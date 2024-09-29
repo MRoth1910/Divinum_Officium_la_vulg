@@ -1,0 +1,109 @@
+% !TEX TS-program = lualatexmk
+% !TEX parameter =  --shell-escape
+\documentclass[11pt]{book}
+
+\input{commonheaders_vespers_people}
+
+\begin{document}
+\thispagestyle{empty}
+
+%%need to fix rule from sticking out
+
+{\centering{\large{Sunday.}\par}} %%Sunday
+
+{\centering{.}\par} %%date Month NN, YYYY
+
+\rubrique{Antiphons, psalms, chapter, and hymn per annum. Collect of the day. Commemorations of .} %% or Suffrage of All Saints
+
+%%changes for Easter time; Advent will probably require a booklet and therefore ONLY commemorations
+
+%\chapterlateng
+
+%%for gesima, Lent, Advent, Easter etc.
+
+\smalltitle{Antiphona ad Magnificat.} %%add mode number and final letter, e.g. 4. A.
+\gscore[]{}{}
+
+\begin{otherlanguage}{english} \noindent Ant. \end{otherlanguage} %%translation
+
+\smallscore{} %%Magnificat file 
+
+%\gabcsnippet{}%%
+
+\begin{enumerate}[label=\arabic*.,%
+			leftmargin=0pt, %
+			itemindent=0mm, %
+			labelsep=3pt, %
+			labelwidth=0pt, %
+			rightmargin=0pt, %
+			parsep=0pt, %
+			topsep=0pt, %
+			itemsep=0pt,%
+			start=3]
+%%Magnificat
+%% each line requires \item
+\end{enumerate}
+
+\smalltitle{Collect.}
+\smallskip
+
+\texteparacol{Orémus.
+
+\lettrine{}{}
+
+\rr Amen.}{\noindent}
+   
+    %%repeat for collects of commemorations
+
+\gscore[]{.}{}
+
+\begin{otherlanguage}{english} \noindent Ant. \end{otherlanguage} %%translation
+
+       \begin{paracol}{2}
+ \vv
+
+\rr
+           \switchcolumn
+    \noindent  \vv  
+         
+\noindent  \rr 
+    \end{paracol}
+
+\smalltitle{Collect.}
+\smallskip
+
+\texteparacol{Orémus.
+
+\lettrine{}{}
+
+\rr Amen.}{\noindent}
+%%the last collect ends with the conclusion and Amen.
+
+
+\gscore[Ant.]{.}{}
+
+\begin{otherlanguage}{english} \noindent Ant. \end{otherlanguage} %%translation
+
+       \begin{paracol}{2}
+\vv
+
+\rr
+           \switchcolumn
+ \noindent         \vv
+                  
+\noindent \rr 
+    \end{paracol}
+
+\smalltitle{Collect.}
+\smallskip
+
+\texteparacol{Orémus.
+
+\lettrine{}{}
+
+\rr Amen.}{\noindent
+
+Amen.}
+
+\end{document}
+
