@@ -1,0 +1,475 @@
+% !TEX TS-program = lualatexmk
+% !TEX parameter =  --shell-escape
+\documentclass[12pt]{book}
+
+\input{commonheaders_vespers_people} %%% will need to fix spacing problem in psalms at a later date.
+
+\begin{document}
+ 
+ \twosided[pc] %% to allow for the left-right switching of columns needed for bilingual liturgical typesetting (like in missals); it's unclear why this goes BEFORE everything else and not when activating the environment. %% It's OK for paper booklets to not switch, but it's probably best practice to switch.
+ 
+  \thispagestyle{empty}
+  
+   {\centering{\huge\capspace{{VESPERS OF CORPUS CHRISTI}}}\par} \header{vespers of corpus christi and within the octave.}
+   
+  \vspace{0.5\baselineskip}
+ 
+ {\centering{\huge\capspace{{AND DAYS WITHIN THE OCTAVE.}}}\par}
+ 
+\smalltitle{Before the Office.}
+
+\rubrique{These prayers are said kneeling. End when the priest stands.}
+
+\textebilingue{orationes_ante_do}{orationes_ante_do_eng}
+
+\smalltitle{\prayers}
+
+\rubrique{The celebrant intones the following verse. All sing the response and doxology.}
+
+\begin{otherlanguage}{english}
+\rubrique{Make the sign of the cross at the beginning and at the Magnificat, and bow the head when the Trinity is mentioned, when mention is made of the ``Holy Name'' in some way, and at ``Orémus.''}\end{otherlanguage}
+
+\rubrique{On the feast itself:}
+
+\gscore[]{℣.}{Deus_in_adjutorium_tonus_solemnior}
+
+\noindent
+\begin{otherlanguage}{english}
+O God, \cc{} come to my assistance. \rr O Lord, make haste to help me. Glory be to the Father, and to the Son,~* and to the Holy Ghost. As it was in the beginning, is now,~* and ever shall be, world without end. Amen. Alleluia.\end{otherlanguage}
+
+\myrule
+
+\rubrique{On the other days within the octave:}
+
+\gscore[]{℣.}{Deus_In_Adjutorium_Festivus}
+
+\rubrique{On the feast and its octave day, the antiphons are doubled. On all other days, the office is of semidouble rite.}
+
+\smalltitle{First Antiphon. 1. f.}
+\initialscore{an_sacerdos_in_aeternum_solesmes_1961}
+
+\begin{otherlanguage}{english} \noindent Ant. Christ the Lord, being made an High Priest for ever after the order of Melchisedec, hath offered bread and wine.\end{otherlanguage}
+
+\rubrique{\begin{otherlanguage}{english}
+Sit at the word ``Sede.'' The cantor sings odd verses; all sing even verses, and this for the hymn and Magnificat, when sung entirely in chant, as well.
+\end{otherlanguage}}
+
+\psalmus{109}{109_1f}{109_1f}{109_en}
+
+\rubrique{\begin{otherlanguage}{english}
+Clerics in descending order, or a cantor, intone the subsequent antiphons.\end{otherlanguage}}
+
+ \gscore[2. Ant.]{2. D}{an_miserator_dominus_solesmes_1961}
+% 
+ \begin{otherlanguage}{english} \noindent Ant. He hath made His wonderful works to be remembered; the Lord is gracious and full of compassion. He hath given meat unto them that fear Him.\end{otherlanguage}
+%
+\psalmus{110}{110_2}{110_2}{110_en}
+%
+  \gscore[3. Ant.]{3. a2}{an_calicem_salutaris_accipiam_et_sacrificabo_solesmes_1961}
+%  
+  \begin{otherlanguage}{english} \noindent Ant. I will take the cup of salvation, and offer the sacrifice of thanksgiving. \end{otherlanguage}
+%
+ \psalmus{115}{115_3a2}{115_3a2_g}{115_en}
+%
+\gscore[4. Ant.]{4. E}{an_sicut_novellae_solesmes_1961}
+%
+\begin{otherlanguage}{english} \noindent Ant. Let the children of the Church be like olive-plants round about the table of the Lord.\end{otherlanguage}
+%
+\psalmus{127}{127_4E}{127_4E}{127_en}
+
+ \gscore[5. Ant.]{5. a}{an_qui_pacem_ponit_solesmes_1961}
+ 
+\begin{otherlanguage}{english} \noindent Ant. The Lord, That maketh peace in the borders of the Church, filleth her with the finest of the wheat.\end{otherlanguage}
+
+\psalmus{147}{147_5}{147_5}{147_en}
+
+\rubrique{\begin{otherlanguage}{english}
+Having sung the last antiphon in full, stand when the celebrant does.
+\end{otherlanguage}}
+
+\bigtitle{Chapter.}
+
+\smalltitle{On the feast and within the octave:}
+ \scripture{1 Cor. 11, 23 – 24.}
+
+\texteparacol{\lettrine{F}{r}atres: Ego enim accépi a Dómino quod et trádidi vobis,~† quóniam Dóminus Jesus, in qua nocte tradebátur, accépit panem, et grátias agens fregit, et dixit: Accípite et manducáte: hoc est corpus meum, quod pro vobis tradétur:~* hoc fácite in meam commemoratiónem.\par
+\rr Deo grátias.}{\noindent Brothers: For I have received of the Lord that which also I delivered unto you, that the Lord Jesus, the same night in which he was betrayed, took bread. And giving thanks, broke, and said: Take ye, and eat: this is my body, which shall be delivered for you: this do for the commemoration of me. Thanks be to God.}
+
+\smalltitle{On Saturday and Sunday within the octave:}
+\scripture{1 Joann. 3, 13 – 14.}
+
+\texteparacol{\lettrine{C}{a}ríssimi: Nolíte mirári, si odit vos mundus.~† Nos scimus quóniam transláti sumus de morte ad vitam,~* quóniam dilígimus fratres.\par
+\rr Deo grátias.}{\noindent Beloved: Wonder not, brethren, if the world hate you. We know that we have passed from death to life, because we love the brethren. He that loveth not, abideth in death. Thanks be to God.}
+
+\smalltitle{Hymn.}
+
+\gscore[]{3.}{hy_pange_lingua_corpus_christi_solesmes.gabc}
+
+\begin{multicols}{2}
+\begin{otherlanguage}{english}
+\raggedcolumns
+Sing, my tongue, the Saviour's glory,\\
+Of his flesh the mystery sing;\\
+Of the blood, all price exceeding,\\
+Shed by our immortal King,\\
+Destined, for the world's redemption,\\
+From a noble womb to spring.
+
+Of a pure and spotless Virgin\\
+Born for us on earth below,\\
+He, as man, with man conversing,\\
+Stayed, the seeds of truth to sow;\\
+Then he closed in solemn order\\
+Wondrously his life of woe.
+
+On the night of that last supper
+Seated with his chosen band,\\
+He, the paschal victim eating,\\
+First fulfills the law's command:\\
+Then as food to all his brethren\\
+Gives himself with his own hand.
+
+Word made flesh, the bread of nature\\
+By his word to flesh he turns;\\
+Wine into his blood he changes:\\
+What though sense no change discerns?\\
+Only be the heart in earnest,\\
+Faith her lesson quickly learns.
+
+\rubrique{If the Office is celebrated before the exposed Blessed Sacrament, the following verses are said kneeling.}
+
+Down in adoration falling,\\
+Lo! the sacred Host we hail;\\
+Lo! o'er ancient forms departing,\\
+Newer rites of grace prevail;\\
+Faith for all defects supplying,\\
+Where the feeble senses fail.
+
+To the everlasting Father,\\
+And the Son who reigns on high,\\
+With the Holy Ghost proceeding\\
+Forth from each eternally,\\
+Be salvation, honour, blessing,\\
+Might, and endless majesty.
+Amen.
+
+\end{otherlanguage}
+\end{multicols}
+
+\rubrique{\begin{otherlanguage}{english}
+The cantor sings the verse to which all reply.
+\end{otherlanguage}}
+
+\rubrique{On the feast, the solemn tone is used, but on the days within the octave, the ordinary tone is used:}
+\label{panem}\phantomsection
+   \smallscore{versiculus_vesperis_cc.gabc}
+   
+\begin{otherlanguage}{english}
+\noindent \vv Thou hast sent them from heaven, alleluia.
+
+\noindent \rr Having all sweetness within it, alleluia.
+
+\end{otherlanguage}
+\myrule
+
+\rubrique{On Saturday and Sunday within the octave:}
+
+ \smallscore{versiculus_dom_octave_cc}
+
+\begin{otherlanguage}{english} \noindent \vv He fed them with the finest of the wheat, alleluia.
+
+\noindent \rr  And with honey out of the rock did He satisfy them, alleluia.
+ \end{otherlanguage}
+ 
+ \myrule
+ 
+\smalltitle{Antiphon at the Magnificat.}
+
+\rubrique{On the feast and octave day, sit when the celebrant does, after he sings the first words. Rise at the end. Otherwise, remain standing.}
+
+\smalltitle{At I Vespers.}
+
+\label{o_quam_suavis} \phantomsection
+\gscore[]{6. F}{an_o_quam_suavis_solesmes_1961}
+ 
+ \begin{otherlanguage}{english} \noindent Ant. O how sweet is thy spirit, Lord,
+thou who, in order to demonstrate thy sweetness to thy children,
+send down from heaven the sweetest bread unsurpassed,
+filling the hungry with good things,
+sending away empty the disdainful rich! \end{otherlanguage}
+ 
+ \gresetinitiallines{0}
+\gabcsnippet{ (c4)1. Ma(f)gní(gh)fi(h)cat(h.) *(:) á(h)ni(h)ma(h) <i>me</i>(f)<i>a</i>(gh) <b>Dó</b>(g)mi(fr)num.(f.) (::) (Z-)
+
+2. Et(f) ex(gh)sul(h)tá(h)vit(h) <i>spí(hg)ri(ixgi)tus</i>(h hr[ocb:1{]) <b>me</b>(hg[ocb:0}])us:(gh..) *(:) in(h) De(h)o(h) sa(h)lu(h)<i>tá</i>(f)<i>ri</i>(gh) <b>me</b>(g fr)o.(f.) (::)}
+ \gresetinitiallines{1}
+ 
+ \begin{enumerate}[label=\arabic*.,%
+			leftmargin=0pt, %
+			itemindent=0mm, %
+			labelsep=3pt, %
+			labelwidth=0pt, %
+			rightmargin=0pt, %
+			parsep=0pt, %
+			topsep=0pt, %
+			itemsep=0pt,%
+			start=3]
+
+\item Quia respéxit humilitátem \textit{ancíllæ} \textbf{su}æ:~* ecce enim ex hoc beátam me dicent omnes gene\textit{rati}\textbf{ó}nes.
+
+\item Quia fecit mihi \textit{magna} \textit{qui} \textbf{pot}\textbf{ens} est:~* et sanctum \textit{nomen} \textbf{e}jus.
+
+\item Et misericórdia ejus a progéni\textit{e} \textit{in} \textit{pro}\textbf{gé}\textbf{ni}es~* timén\textit{tibus} \textbf{e}um.
+
+\item Fecit poténtiam in \textit{bráchio} \textbf{su}o:~* dispérsit supérbos mente \textit{cordis} \textbf{su}i.
+
+\item Depósuit po\textit{téntes} \textit{de} \textbf{se}de,~* et exal\textit{távit} \textbf{hú}miles.
+
+\item Esuriéntes \textit{implévit} \textbf{bo}nis:~* et dívites dimí\hspace{0.04em}\textit{sit} \textit{in}\textbf{á}nes.
+
+\item Suscépit Israel \textit{púerum} \textbf{su}um,~* recordátus misericór\textit{diæ} \textbf{su}æ.
+
+\item Sicut locútus est \textit{ad} \textit{pa}\textit{tres} \textbf{no}stros,~* Abraham et sémini e\hspace{0.02em}\textit{jus} \textit{in} \textbf{sǽ}cula.
+\item Glória \textit{Pa}\textit{tri,} \textit{et} \textbf{Fí}\textbf{li}o,~* et Spirí\hspace{0.03em}\textit{tui} \textbf{San}cto.
+
+\item Sicut erat in princípio, \textit{et} \textit{nunc,} \textit{et} \textbf{sem}per,~* et in sǽcula sæcu\hspace{0.03em}\textit{lórum.} \textbf{A}men.
+
+\end{enumerate}
+ 
+ \smalltitle{At II Vespers.}
+ \label{o_sacrum_convivium}\phantomsection
+ \gscore[]{5. a}{an_o_sacrum_convivium_solesmes_1961}
+ 
+ \begin{otherlanguage}{english} \noindent Ant. O Sacred Banquet, in which Christ is received, the memory of his Passion is recalled, the soul is filled with grace, and the pledge of future glory is given unto us.\end{otherlanguage}
+ 
+ \smallscore{Magnificat_5_Solemnis}
+
+\begin{enumerate}[label=\arabic*.,%
+			leftmargin=0pt, %
+			itemindent=0mm, %
+			labelsep=3pt, %
+			labelwidth=0pt, %
+			rightmargin=0pt, %
+			parsep=0pt, %
+			topsep=0pt, %
+			itemsep=0pt,%
+			start=3]
+
+\item Quia respéxit humilitátem ancíl\textit{læ} \textbf{su}æ:~* ecce enim ex hoc beátam me dicent omnes gene\textbf{ra}ti\textbf{ó}nes.
+\item Quia fecit mihi magna \textit{qui} \textbf{pot}ens est:~* et sanctum \textbf{no}men \textbf{e}jus.
+\item Et misericórdia ejus a progénie in \textit{pro}\textbf{gé}nies~* ti\textbf{mén}tibus \textbf{e}um.
+\item Fecit poténtiam in bráchi\textit{o} \textbf{su}o:~* dispérsit supérbos mente \textbf{cor}dis \textbf{su}i.
+\item Depósuit poténtes \textit{de} \textbf{se}de,~* et exal\textbf{tá}vit \textbf{hú}miles.
+\item Esuriéntes implé\textit{vit} \textbf{bo}nis:~* et dívites di\textbf{mí}sit in\textbf{á}nes.
+\item Suscépit Israel púe\textit{rum} \textbf{su}um,~* recordátus miseri\textbf{cór}diæ \textbf{su}æ.
+\item Sicut locútus est ad pa\textit{tres} \textbf{nos}tros,~* Abraham et sémini \textbf{e}jus in \textbf{sǽ}cula.
+\item Glória Patri, \textit{et} \textbf{Fí}lio,~* et Spi\textbf{rí}tui \textbf{San}cto.
+\item Sicut erat in princípio, et nunc, \textit{et} \textbf{sem}per,~* et in sǽcula sæcu\hspace{0.03em}\textbf{ló}rum. \textbf{A}men.
+
+\end{enumerate}
+  
+   \smalltitle{At Vespers of Saturday within the octave.}
+   
+    \gscore[]{7. a}{an_puer_samuel_solesmes_1961}
+    \begin{otherlanguage}{english} \noindent Ant. The child Samuel ministered unto God before Eli, and the word of the Lord was precious in his sight.\end{otherlanguage}
+    
+      \gresetinitiallines{0}
+   \gabcsnippet{ (c3) 1. Ma(hg)gní(hi)fi(i)cat(i.) *(:) á(i)ni(i)ma(i) <b>me</b>(j ir)a(i) <b>Dó</b>(h)mi(hr)num.(gf..) (::) (Z-)
+2. Et(hg) ex(hi)sul(i)tá(i)vit(i) <b>spí</b>(k)ri(jr)tus(j) <b>me</b>(i//jr)us(j.) *(:) in(i) De(i)o(i) sa(i)lu(i)<b>tá</b>(j)ri(i) <b>me</b>(h//hr)o.(gf..) (::)}
+  \gresetinitiallines{1}
+  
+     \smallskip%
+    \noindent%
+    \begin{enumerate}[%
+    		label=\arabic*.,%
+			leftmargin=0pt, %
+			itemindent=0mm, %
+			labelsep=3pt, %
+			labelwidth=0pt, %
+			rightmargin=0pt, %
+			parsep=0pt, %
+			topsep=0pt, %
+			itemsep=0pt,%
+			start=3]%
+   
+%  \rubrique{The canticle is as on Sunday, \normaltext{\pageref{mag_8G}.}}
+
+\item Quia respéxit humilitátem an\textbf{cíl}læ \textbf{su}æ:~* ecce enim ex hoc beátam me dicent omnes gene\textbf{ra}ti\textbf{ó}nes.
+
+\item Quia fecit mihi \textbf{ma}gna qui \textbf{pot}ens est:~* et sanctum \textbf{no}men \textbf{e}jus.
+
+\item Et misericórdia ejus a progénie \textbf{in} pro\textbf{gé}nies~* ti\textbf{mén}tibus \textbf{e}um.
+
+\item Fecit poténtiam in \textbf{brá}chio \textbf{su}o:~* dispérsit supérbos mente \textbf{cor}dis \textbf{su}i.
+
+\item Depósuit po\textbf{tén}tes de \textbf{se}de,~* et exal\textbf{tá}vit \textbf{hú}miles.
+
+\item Esuriéntes im\textbf{plé}vit \textbf{bo}nis:~* et dívites di\textbf{mí}sit in\textbf{á}nes.
+
+\item Suscépit Israel \textbf{pú}erum \textbf{su}um,~* recordátus miseri\textbf{cór}diæ \textbf{su}æ.
+
+\item Sicut locútus est ad \textbf{pa}tres \textbf{no}stros,~* Abraham et sémini \textbf{e}jus in \textbf{sǽ}cula.
+
+\item Glória \textbf{Pa}tri, et \textbf{Fí}lio,~* et Spi\textbf{rí}tui \textbf{San}cto.
+
+\item Sicut erat in princípio, et \textbf{nunc,} et \textbf{sem}per,~* et in sǽcula sæcu\textbf{ló}rum. \textbf{A}men.
+
+\end{enumerate}
+  
+      \smalltitle{At Vespers of Sunday within the octave.}
+      
+          \gscore[Ad Magnif.]{Ant. 5. a}{an_exi_cito_in_plateas_solesmes_1961}
+        \begin{otherlanguage}{english} \noindent Ant. Go out quickly into the streets and lanes of the city, and compel the poor and the maimed, and the halt, and the blind, to come in that my house may be full, alleluia.\end{otherlanguage}
+      
+  
+      \gresetinitiallines{0}
+
+\gabcsnippet{(c4) 1. Ma(f)gní(gh)fi(h)cat(h) * (:) á(h)ni(h)ma(h) <i>me</i>(g)a(f) <b>Dó</b>(g)mi(hr)num.(h.) (::)}
+
+\gabcsnippet{(c4) 2. Et(f) ex(gh)sul(h)tá(h)vit(h) <b>spí</b>(ixi)ri(hr)tus(h) <b>me</b>(g//hr)us(h.) *(:) in(h) De(h)o(h) sa(h)lu(h)<i>tá</i>(g)<i>ri</i>(f)<b>me</b>(h//gr)o.(g.)  <b>me</b>(g//hr)o.(h.) (::) (::)}
+
+\gresetinitiallines{1}
+   \smallskip%
+    \noindent%
+    \begin{enumerate}[%
+    		label=\arabic*.,%
+			leftmargin=0pt, %
+			itemindent=0mm, %
+			labelsep=3pt, %
+			labelwidth=0pt, %
+			rightmargin=0pt, %
+			parsep=0pt, %
+			topsep=0pt, %
+			itemsep=0pt,%
+			start=3]%
+
+\item Quia respéxit humilitátem an\textbf{cíl}læ \textbf{su}æ:~* ecce enim ex hoc beátam me dicent omnes gene\textit{rati}\textbf{ó}nes.
+\item Quia fecit mihi \textbf{ma}gna qui \textbf{pot}ens est:~* et sanctum \textit{nomen} \textbf{e}jus.
+\item Et misericórdia ejus a progénie \textbf{in} pro\textbf{gé}nies~* timén\textit{tibus} \textbf{e}um.
+\item Fecit poténtiam in \textbf{brá}chio \textbf{su}o:~* dispérsit supérbos mente \textit{cordis} \textbf{su}i.
+\item Depósuit po\textbf{tén}tes de \textbf{se}de,~* et exal\textit{távit} \textbf{hú}miles. 
+\item Esuriéntes im\textbf{plé}vit \textbf{bo}nis:~* et dívites dimí\hspace{0.02em}\textit{sit} in\textbf{á}nes.
+\item Suscépit Israel \textbf{pú}erum \textbf{su}um,~* recordátus misericór\textit{diæ} \textbf{su}æ.
+\item Sicut locútus est ad \textbf{pa}tres \textbf{no}stros,~* Abraham et sémini e\hspace{0.02em}\textit{jus} \textit{in} \textbf{sǽ}cula.
+\item Glória \textbf{Pa}tri, et \textbf{Fí}lio,~* et Spirí\hspace{0.03em}\textit{tui} \textbf{San}cto.
+\item Sicut erat in princípio, et \textbf{nunc,} et \textbf{sém}per, ~* et in sǽcula sæcu\hspace{0.03em}\textit{lórum.} \textbf{A}men.\end{enumerate}
+
+\smalltitle{Canticle of the Blessed Virgin Mary.}
+
+\scripture{Luc. 1, 46–55.}
+
+\begin{multicols}{2}
+ \begin{otherlanguage}{english}
+My soul \cc~* doth magnify the Lord.
+
+And my spirit hath rejoiced~* in God my Saviour.
+
+Because he hath regarded the humility of his handmaid;~* for behold from henceforth all generations shall call me blessed.
+
+Because he that is mighty, hath done great things to me;~* and holy is his name.
+
+And his mercy is from generation unto generations,~* to them that fear him.
+
+He hath shewed might in his arm:~* he hath scattered the proud in the conceit of their heart.
+
+He hath put down the mighty from their seat,~* and hath exalted the humble.
+
+He hath filled the hungry with good things;~* and the rich he hath sent empty away.
+
+He hath received Israel his servant,~* being mindful of his mercy:
+
+As he spoke to our fathers,~* to Abraham and to his seed for ever.
+
+Glory be to the Father, and to the Son,~* and to the Holy Ghost.
+
+As it was in the beginning, is now,~* and ever shall be, world without end. Amen.
+\end{otherlanguage}
+% \end{paracol}
+\end{multicols}
+
+\rubrique{\begin{otherlanguage}{english}
+Sit as the antiphon is repeated. Then the usual dialogue follows. All stand from now until the end of the office.\end{otherlanguage}}
+
+\textebilingue{dv}{dv_eng}
+
+   \begin{paracol}{2}
+   Orémus.
+   
+\label{oratio_cc}\phantomsection
+
+\lettrine{D}{e}us, qui nobis sub Sacraménto mirábili passiónis tuæ memóriam reliquísti:~† tríbue, quǽsumus, ita nos córporis, et sánguinis tui sacra mystéria venerári;~* ut redemptiónis tuæ fructum in nobis júgiter sentiámus. Qui vivis et regnas cum Deo Patre in unitáte.
+
+   ℟. Amen.
+   
+\switchcolumn
+\begin{otherlanguage}{english}
+\noindent Let us pray. O God, who under a wonderful Sacrament hast left us a memorial of Thy Passion; grant us, we beseech Thee, so to reverence the sacred mysteries of Thy Body and Blood, that we may ever feel within ourselves the fruit of Thy Redemption. Who livest and reignest with God the Father in the unity of the Holy Ghost, God, world without end.
+Amen.
+\end{otherlanguage}
+    \end{paracol}
+    
+    \myrule
+    
+    \smalltitle{On Saturday and Sunday within the octave:}
+       \begin{paracol}{2}
+   Orémus.
+   
+\label{oratio_dom_cc}\phantomsection
+
+\lettrine{S}{a}ncti nóminis tui, Dómine, timórem páriter et amórem fac nos habére perpétuum:~† quia nunquam tua gubernatióne destítuis,~* quos in soliditáte tuæ dilectiónis instítuis.
+Per Dóminum.
+
+   ℟. Amen.
+   
+\switchcolumn
+\begin{otherlanguage}{english}
+\noindent Let us pray.
+O Lord, Who never failest to help and govern them whom Thou dost bring up in thy steadfast fear and love keep us, we beseech thee, under the protection of thy good providence, and make us to have a perpetual fear and love of thy Holy Name.
+Through Jesus Christ, thy Son, Our Lord, Who liveth and reigneth with thee in the unity of the Holy Ghost, God, world without end.
+ Amen.
+\end{otherlanguage}
+    \end{paracol}
+    
+ \rubrique{On Saturday, then the preceding day is commemorated, ant. \normaltext{O sacrum convívium, \pageref{o_sacrum_convivium}. ℣. Panem, \pageref{o_sacrum_convivium},} Oratio \normaltext{Deus, qui nobis, \pageref{oratio_cc}.}}
+
+\rubrique{On Sunday, then the following day is commemorated, ant. \normaltext{O quam suávis, \pageref{o_quam_suavis}. ℣. Panem, \pageref{panem},} Oratio \normaltext{Deus, qui nobis, \pageref{oratio_cc}.}} 
+
+\rubrique{But if the following day is not of the octave, then the commemoration is made as on Saturday evening.}
+
+\textebilingue{dv}{dv_eng}
+
+\rubrique{\begin{otherlanguage}{english}
+The cantor sings the verse to which all reply.
+\end{otherlanguage}}
+
+        \myrule
+    \smalltitle{At I Vespers.}
+
+\gscore[]{2.}{BD_Solemnis_I_Vesp}
+
+    \myrule
+
+\gscore[]{6.}{BD_Solemnis_mode_6}
+
+\rubrique{Or:}
+
+\gscore[]{5.}{BD_Solemnis_mode_5}
+
+    \myrule
+    
+    \smalltitle{On Saturday and Sunday within the octave:}
+
+\gscore[]{2.}{BD_Semiduplex_Vesp}
+
+\myrule
+
+\noindent \vv Let us bless the Lord.
+
+\noindent \rr Thanks be to God.
+
+\textebilingue{fidelium_animae}{fidelium_animae_en}
+
+\rubrique{The office is as on the feast, unless a double of the I class feast is celebrated, and is of semidouble rite during the octave.}
+
+\rubrique{On Wednesday, all is at I Vespers, and the office is of double major rite.}
+\end{document}

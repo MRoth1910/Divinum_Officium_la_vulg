@@ -1,0 +1,102 @@
+% !TEX TS-program = lualatexmk
+% !TEX parameter =  --shell-escape
+
+\documentclass[12pt]{book}
+
+\input{commonheaders_vespers_people} %%% will need to fix spacing problem in psalms at a later date.
+
+\begin{document}
+ 
+ \twosided[pc] %% to allow for the left-right switching of columns needed for bilingual liturgical typesetting (like in missals); it's unclear why this goes BEFORE everything else and not when activating the environment. %% It's OK for paper booklets to not switch, but it's probably best practice to switch.
+
+\thispagestyle{empty}
+
+\rubrique{The celebrant intones, and the cantors continue. The people may join the schola on alternating verses, which begin at double bar lines.}
+
+\gscore[]{3.}{hy_te_deum_solemn_solesmes}
+
+\begin{multicols}{2}
+\begin{otherlanguage}{english}
+
+We praise thee, O God; we acknowledge thee to be the Lord.\\
+All the earth doth worship thee, the Father everlasting.
+
+To thee all angels cry aloud, the heavens and all the powers therein.\\
+To thee cherubin and seraphin continually do cry,\\
+Holy, Holy, Holy, Lord God of Sabaoth;
+
+Heaven and earth are full of the majesty of thy glory.\\
+The glorious company of the apostles praise thee.\\
+The goodly fellowship of the prophets praise thee.\\
+The noble army of martyrs praise thee.
+
+The holy Church throughout all the world doth acknowledge thee:\\
+the Father of an infinite majesty;\\
+thine honourable, true and only Son;\\
+also the Holy Ghost the Comforter.
+
+Thou art the King of glory, O Christ.\\
+Thou art the everlasting Son of the Father.\\
+When thou tookest upon thee to deliver man,\\
+thou didst not abhor the Virgin’s womb.
+
+When thou hadst overcome the sharpness of death,\\
+thou didst open the kingdom of heaven to all believers.
+
+Thou sittest at the right hand of God, in the glory of the Father.\\
+We believe that thou shalt come to be our judge.\\
+We therefore pray thee, help thy servants,\\
+whom thou hast redeemed with thy precious blood.
+
+Make them to be numbered with thy saints in glory everlasting.\\
+O Lord, save thy people and bless thine heritage.\\
+Govern them and lift them up for ever.
+
+Day by day we magnify thee;\\
+and we worship thy name, ever world without end.
+
+Vouchsafe, O Lord, to keep us this day without sin.\\
+O Lord, have mercy upon us, have mercy upon us.\\
+O Lord, let thy mercy lighten upon us, as our trust is in thee.\\
+O Lord, in thee have I trusted; let me never be confounded.
+
+\end{otherlanguage}
+\end{multicols}
+
+\texteparacol{\noindent \vv Benedicámus Patrem et Fílium cum San\-cto Spíritu.
+
+\noindent \rr Laudémus et superexaltémus eum in sǽcula.
+
+\noindent \vv Benedí\-ctus es Dómine in firmaménto cæli.
+
+\noindent \rr Et laudábilis, et gloriósus, et superexaltátus in sǽcula.
+
+\noindent \vv Dómine exáudi oratiónem meam.
+
+\noindent \rr Et clamor meus ad te véniat.}{\noindent \vv Let us bless the Father and the Son with the Holy Ghost.
+
+\noindent \rr Let us praise and exalt him above all forever.
+
+\noindent \vv Blessed art thou, o Lord, in the firmament of heaven.
+
+\noindent \rr And worthy of praise, and glorious, and above all forever.
+
+\noindent \vv O Lord hear my prayer.
+
+\noindent \rr And let my cry come unto thee.}
+
+\textebilingue{dv}{dv_eng}
+
+\texteparacol{Orémus. 
+
+\lettrine{D}{e}us, cujus misericórdiæ non est númerus, et bonitátis infinítus est thesáurus:~† piíssimæ majestáti tuæ pro collátis donis grátias ágimus, tuam semper cleméntiam exorántes;~* ut qui peténtibus postuláta concédis, eósdem non déserens, ad prǽmia futúra dispónas. Per Christum Dóminum nostrum. \rr Amen.}{\noindent Let us pray. O God, whose mercies are numberless and whose treasurey
+goodness has no end, we give thanks to
+Thy most gracious Majesty for the gifts
+Thou hast bestowed, beseeching Thy
+mercy, that as Thou grantest the petitions
+of those who ask, so not forsaking them,
+Thou wilt prepare them for rewards to
+come. Through Christ our Lord. Amen.}
+
+
+\end{document}

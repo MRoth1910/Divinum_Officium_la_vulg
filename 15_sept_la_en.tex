@@ -1,0 +1,383 @@
+% !TEX TS-program = lualatexmk
+% !TEX parameter =  --shell-escape
+
+\documentclass[12pt]{book}
+
+\input{commonheaders_vespers_people} %%% will need to fix spacing problem in psalms at a later date.
+
+\begin{document}
+ 
+ \twosided[pc] %% to allow for the left-right switching of columns needed for bilingual liturgical typesetting (like in missals); it's unclear why this goes BEFORE everything else and not when activating the environment. %% It's OK for paper booklets to not switch, but it's probably best practice to switch.
+ 
+  \thispagestyle{empty}
+ 
+ {\centering{\huge\capspace{{SEVEN SORROWS OF THE B.V.M.}}}\par}\header{seven sorrows of the b.v.m.}
+ 
+\smalltitle{Before the Office.}
+
+\rubrique{These prayers are said kneeling. End when the priest stands.}
+
+\textebilingue{orationes_ante_do}{orationes_ante_do_eng}
+
+\smalltitle{\prayers}
+
+\rubrique{The celebrant intones the following verse. All sing the response and doxology.}
+
+\begin{otherlanguage}{english}
+\rubrique{Make the sign of the cross at the beginning and at the Magnificat, and bow the head when the Trinity is mentioned, when mention is made of the ``Holy Name'' in some way, and at ``Orémus.''}\end{otherlanguage}
+
+\gscore[]{℣.}{Deus_In_Adjutorium_Festivus}
+
+\noindent
+\begin{otherlanguage}{english}
+O God, \cc{} come to my assistance. \rr O Lord, make haste to help me. Glory be to the Father, and to the Son,and to the Holy Ghost. As it was in the beginning, is now, and ever shall be, world without end. Amen. Alleluia. \end{otherlanguage}
+
+\smalltitle{First Antiphon. 6. F.}
+
+\initialscore{an_quo_abiit_sept_15_solesmes_1961}
+
+\begin{otherlanguage}{english} \noindent Ant. Whither is thy beloved gone, O thou fairest among women? Whither is thy beloved turned aside? that we may seek him with thee.\end{otherlanguage}
+
+\rubrique{\begin{otherlanguage}{english}
+Sit at the word ``Sede.'' The cantor sings odd verses; all sing even verses, and this for the hymn and Magnificat, when sung entirely in chant, as well.
+\end{otherlanguage}}
+
+\psalmus{109}{109_6_alt}{109_6_alt}{109_en}
+
+\rubrique{\begin{otherlanguage}{english}
+Clerics in descending order, or a cantor, intone the subsequent antiphons.\end{otherlanguage}}
+
+\gscore[2. Ant.]{1. g}{an_recedite_a_me_solesmes_1961}
+ 
+ \begin{otherlanguage}{english} \noindent Ant. Look away from me. I will weep bitterly. Labour not to comfort me.
+\end{otherlanguage}
+
+\psalmus{112}{112_1g}{112_1}{112_en}
+
+\gscore[3. Ant.]{4. A*}{an_non_est_ei_species_solesmes_1961}
+  
+\begin{otherlanguage}{english} \noindent Ant. He hath no form nor comeliness, and when we shall see him there is no beauty that we should desire him.\end{otherlanguage}
+
+\psalmus{121}{121_4A_A_star}{121_4A_A_star}{121_en}
+
+\gscore[4. Ant.]{2. D}{an_a_planta_pedis_solesmes_1961}
+
+\begin{otherlanguage}{english} \noindent Ant. From the sole of the foot even unto the head, there is no soundness in it.\end{otherlanguage}
+
+\psalmus{126}{126_2}{126_2}{126_en}
+
+\gscore[5. Ant.]{1. f}{an_fulcite_me_floribus_solesmes_1961}
+
+\begin{otherlanguage}{english} \noindent Ant. Revive me with flowers, stay me up with apples for I am swooning with love.\end{otherlanguage}
+
+\psalmus{147}{147_1f}{147_1}{147_en}
+
+\rubrique{\begin{otherlanguage}{english}
+Having sung the last antiphon in full, stand when the celebrant does.
+\end{otherlanguage}}
+
+\smalltitle{Chapter.}
+\scripture{Thren. 2, 13.}
+
+\texteparacol{\lettrine{C}{u}i comparábo te? vel cui assimilábo te fília Jerúsalem? cui exæquábo te, et consolábor te, virgo fília Sion? Magna est velut mare contrítio tua.
+
+\rr Deo grátias.}{\noindent \begin{otherlanguage}{english}To what shall I compare thee? or to what shall I liken thee, O daughter of Jerusalem? to what shall I equal thee, that I may comfort thee, O virgin daughter of Sion? for great as the sea is thy destruction: who shall heal thee? Thanks be to God.\end{otherlanguage}}
+
+%  \smallskip%
+%       \begin{paracol}{2}
+%          \lettrine{C}{u}i comparábo te? vel cui assimilábo te fília Jerúsalem? cui exæquábo te, et consolábor te, virgo fília Sion? Magna est velut mare contrítio tua.
+%
+%\rr Deo grátias
+%           \switchcolumn*
+%\noindent To what shall I compare thee? or to what shall I liken thee, O daughter of Jerusalem? to what shall I equal thee, that I may comfort thee, O virgin daughter of Sion? for great as the sea is thy destruction: who shall heal thee? Thanks be to God.
+%    \end{paracol}
+
+%\textebilingue{cap_15_aug_old}{cap_15_aug_old_en}
+
+%% Only the usual tone of the hymn is given.
+
+\smalltitle{Hymn.}
+
+\gscore[]{4.}{hy_jam_toto_subitus_solesmes_1961}
+
+\begin{multicols}{2}
+\raggedcolumns
+\begin{otherlanguage}{english}
+Now let the darkling eve mount suddenly on high,\\
+The sun affrighted reave his splendours from the sky,\\
+While I in silence grieve o'er the mocked agony\\
+And the divine catastrophe.
+
+Grief-drenched, thou dost appear with heart of adamant,\\
+O Mother; and dost hear the great hierophant,\\
+Upon his wooden bier locked in the arms of death,\\
+Utter in groans his parting breath.
+
+What lookest thou upon, mangled and bruised and torn?\\
+Ah, 'tis the very Son thy yearning breast hath borne!\\
+Surely, each breaking moan and each deep-mouthèd wound\\
+Its fellow in thy heart hath found!
+
+Surely, the taunts and woes, the scourge, the dripping thorn,\\
+The spitting and the blows, the gall, the lance, the scorn\\
+Surely, each torment throws a poison-dart at thee,\\
+Crushed by their manifold tyranny.
+
+Yet thou with patient mien beneath his cross dost stand,\\
+Nobler in this, I ween, than all the martyr-band:\\
+A thousand deaths, O Queen, upon thy spirit lie,\\
+Yet thou, O marvel! dost not die.
+
+O Holy Trinity, let earth and heaven raise\\
+Their song of laud to thee the while my spirit prays:\\
+When evil comes to me, the strength do thou impart\\
+That erst upheld thy Mother's heart!
+Amen.
+\end{otherlanguage}
+\end{multicols}
+
+\rubrique{\begin{otherlanguage}{english}
+The cantor sings the verse to which all reply.
+\end{otherlanguage}}
+
+\smallscore{versiculus_15_sept}
+\begin{otherlanguage}{english} \noindent \vv Pray for us, O Queen of Martyrs.
+
+\noindent \rr Who didst stand by the Cross of Jesus.
+ \end{otherlanguage}
+
+\smalltitle{Antiphon at the Magnificat.}
+
+\rubrique{Sit when the celebrant does, after he sings the first words. Rise at the end.}
+
+\myrule
+
+ \smalltitle{At I Vespers.}
+\gscore[]{1. D}{an_nolite_me_considerare_solesmes_1961}
+ 
+ \begin{otherlanguage}{english} \noindent Ant. Let us tell again of the right worthy Birth of the glorious Virgin Mary, who gained the honour of Motherhood without losing the guilelessness of a Maid. \end{otherlanguage}
+ 
+ \gresetinitiallines{0}
+\gabcsnippet{(c4)1. Ma(f)gní(gh)fi(h)cat(h.) *(:) á(h)ni(h)ma(h) <i>me</i>(g)<i>a</i>(f) <b>Dó</b>(gh)mi(gr)num.(gvFED.) (::) (Z-)
+2. Et(f) ex(gh)sul(h)tá(h)vit(h) <i>spí</i>(hg)<i>ri</i>(ixgi)<i>tus</i>(h hr[ocb:1{]) <b>me</b>(hg[ocb:0}])us(gh..) *(:) in(h) De(h)o(h) sa(h)lu(h)<i>tá</i>(g)<i>ri</i>(f) <b>me</b>(gh gr)o.(gvFED.) (::)}
+\gresetinitiallines{1}
+
+    \smallskip%
+    \noindent%
+ \begin{enumerate}[label=\arabic*.,%
+			leftmargin=0pt, %
+			itemindent=0mm, %
+			labelsep=3pt, %
+			labelwidth=0pt, %
+			rightmargin=0pt, %
+			parsep=0pt, %
+			topsep=0pt, %
+			itemsep=0pt,%
+			start=3]
+\item Quia respéxit humilitátem \textit{ancíllæ} \textbf{su}æ:~* ecce enim ex hoc beátam me dicent omnes gene\textit{rati}\textbf{ó}nes.
+\item Quia fecit mihi \textit{magna} \textit{qui} \textbf{pot}\textbf{ens} est:~* et sanctum \textit{nomen} \textbf{e}jus.
+\item Et misericórdia ejus a progéni\textit{e} \textit{in} \textit{pro}\textbf{gé}\textbf{ni}es~* timén\textit{tibus} \textbf{e}um.
+\item Fecit poténtiam in \textit{bráchio} \textbf{su}o:~* dispérsit supérbos mente \textit{cordis} \textbf{su}i.
+\item Depósuit po\textit{téntes} \textit{de} \textbf{se}de,~* et exal\textit{távit} \textbf{hú}miles.
+\item Esuriéntes \textit{implévit} \textbf{bo}nis:~* et dívites dimí\hspace{0.04em}\textit{sit} \textit{in}\textbf{á}nes.
+\item Suscépit Israel \textit{púerum} \textbf{su}um,~* recordátus misericór\textit{diæ} \textbf{su}æ.
+\item Sicut locútus est \textit{ad} \textit{pa}\textit{tres} \textbf{no}stros,~* Abraham et sémini e\hspace{0.02em}\textit{jus} \textit{in} \textbf{sǽ}cula.
+\item Glória \textit{Pa}\textit{tri,} \textit{et} \textbf{Fí}\textbf{li}o,~* et Spirí\hspace{0.03em}\textit{tui} \textbf{San}cto.
+\item Sicut erat in princípio, \textit{et} \textit{nunc,} \textit{et} \textbf{sem}per,~* et in sǽcula sæcu\hspace{0.03em}\textit{lórum.} \textbf{A}men.
+\end{enumerate}
+
+\myrule
+
+ \smalltitle{At II Vespers.}
+\gscore[]{2. D}{an_oppressit_me_dolor_solesmes_1961}
+ 
+ \begin{otherlanguage}{english} \noindent Ant. Sorrow hath crushed me; My face is swollen with weeping, and on mine eyelids is the shadow of death.\end{otherlanguage}
+ 
+\smallscore{Magnificat_2_Solemnis}
+
+    \smallskip%
+    \noindent%
+ \begin{enumerate}[label=\arabic*.,%
+			leftmargin=0pt, %
+			itemindent=0mm, %
+			labelsep=3pt, %
+			labelwidth=0pt, %
+			rightmargin=0pt, %
+			parsep=0pt, %
+			topsep=0pt, %
+			itemsep=0pt,%
+			start=3]
+\item Quia respéxit humilitátem \textit{ancíllæ} \textbf{su}æ:~* ecce enim ex hoc beátam me dicent omnes genera\hspace{0.03em}\textit{ti}\textbf{ó}nes.
+\item Quia fecit mihi \textit{magna} \textit{qui} \textbf{pot}ens est:~* et sanctum no\textit{men} \textbf{e}jus.
+\item Et misericórdia ejus a progéni\textit{e} \textit{in} \textit{pro}\textbf{gé}nies~* timénti\textit{bus} \textbf{e}um.
+\item Fecit poténtiam in \textit{bráchio} \textbf{su}o:~* dispérsit supérbos mente cor\textit{dis} \textbf{su}i.
+\item Depósuit po\textit{téntes} \textit{de} \textbf{se}de,~* et exaltá\textit{vit} \textbf{hú}miles.
+\item Esuriéntes \textit{implévit} \textbf{bo}nis:~* et dívites dimísit \textit{in}\textbf{á}nes.
+\item Suscépit Israel \textit{púerum} \textbf{su}um,~* recordátus misericórdi\hspace{0.03em}\textit{æ} \textbf{su}æ.
+\item Sicut locútus est \textit{ad} \textit{patres} \textbf{no}stros,~* Abraham et sémini ejus \textit{in} \textbf{sǽ}cula.
+\item Glória \textit{Patri,} \textit{et} \textbf{Fí}lio,~* et Spirítu\hspace{0.03em}\textit{i} \textbf{San}cto.
+\item Sicut erat in princípio, \textit{et} \textit{nunc,} \textit{et} \textbf{sem}per,~* et in sǽcula sæculó\textit{rum.} \textbf{A}men.
+    \end{enumerate}
+
+\smalltitle{Canticle of the Blessed Virgin Mary.}
+
+\scripture{Luc. 1, 46–55.}
+
+%\begin{paracol}{2}
+\begin{multicols}{2}
+%\lettrine{M}agníficat~* ánima mea Dóminum.\\ Et exsultávit spíritus meus~* in Deo salutári meo.
+%
+% Quia respéxit humilitátem ancíllæ suæ:~* ecce enim ex hoc beátam me dicent o\-mnes generatiónes.
+%
+% Quia fecit mihi magna qui potens est:~* et san\-ctum nomen ejus.
+%
+% Et misericórdia ejus a progénie in progénies~* timéntibus eum.
+%
+% Fecit poténtiam in bráchio suo:~* dispérsit supérbos mente cordis sui.
+%
+% Depósuit poténtes de sede,~* et exaltávit húmiles.
+%
+% Esuriéntes implévit bonis:~* et dívites dimísit inánes.
+%
+% Suscépit Israel púerum suum,~* recordátus misericórdiæ suæ.
+%
+% Sicut locútus est ad patres no\-stros,~* Abraham, et sémini ejus in sǽcula.
+%
+% Glória Patri, et Fílio,~* et Spirítui San\-cto.
+%
+% Sicut erat in princípio, et nunc, et semper,~* et in sǽcula sæculórum. Amen.
+% 
+% \switchcolumn
+ \begin{otherlanguage}{english}
+My soul \cc~* doth magnify the Lord.
+
+And my spirit hath rejoiced~* in God my Saviour.
+
+Because he hath regarded the humility of his handmaid;~* for behold from henceforth all generations shall call me blessed.
+
+Because he that is mighty, hath done great things to me;~* and holy is his name.
+
+And his mercy is from generation unto generations,~* to them that fear him.
+
+He hath shewed might in his arm:~* he hath scattered the proud in the conceit of their heart.
+
+He hath put down the mighty from their seat,~* and hath exalted the humble.
+
+He hath filled the hungry with good things;~* and the rich he hath sent empty away.
+
+He hath received Israel his servant,~* being mindful of his mercy:
+
+As he spoke to our fathers,~* to Abraham and to his seed for ever.
+
+Glory be to the Father, and to the Son,~* and to the Holy Ghost.
+
+As it was in the beginning, is now,~* and ever shall be, world without end. Amen.
+\end{otherlanguage}
+% \end{paracol}
+\end{multicols}
+
+\rubrique{\begin{otherlanguage}{english}
+Sit as the antiphon is repeated. Then the usual dialogue follows. All stand from now until the end of the office, unless one sits for the antiphon of a commemorated feast or Sunday, according to custom.\end{otherlanguage}}
+
+\textebilingue{dv}{dv_eng}
+\newpage
+   \begin{paracol}{2}
+   Orémus.
+   
+\lettrine{D}{e}us, in cujus passióne, secúndum Simeónis prophetíam, dulcíssimam ánimam gloriósæ Vírginis et Matris Maríæ dolóris gládius pertransívit:~† concéde propítius; ut, qui dolóres ejus venerándo recólimus,~* passiónis tuæ efféctum felícem consequámur. Qui vivis et regnas cum Deo Patre in unitáte Spíritus Sancti Deus.
+   
+   ℟. Amen.
+   
+\switchcolumn
+\begin{otherlanguage}{english}
+\noindent Let us pray.
+O God, at Whose suffering the prophecy of Simeon was fulfilled, and a sword of sorrow pierced through the gentle soul of the glorious Virgin and Mother Mary, mercifully grant that we who speak worshipfully of her woes, may obtain the saving purchase of thy suffering.
+Who livest and reignest with God the Father in the unity of the Holy Spirit, God, world without end. Amen.
+\end{otherlanguage}
+    \end{paracol}
+
+\textebilingue{dv}{dv_eng}
+
+\myrule
+
+\rubrique{At I Vespers, a commemoration is made of the Holy Cross and if needed, of the Sunday.}
+
+\gscore[Ant.]{1.}{an_o_crux_benedicta_quae_solesmes_1961}
+
+\begin{otherlanguage}{english} \noindent Ant. O blessed art thou, O Cross thou which wast counted the only tree worthy to. bear the Lord and King of heaven. \end{otherlanguage}
+
+       \begin{paracol}{2}
+        \vv Hoc signum Crucis erit in cælo.
+        
+\rr Cum Dóminus ad judicándum vénerit.
+           \switchcolumn
+    \noindent  \vv  This sign of the Cross shall be in heaven.
+    
+\noindent  \rr When the Lord cometh to judgment.
+    \end{paracol}
+
+\begin{paracol}{2}
+   Orémus.
+   
+\lettrine{D}{e}us, qui nos hodiérna die Exaltatiónis sanctæ Crucis ánnua solemnitáte lætíficas:~† præsta, quǽsumus; ut, cujus mystérium in terra cognóvimus,~* ejus redemptiónis prǽmia in cælo mereámur. (Per eumdem Dominum.)
+\switchcolumn
+\begin{otherlanguage}{english}
+\noindent Let us pray. O God, Who dost this day gladden us by the yearly Feast of the Exaltation of the Holy Cross, grant, we beseech thee, that even as we have understood the mystery thereof upon earth, so we may worthily enjoy in heaven the fruits of the redemption which was paid thereon. (Through the same Jesus Christ our Lord, etc.)
+\end{otherlanguage}
+    \end{paracol}
+
+\myrule
+
+\rubrique{At II Vespers, a commemoration is made of the following feast of Saints Cornelius and Cyprian, bishops and martyrs; if necessary, the Sunday is also commemorated.}
+
+\gscore[Ant.]{8.}{an_cs_istorum_est_enim_solesmes_1960}
+
+\begin{otherlanguage}{english} \noindent Ant. For theirs is the Kingdom of heaven who love not their lives in this world, and have attained unto the reward of the Kingdom, and have washed their robes in the blood of the Lamb. \end{otherlanguage}
+
+       \begin{paracol}{2}
+        \vv Lætámini in Dómino et exultáte justi.
+
+\rr Et gloriámini ómnes récti córde.
+           \switchcolumn
+    \noindent  \vv  Be glad in the Lord, and rejoice, ye just.
+         
+\noindent  \rr And glory, all ye right of heart.
+    \end{paracol}
+
+\begin{paracol}{2}
+   Orémus.
+   
+\lettrine{B}{e}atórum Mártyrum paritérque Pontíficum Cornélii et Cypriáni nos, quǽsumus Dómine, festa tueántur:~* et eórum comméndet orátio veneránda. (Per Dominum.)
+\switchcolumn
+\begin{otherlanguage}{english}
+\noindent Let us pray. O Lord, we beseech thee, that the precious testifying of thy blessed Martyrs and Bishops Cornelius and Cyprian may profit us, and their godly prayers protect us. (Through our Lord etc.)
+\end{otherlanguage}
+    \end{paracol}
+
+\rubrique{\begin{otherlanguage}{english}
+The cantor sings the verse to which all reply. One of the following tones is chosen according to the Vespers sung, at the choirmaster's discretion.
+\end{otherlanguage}}
+
+\smalltitle{At I Vespers.}
+
+\gscore[]{2.}{BD_Solemnis_I_Vesp}
+
+\noindent \vv Let us bless the Lord.
+
+\noindent \rr Thanks be to God.
+
+\smalltitle{At II Vespers.}
+
+\gscore[]{6.}{BD_Solemnis_mode_6}
+
+\rubrique{Or the following tone may be used:}
+
+\gscore[]{5.}{BD_Solemnis_mode_5}
+
+\smalltitle{At either Vespers.}
+
+\gscore[]{1.}{BD_BVM}
+
+\textebilingue{fidelium_animae}{fidelium_animae_en}
+
+\end{document}

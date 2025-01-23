@@ -1,0 +1,303 @@
+% !TEX TS-program = lualatexmk
+% !TEX parameter =  --shell-escape
+\documentclass[12pt]{book}
+
+\input{commonheaders_vespers_people}
+
+\begin{document}
+ 
+ \twosided[pc] %% to allow for the left-right switching of columns needed for bilingual liturgical typesetting (like in missals); it's unclear why this goes BEFORE everything else and not when activating the environment. %% It's OK for paper booklets to not switch, but it's probably best practice to switch.
+ 
+ \thispagestyle{empty}
+ 
+ {\centering{\huge\capspace{{III SUNDAY OF ADVENT}}}\par}\header{vespers of the iii sunday of advent.}
+ \vspace{\baselineskip}
+{\centering{\huge\capspace{{AT VESPERS.}}}\par}
+ 
+\smalltitle{Before the Office.}
+
+\rubrique{These prayers are said kneeling. End when the priest stands.}
+
+\textebilingue{orationes_ante_do}{orationes_ante_do_eng}
+
+\smalltitle{\prayers}
+
+\rubrique{The celebrant intones the following verse. All sing the response and doxology.}
+
+\begin{otherlanguage}{english}
+\rubrique{Make the sign of the cross at the beginning and at the Magnificat, and bow the head when the Trinity is mentioned, when mention is made of the ``Holy Name'' in some way, and at ``Orémus.''}\end{otherlanguage}
+
+\gscore[]{℣.}{Deus_In_Adjutorium_Festivus}
+
+\noindent
+\begin{otherlanguage}{english}
+O God, \cc{} come to my assistance. \rr O Lord, make haste to help me. Glory be to the Father, and to the Son,~* and to the Holy Ghost. As it was in the beginning, is now,~* and ever shall be, world without end. Amen. Alleluia.\end{otherlanguage}
+
+\smalltitle{First Antiphon. 1. a.}
+
+\gscore[]{}{veniet_dominus_incipit}
+
+\rubrique{\begin{otherlanguage}{english}
+Sit at the word ``Sede.'' The cantor sings odd verses; all sing even verses, and this for the hymn and Magnificat as well.
+\end{otherlanguage}}
+
+\psalmus{109}{109_1a}{109_1}{109_en}
+
+\smallscore{an_veniet_dominus_et_non_solesmes_1961}
+
+\begin{otherlanguage}{english} \noindent Ant. The Lord will come, and will not tarry; He both will bring to light the hidden things of darkness, and will make Himself manifest to all people. Alleluia. \end{otherlanguage}
+
+\rubrique{\begin{otherlanguage}{english}
+Clerics in descending order, or a cantor, intone the subsequent antiphons. The cantor then continues the psalm.
+\end{otherlanguage}}
+
+\gscore[2. Ant.]{7. b}{jerusalem_gaude_incipit}
+
+\psalmus{110}{110_7b}{110_7}{110_en}
+
+\smallscore{an_jerusalem_gaude_solesmes_1961}
+
+\begin{otherlanguage}{english} \noindent Ant. Rejoice greatly, O Jerusalem, for thy Saviour cometh unto thee. Alleluia. \end{otherlanguage}
+
+\gscore[3. Ant.]{8. g}{dabo_incipit}
+
+\psalmus{111}{111_8G}{111_8}{111_en}
+
+\smallscore{an_dabo_in_sion_solesmes_1961}
+
+\begin{otherlanguage}{english} \noindent Ant. I will place salvation in Zion, and My glory in Jerusalem. Alleluia. \end{otherlanguage}
+
+\gscore[4. Ant.]{5. a}{montes_et_omnes_incipit}
+
+\psalmus{112}{112_5a}{112_5}{112_en}
+
+\smallscore{an_montes_et_omnes_solesmes_1961}
+
+\begin{otherlanguage}{english} \noindent Ant. Every mountain and hill shall be made low, and the crooked shall be made straight, and the rough places plain; O Lord, come and make no tarrying. Alleluia. \end{otherlanguage}
+
+\gscore[5. Ant.]{2. D}{juste_et_pie_incipit}
+
+\psalmus{113}{113_2}{113_2}{113_en}
+
+\smallscore{an_juste_et_pie_solesmes_1961}
+
+\begin{otherlanguage}{english} \noindent Ant. We should live righteously and godly, looking for that blessed hope and the coming of the Lord.\end{otherlanguage}
+
+\rubrique{\begin{otherlanguage}{english}
+Having sung the last antiphon in full, stand when the celebrant does.
+\end{otherlanguage}}
+
+\rubrique{\begin{otherlanguage}{english}
+The chapter is proper to each Sunday of Advent, while the hymn and verse are always the same.\end{otherlanguage}}
+
+\smalltitle{Chapter.}
+\scripture{Phil. 4, 4 – 5.}
+%
+\texteparacol{\lettrine{F}{r}atres: Gaudéte in Dómino semper: íterum dico, gaudéte.~† Modéstia vestra nota sit ómnibus homínibus:~* Dóminus enim prope est.\par
+
+\rr Deo grátias.}{\noindent Brothers: Rejoice in the Lord always; again, I say, rejoice. Let your modesty be known to all men. The Lord is nigh. Thanks be to God.}
+
+%% The usual tone and the 3rd tone, used ad libitum, are omitted as we do not use these tones, but they are included in the tex file and the gabc files are available, for the sake of completeness.
+
+\smalltitle{Hymn.}
+
+\gscore[]{4.}{hy_creator_alme_siderum_solesmes_1961}
+
+\begin{multicols}{2}
+\begin{otherlanguage}{english}
+
+Bright builder of the heavenly poles,\\
+Eternal light of faithful souls,\\
+Jesus, Redeemer of mankind,\\
+Our humble prayers vouchsafe to mind.
+
+Who, lest the fraud of hell’s black king\\
+Should all men to destruction bring,\\
+Didst, by an act of generous love,\\
+The fainting world’s physician prove.
+
+Who, that thou mightst our ransom pay\\
+And wash the stains of sin away,\\
+Wouldst from a Virgin’s womb proceed\\
+And on the cross a victim bleed.
+
+Whose glorious power, whose saving name\\
+No sooner any voice can frame,\\
+But heaven and earth and hell agree\\
+To honour them with trembling knee.
+
+Thee, Christ, who at the latter day\\
+Shalt be our Judge, we humbly pray\\
+Such arms of heavenly grace to send\\
+As may thy Church from foes defend.
+
+Be glory given and honour done\\
+To God the Father and the Son\\
+And to the Holy Ghost on high,\\
+From age to age eternally. Amen.
+\end{otherlanguage}
+\end{multicols}
+
+\rubrique{\begin{otherlanguage}{english}
+The cantor sings the verse to which all reply.
+\end{otherlanguage}}
+
+\gresetinitiallines{0}
+
+\gabcsnippet{(c3)℣. Ro(h)rá(h)te(h) cæ(h)li(h) dé(h)su(h)per,(h) et(h) nu(h)bes(h) plu(h)ant(h) ju(h)stum.(g_hvGFEfgf.) (::)}
+
+\gabcsnippet{(c3) ℟. A(h)pe(h)ri(h)á(h)tur(h) ter(h)ra,(h) et(h) gér(h)mi(h)net(h) Sal(h)va(h)tó(h)rem.(g_hvGFEfgf.) (::)}
+
+\gresetinitiallines{1}
+
+\begin{otherlanguage}{english} \noindent \vv Drop down dew, ye heavens, from above, and let the clouds rain the Just.
+
+\noindent \rr Let the earth be opened, and bud forth the Saviour.
+ \end{otherlanguage}
+ 
+ \rubrique{\begin{otherlanguage}{english}
+The celebrant intones the \normaltext{Magnificat} antiphon; this is ordinarily proper to the Sunday. The cantor continues the \normaltext{Ma\-gnificat.}\end{otherlanguage}}
+
+ \rubrique{\begin{otherlanguage}{english}
+If this Sunday falls on or after December 17, and if the office is of the Sunday, then the corresponding \normaltext{O} antiphon is sung, and the antiphon of the Sunday is omitted that year.\end{otherlanguage}}
+
+ \rubrique{\begin{otherlanguage}{english}
+In that case, the antiphon \normaltext{O} is sung in full before and after, or ``doubled'', remaining standing both before and after the canticle.\end{otherlanguage}}
+
+\gscore[Ad Magnif.]{Ant. 8. G}{beata_es_incipit}
+
+\smalltitle{Canticle of the Blessed Virgin Mary.}
+
+\scripture{Luc. 1, 46–55.}
+
+\gresetinitiallines{0}
+
+\gabcsnippet{(c4) 1. Ma(g)gní(hg)fi(gj)cat(j.) *(:) á(j)ni(j)ma(j) <i>me</i>(i)<i>a</i>(j) <b>Dó</b>(h)mi(gr)num.(g.) (::)}
+
+\gabcsnippet{(c4) 2. Et(g) ex(h)sul(j)tá(j)vit(j) spí(j)ri(j)tus(j) <b>me</b>(k//jr)us(j.) *(:) in(j) De(j)o(j) sa(j)lu(j)<i>tá</i>(i)<i>ri</i>(j) <b>me</b>(h//gr)o.(g.) (::)}
+
+\gresetinitiallines{1}
+   \smallskip%
+    \noindent%
+\begin{enumerate}[label=\arabic*.,%
+			leftmargin=0pt, %
+			itemindent=0mm, %
+			labelsep=3pt, %
+			labelwidth=0pt, %
+			rightmargin=0pt, %
+			parsep=0pt, %
+			topsep=0pt, %
+			itemsep=0pt,%
+			start=3]
+
+\item Quia respéxit humilitátem ancíllæ \textbf{su}æ:~* ecce enim ex hoc beátam me dicent omnes gene\textit{rati}\textbf{ó}nes.
+
+\item Quia fecit mihi magna qui \textbf{pot}ens est:~* et sanctum \textit{nomen} \textbf{e}jus.
+
+\item Et misericórdia ejus a progénie in pro\textbf{gé}nies~* timén\textit{tibus} \textbf{e}um.
+
+\item Fecit poténtiam in bráchio \textbf{su}o:~* dispérsit supérbos mente \textit{cordis} \textbf{su}i.
+
+\item Depósuit poténtes de \textbf{se}de,~* et exal\textit{távit} \textbf{hú}miles.
+
+\item Esuriéntes implévit \textbf{bo}nis:~* et dívites dimí\kern 0.04em\textit{sit} \textit{in}\textbf{á}nes.
+
+\item Suscépit Israel púerum \textbf{su}um,~* recordátus misericór\textit{diæ} \textbf{su}æ.
+
+\item Sicut locútus est ad patres \textbf{no}stros,~* Abraham et sémini e\kern 0.02em\textit{jus} \textit{in} \textbf{sǽ}cula.
+
+\item Glória Patri, et \textbf{Fí}lio,~* et Spirí\textit{tui} \textbf{San}cto.
+
+\item Sicut erat in princípio, et nunc, et \textbf{sem}per,~* et in sǽcula sæcu\kern 0.02em\textit{lórum}. \textbf{A}men.
+\end{enumerate}
+
+\begin{multicols}{2}
+%\begin{paracol}{2}
+%\lettrine{M}agníficat~* ánima mea Dóminum.\\ Et exsultávit spíritus meus~* in Deo salutári meo.
+%
+% Quia respéxit humilitátem ancíllæ suæ:~* ecce enim ex hoc beátam me dicent o\-mnes generatiónes.
+%
+% Quia fecit mihi magna qui potens est:~* et san\-ctum nomen ejus.
+%
+% Et misericórdia ejus a progénie in progénies~* timéntibus eum.
+%
+% Fecit poténtiam in bráchio suo:~* dispérsit supérbos mente cordis sui.
+%
+% Depósuit poténtes de sede,~* et exaltávit húmiles.
+%
+% Esuriéntes implévit bonis:~* et dívites dimísit inánes.
+%
+% Suscépit Israel púerum suum,~* recordátus misericórdiæ suæ.
+%
+% Sicut locútus est ad patres no\-stros,~* Abraham, et sémini ejus in sǽcula.
+%
+% Glória Patri, et Fílio,~* et Spirítui San\-cto.
+%
+% Sicut erat in princípio, et nunc, et semper,~* et in sǽcula sæculórum. Amen.
+% 
+% \switchcolumn
+ \begin{otherlanguage}{english}
+My soul \cc~* doth magnify the Lord.
+
+And my spirit hath rejoiced~* in God my Saviour.
+
+Because he hath regarded the humility of his handmaid;~* for behold from henceforth all generations shall call me blessed.
+
+Because he that is mighty, hath done great things to me;~* and holy is his name.
+
+And his mercy is from generation unto generations,~* to them that fear him.
+
+He hath shewed might in his arm:~* he hath scattered the proud in the conceit of their heart.
+
+He hath put down the mighty from their seat,~* and hath exalted the humble.
+
+He hath filled the hungry with good things;~* and the rich he hath sent empty away.
+
+He hath received Israel his servant,~* being mindful of his mercy:
+
+As he spoke to our fathers,~* to Abraham and to his seed for ever.
+
+Glory be to the Father, and to the Son,~* and to the Holy Ghost.
+
+As it was in the beginning, is now,~* and ever shall be, world without end. Amen.
+\end{otherlanguage}
+% \end{paracol}
+\end{multicols}
+
+\smallscore{an_beata_es_maria_solesmes}
+
+\begin{otherlanguage}{english} \noindent Ant. Blessed art thou, O Mary, who hast believed the Lord, for there shall be a performance of those things which were told thee from the Lord. Alleluia.\end{otherlanguage}
+
+ \rubrique{\begin{otherlanguage}{english}
+Sit as the antiphon is sung in full. Then the usual dialogue follows. On Sundays, all stand from now until the end of the office, unless one sits for the antiphons sung for the commemorations, according to custom.\end{otherlanguage}}
+
+ \rubrique{\begin{otherlanguage}{english}
+The celebrant sings the collect of the day, and any commemorations follow. The Suffrage of All Saints is omitted for all of Advent.\end{otherlanguage}}
+
+\textebilingue{dv}{dv_eng}
+
+\texteparacol{\lettrine{A}{u}rem tuam quǽsumus Dómine, précibus nostris accómmoda:~† et mentis nostræ ténebras~* grátia tuæ visitatiónis illústra. Qui vivis et regnas cum Deo Patre.}{\noindent Let us pray. O Lord, we beseech thee, mercifully incline thine ears unto our prayers, and lighten the darkness of our minds by the grace of thy heavenly visitation.
+Who livest and reignest with God the Father in the unity of the Holy Spirit, God, world without end. Amen}
+
+
+\rubrique{\begin{otherlanguage}{english}
+The cantor sings the verse to which all reply.
+\end{otherlanguage}}
+
+\gscore[]{6.}{BD_Dominicis_Adventus_Quadragesimae}
+
+\vv Let us bless the Lord.
+
+\rr Thanks be to God.
+
+\textebilingue{fidelium_animae}{fidelium_animae_en}
+
+%\rubrique{\begin{otherlanguage}{english}
+%Then one Our Father is said, unless Compline follows, or even some pious exercises, a sermon, or Benediction of the Blessed Sacrament, in parish and other smaller churches.\end{otherlanguage}}
+
+%\rubrique{\begin{otherlanguage}{english}
+%Then the office is concluded with the following verses, the Marian antiphon, etc.
+%\end{otherlanguage}}
+
+
+\end{document}

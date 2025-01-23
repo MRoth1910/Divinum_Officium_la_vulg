@@ -1,0 +1,256 @@
+% !TEX TS-program = lualatexmk
+% !TEX parameter =  --shell-escape
+\documentclass[12pt]{book}
+
+\input{commonheaders_vespers_people}
+
+\begin{document}
+ 
+ \twosided[pc] %% to allow for the left-right switching of columns needed for bilingual liturgical typesetting (like in missals); it's unclear why this goes BEFORE everything else and not when activating the environment. %% It's OK for paper booklets to not switch, but it's probably best practice to switch.
+ 
+ \thispagestyle{empty}
+ 
+ {\centering{\huge\capspace{{SUNDAY AT SEXT.}}}\par}\header{sunday at sext.}
+ 
+\smalltitle{Before the Office.}
+
+\rubrique{These prayers are said kneeling. End when the officiant stands.}
+
+\textebilingue{orationes_ante_do}{orationes_ante_do_eng}
+
+\smalltitle{\prayers}
+
+\rubrique{The officiant intones the following verse. All sing the response and doxology.}
+
+\begin{otherlanguage}{english}
+\rubrique{Make the sign of the cross at the beginning. Bow the head when the Trinity is mentioned, when mention is made in some way of the ``Holy Name'', and at ``Orémus.''}\end{otherlanguage}
+
+\gscore[]{℣.}{Deus_in_adiutorium_Tonus_ferialis}
+
+\noindent
+\begin{otherlanguage}{english}
+O God, \cc{} come to my assistance. \rr O Lord, make haste to help me. Glory be to the Father, and to the Son,~* and to the Holy Ghost. As it was in the beginning, is now,~* and ever shall be, world without end. Amen. Alleluia.\end{otherlanguage} \rubrique{After Septuagesima:}
+
+%\smallscore{Laus_tibi_Domine}
+
+\noindent
+\begin{otherlanguage}{english}
+Praise be unto Thee, O Lord, King of Eternal Glory.
+\end{otherlanguage}
+
+\smalltitle{Hymn.}
+
+\smalltitle{Tone on Sundays and on minor feasts.}
+
+\gscore[]{8.}{hy_rector_potens_in_dominicis_per_annum_solesmes_1961}
+
+\begin{multicols}{2}
+\raggedcolumns
+\begin{otherlanguage}{english}
+O God of truth, O Lord of might,\\
+Who orderest time and change aright,\\
+Who send’st the early morning ray,\\
+And light’st the glow of perfect day:
+
+Extinguish thou each sinful fire,\\
+And banish every ill desire;\\
+And while thou keep’st the body whole,\\
+Shed forth thy peace upon the soul.
+
+Almighty Father, hear our cry,\\
+Through Jesus Christ, our Lord most High,\\
+Who, with the Holy Ghost and thee,\\
+Doth live and reign eternally.
+\end{otherlanguage}
+\end{multicols}
+
+\rubrique{The officiant and cantor sing odd verses; all others sing even verses, and this for the psalms as well.}
+
+\gscore[Ant.]{8. G}{an_alleluia_tuus_sum_ego_incipit}
+
+\rubrique{\begin{otherlanguage}{english}
+The cantor intones each psalm, and he and the officiant continue the psalm. Sit at the word ``mea.''
+\end{otherlanguage}}
+
+\psalmus{118.\textsc{vi}}{118_6_8G}{118_6_8}{118_6_en}
+
+\psalmus{118.\textsc{vii}}{118_7_8G}{118_7_8}{118_7_en}
+
+\psalmus{118.\textsc{viii}}{118_8_8G}{118_8_8}{118_8_en}
+
+\smallscore{an_alleluia_tuus_sum_ego_dom_pa_sext_solesmes_1961}
+
+\begin{otherlanguage}{english} \noindent Ant. Alleluia, I am thine, save thou me, O Lord, alleluia, alleluia. \end{otherlanguage}
+
+\rubrique{\begin{otherlanguage}{english}
+Having sung the antiphon in full, stand when the officiant does.
+\end{otherlanguage}}
+
+\chapterlateng
+\scripture{Galat. 6, 2.}
+
+\texteparacol{\lettrine{A}{l}ter altérius ónera portáte,~* et sic adimplébitis legem Christi.
+
+\rr Deo grátias.}{\noindent Bear ye one another's burdens; and so you shall fulfill the law of Christ. Thanks be to God.}
+
+\rubrique{A short responsory is sung in the following way. The cantor sings the first portion. All repeat, then the cantor sings the verse, and all sing from the asterisk. The cantor sings the doxology, and all repeat the first portion again in full.}
+
+\gscore[]{\rr br.}{rb_in_aeternum_solesmes_1961}
+
+\begin{otherlanguage}{english} \noindent For ever, O Lord, thy word standeth firm in heaven. For ever, O Lord…
+\vv Thy truth for ever and ever. Thy word…Glory be to the Father, and to the Son, and to the Holy Ghost. For ever, O Lord…\end{otherlanguage}
+
+\rubrique{\begin{otherlanguage}{english}
+The cantor sings the verse to which all reply.
+\end{otherlanguage}}
+
+\smallscore{versiculus_ad_sextam_pa}
+\begin{otherlanguage}{english} \noindent \vv The Lord ruleth me: and I shall want nothing.
+
+\noindent \rr He hath set me in a place of pasture.
+ \end{otherlanguage}
+ 
+\textebilingue{dv}{dv_eng}
+
+\myrule
+
+\rubrique{Or if the officiant is not at least a deacon:}
+
+\texteparacol{\vv Dómine, exáudi oratiónem meam.
+
+\rr Et clamor meus ad te véniat.}{
+\noindent \vv O Lord hear my prayer.
+
+\noindent \rr And let my cry come unto Thee.}
+
+\myrule
+
+ \rubrique{\begin{otherlanguage}{english}
+The officiant sings the collect of the day in the ferial tone; no commemorations are made at the minor hours. Then:\end{otherlanguage}}
+
+\textebilingue{dv}{dv_eng}
+
+\myrule
+
+\texteparacol{\noindent \vv Dómine, exáudi oratiónem meam.
+
+\noindent \rr Et clamor meus ad te véniat.}{
+\noindent \vv O Lord hear my prayer.
+
+\noindent \rr And let my cry come unto Thee.}
+
+\myrule
+
+\rubrique{\begin{otherlanguage}{english}
+The cantor sings the verse to which all reply. This tone never changes.
+\end{otherlanguage}}
+
+\smallscore{BD_ad_horas_et_ad_completorium}
+
+\noindent \vv Let us bless the Lord.
+
+\noindent \rr Thanks be to God.
+
+\textebilingue{fidelium_animae}{fidelium_animae_en}
+
+\rubrique{After the verse \normaltext{Fidélium ánimæ} is sung, the Lord's Prayer is said silently. Then the following is sung, also on a lower note.}
+
+ \begin{paracol}{2}
+\noindent \vv Dóminus det nobis suam pacem.
+
+\noindent \rr Et vitam ætérnam. Amen.
+\switchcolumn
+\begin{otherlanguage}{english}
+\noindent \vv May the Lord grant us his peace.
+
+\noindent \rr And life everlasting. Amen.
+\end{otherlanguage}
+\end{paracol}
+
+\rubrique{The officiant always intones the Marian antiphon, which is said standing on Sundays, even when the office is of a feast.}
+
+\rubrique{If the solemn tone is sung, the alternation is as in a hymn, at the double bar; all sing from the asterisk of the final strophe. But if the simple tone is sung, the antiphon is sung in unison.}
+
+\smalltitle{Alma Redemptoris Mater.}
+
+\rubrique{¶ From Vespers of the Saturday before the I Sunday of Advent to Vespers of February 2 inclusive.}
+
+\gscore[]{5.}{an--alma_redemptoris--solesmes_1961}
+%%\vspace{1ex}
+
+\smalltitle{Simple Tone.}
+\gscore[]{5.}{an--alma_redemptoris_simple_solesmes}
+
+%\newpage
+
+\begin{sloppypar}
+ \begin{paracol}{2}
+  \setlength{\columnsep}{1.5em} %EB Garamond, Octavio Pardo; should define this so that there are no magic numbers
+\textes{Alma_Redemptoris_en}
+
+%\columnbreak
+\switchcolumn
+\textes{Alma_Redemptoris_la}
+\end{paracol}
+\end{sloppypar}
+
+\smalltitle{Ave Regina Cælorum.}
+
+\rubrique{¶ After the Purification, that is, from Compline of February 2 even if the feast is transferred, until Compline of Wednesday in Holy Week.}
+
+\gscore[]{6.}{an--ave_regina_caelorum--solesmes_1961}
+%\vspace{1ex}
+
+\smalltitle{Simple Tone.}
+\gscore[]{6.}{an--ave_regina_caelorum_simple_tone--solesmes}
+
+\begin{sloppypar}
+ \begin{paracol}{2}
+  \setlength{\columnsep}{1.5em} %EB Garamond, Octavio Pardo; should define this so that there are no magic numbers
+\textes{Ave_Regina_la}
+
+%\columnbreak
+\switchcolumn
+\textes{Ave_Regina_en}
+\end{paracol}
+\end{sloppypar}
+
+\smalltitle{Salve Regina.}
+
+\rubrique{¶ From Vespers of the Holy Trinity until None of the Saturday before Advent inclusive.}
+
+\gscore[]{1.}{an--salve_regina--solesmes}
+%\vspace{1ex}
+
+\smalltitle{Simple Tone.}
+\gscore[]{5.}{an--salve_regina_simple_tone_solesmes}
+
+\begin{sloppypar}
+ \begin{paracol}{2}
+  \setlength{\columnsep}{1.5em} %EB Garamond, Octavio Pardo; should define this so that there are no magic numbers
+\textes{Salve_Regina_la}
+
+%\columnbreak
+\switchcolumn
+\textes{Salve_Regina_en}
+\end{paracol}
+\end{sloppypar}
+%\end{multicols}
+
+\rubrique{The versicle is sung on a lower pitch. Make the sign of the cross at \normaltext{Divínum auxílium.}}
+\label{conclusion}
+
+\begin{paracol}{2}
+\noindent \vv Divínum auxílium máneat semper nobíscum.
+
+\noindent \rr Amen.
+
+\switchcolumn
+\begin{otherlanguage}{english}
+\noindent \vv May the divine assistance remain always with us.
+
+\noindent \rr Amen.
+\end{otherlanguage}
+\end{paracol}
+
+\end{document}

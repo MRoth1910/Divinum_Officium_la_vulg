@@ -1,0 +1,362 @@
+% !TEX TS-program = lualatexmk
+% !TEX parameter =  --shell-escape
+
+\documentclass[12pt]{book}
+
+\input{commonheaders_vespers_people} %%% will need to fix spacing problem in psalms at a later date.
+
+\begin{document}
+ 
+ \twosided[pc] %% to allow for the left-right switching of columns needed for bilingual liturgical typesetting (like in missals); it's unclear why this goes BEFORE everything else and not when activating the environment. %% It's OK for paper booklets to not switch, but it's probably best practice to switch.
+ 
+  \thispagestyle{empty}
+ 
+ {\centering{\huge\capspace{{DEDICATION OF S.\@ MICHAEL\\[0.25\baselineskip] THE ARCHANGEL.}}}\par}\header{dedication of saint michael the archangel.}
+ 
+% THE ARCHANGEL
+% {\centering{\huge\capspace{{THE ARCHANGEL.}}}\par}
+
+ \vspace{0.5\baselineskip}
+ 
+ {\centering{\huge{At Vespers.}}\par}
+ 
+\smalltitle{Before the Office.}
+
+\rubrique{These prayers are said kneeling. End when the priest stands.}
+
+\textebilingue{orationes_ante_do}{orationes_ante_do_eng}
+
+\smalltitle{\prayers}
+
+\rubrique{The celebrant intones the following verse. All sing the response and doxology.}
+
+\begin{otherlanguage}{english}
+\rubrique{Make the sign of the cross at the beginning and at the Magnificat, and bow the head when the Trinity is mentioned, when mention is made of the ``Holy Name'' in some way, and at ``Orémus.''}\end{otherlanguage}
+
+\gscore[]{℣.}{Deus_in_adjutorium_tonus_solemnior}
+
+\noindent
+\begin{otherlanguage}{english}
+O God, \cc{} come to my assistance. \rr O Lord, make haste to help me. Glory be to the Father, and to the Son, and to the Holy Ghost. As it was in the beginning, is now, and ever shall be, world without end. Amen. Alleluia.\end{otherlanguage}
+
+\smalltitle{First Antiphon. 4. A*.}
+
+ \initialscore{an_stetit_angelus_solesmes_1961} 
+ \begin{otherlanguage}{english} \noindent Ant. An Angel stood at the Altar of the Temple, having a golden censer in his hand.\end{otherlanguage}
+
+\rubrique{\begin{otherlanguage}{english}
+Sit at the word ``Sede.'' The cantor sings odd verses; all sing even verses, and this for the hymn and Magnificat, when sung entirely in chant, as well.
+\end{otherlanguage}}
+
+\psalmus{109}{109_4A_A_star}{109_4A_A_star}{109_en}
+%
+\rubrique{\begin{otherlanguage}{english}
+Clerics in descending order, or a cantor, intone the subsequent antiphons.\end{otherlanguage}}
+%
+ \gscore[2. Ant.]{7. a}{an_dum_praeliaretur_solesmes_1961}
+% 
+ \begin{otherlanguage}{english} \noindent Ant. While as the Archangel Michael fought against the dragon, I heard voices saying: Salvation unto our God. Alleluia.\end{otherlanguage}
+%
+ \psalmus{110}{110_7a}{110_7}{110_en}
+%
+\gscore[3. Ant.]{8. G}{an_archangele_michael_solesmes_1961}
+
+  \begin{otherlanguage}{english} \noindent Ant. Michael the Archangel, I have appointed thee for a prince over the ingathering of souls.\end{otherlanguage}
+%
+ \psalmus{111}{111_8G}{111_8}{111_en}
+%
+ \gscore[4. Ant.]{T. pereg.}{an_angeli_domini_solesmes_1961}
+%
+\begin{otherlanguage}{english} \noindent Ant. O  ye Angels of the Lord, bless ye the Lord always.\end{otherlanguage}
+%
+\psalmus{112}{112_per}{112_per}{112_en}
+%
+  \gscore[5. Ant.]{7. c}{an_angeli_archangeli_solesmes_1961}
+% 
+\begin{otherlanguage}{english} \noindent Ant. O ye Angels and Archangels, O ye Thrones and Dominions, O ye Principalities and Powers, O ye mighty Ones of heaven, praise ye the Lord from the heavens. Alleluia.\end{otherlanguage}
+%
+\psalmus{137}{137_7c}{137_7}{137_en}
+
+\myrule
+
+\smalltitle{At I Vespers.}
+   \psalmus{116}{116_7c}{116_7}{116_en}
+   
+   \myrule
+
+\rubrique{\begin{otherlanguage}{english}
+Having sung the last antiphon in full, stand when the celebrant does.
+\end{otherlanguage}}
+
+\chapterlateng
+
+\scripture{Apoc. 1, 1 – 2.}
+
+\texteparacol{\lettrine{S}{i}gnificávit Deus, quæ opórtet fíeri cito,~† loquens per Angelum suum servo suo Joánni, qui testimónium perhíbuit verbo Dei,~* et testimónium Jesu Christi, quæcúmque vidit.
+
+\rr Deo grátias.}{\noindent God gave unto Jesus Christ to show unto His servants the things which must shortly come to pass and He sent and signified it by His Angel unto His servant John, who bare witness of the Word of God and of the testimony of Jesus Christ, of all the things which he saw. Thanks be to God.}
+
+\smalltitle{Hymn.}
+
+\gscore[]{2.}{hy_te_splendor_et_virtus_29_sept_solesmes_1961}
+
+\begin{multicols}{2}
+\begin{otherlanguage}{english}
+\raggedcolumns
+O Jesu Life, spring of the soul!\\
+The Father's power and glory bright!\\
+thee with the Angels we extol;\\
+From thee they draw their life and light.
+
+Thy thousand thousand hosts are spread\\
+Embattled o'er the azure sky;\\
+But Michael bears thy standard dread,\\
+And lifts the mighty Cross on high.\\
+
+He in that Sign the rebel power.\\
+Did with their Dragon Prince expel;\\
+And hurled them from the heaven's high towers,\\
+Down like a thunderbolt to hell.
+
+Grant us, with Michael, still, O Lord,\\
+Against the prince of pride to fight;\\
+So may a crown be our reward,\\
+Before the Lamb's pure throne of light.\\
+
+To God the Father, with the Son\\
+And Holy Paraclete, with thee,\\
+As evermore hath been before,\\
+Be glory through eternity. Amen.
+\end{otherlanguage}
+\end{multicols}
+
+\rubrique{\begin{otherlanguage}{english}
+The cantor sings the verse to which all reply.
+\end{otherlanguage}}
+
+\smallscore{versiculus_29_sept}
+
+\begin{otherlanguage}{english} \noindent \vv Before the Angels will I sing praise unto thee, O my God.
+
+\noindent \rr I will worship toward thy holy Temple, and praise thy Name.
+ \end{otherlanguage}
+ 
+\smalltitle{Antiphon at the Magnificat.}
+
+\rubrique{Sit when the celebrant does, after he sings the first words. Rise at the end.}
+
+\myrule
+
+\smalltitle{At I Vespers.}
+
+ \gscore[]{8. G}{an_dum_sacrum_mysterium_solesmes_1961}
+
+ \smallscore{Magnificat_8_G_Solemnis}
+
+   \smallskip%
+    \noindent%
+    \begin{enumerate}[%
+    		label=\arabic*., %
+			leftmargin=0pt, %
+			itemindent=0mm, %
+			labelsep=3pt, %
+			labelwidth=0pt, %
+			rightmargin=0pt, %
+			parsep=0pt, %
+			topsep=0pt, %
+			itemsep=0pt,
+			start=3]%
+    \input{psaumes/Magnificat_8_Solemnis}
+    \end{enumerate}
+
+\myrule
+
+\smalltitle{At II Vespers.}
+
+\zerobaroffsettextleft
+\zerobaroffsettextright
+\gscore[]{1. D2}{an_princeps_gloriosissime_michael_solesmes_1961}
+
+\resetbaroffsettextleft
+\resetbaroffsettextright
+ 
+ \begin{otherlanguage}{english} \noindent Ant. O thou Prince most glorious, Michael the Archangel, remember us and here, and everywhere, always entreat for us the countenance of the Son of God.\end{otherlanguage}
+ 
+\smallscore{Magnificat_1D2_solemnis}
+ 
+ \gresetinitiallines{1}
+\begin{enumerate}[label=\arabic*.,%
+			leftmargin=0pt, %
+			itemindent=0mm, %
+			labelsep=3pt, %
+			labelwidth=0pt, %
+			rightmargin=0pt, %
+			parsep=0pt, %
+			topsep=0pt, %
+			itemsep=0pt,%
+			start=3]
+\item Quia respéxit humilitátem \textit{ancíllæ} \textbf{su}æ:~* ecce enim ex hoc beátam me dicent omnes gene\textit{rati}\textbf{ó}nes.
+\item Quia fecit mihi \textit{magna} \textit{qui} \textbf{pot}\textbf{ens} est:~* et sanctum \textit{nomen} \textbf{e}jus.
+\item Et misericórdia ejus a progéni\textit{e} \textit{in} \textit{pro}\textbf{gé}\textbf{ni}es~* timén\textit{tibus} \textbf{e}um.
+\item Fecit poténtiam in \textit{bráchio} \textbf{su}o:~* dispérsit supérbos mente \textit{cordis} \textbf{su}i.
+\item Depósuit po\textit{téntes} \textit{de} \textbf{se}de,~* et exal\textit{távit} \textbf{húmi}les.
+\item Esuriéntes \textit{implévit} \textbf{bo}nis:~* et dívites dimí\hspace{0.04em}\textit{sit} \textit{in}\textbf{á}nes.
+\item Suscépit Israel \textit{púerum} \textbf{su}um,~* recordátus misericór\textit{diæ} \textbf{su}æ.
+\item Sicut locútus est \textit{ad} \textit{pa}\textit{tres} \textbf{no}stros,~* Abraham et sémini e\hspace{0.02em}\textit{jus} \textit{in} \textbf{sǽcu}la.
+\item Glória \textit{Pa}\textit{tri,} \textit{et} \textbf{Fí}\textbf{li}o,~* et Spirí\hspace{0.03em}\textit{tui} \textbf{San}cto.
+\item Sicut erat in princípio, \textit{et} \textit{nunc,} \textit{et} \textbf{sem}per,~* et in sǽcula sæcu\hspace{0.03em}\textit{lórum.} \textbf{A}men.
+\end{enumerate}
+
+\smalltitle{Canticle of the Blessed Virgin Mary.}
+
+\scripture{Luc. 1, 46–55.}
+
+
+\begin{multicols}{2}
+%\begin{paracol}{2}
+
+%\lettrine{M}agníficat~* ánima mea Dóminum.\\ Et exsultávit spíritus meus~* in Deo salutári meo.
+%
+% Quia respéxit humilitátem ancíllæ suæ:~* ecce enim ex hoc beátam me dicent o\-mnes generatiónes.
+%
+% Quia fecit mihi magna qui potens est:~* et san\-ctum nomen ejus.
+%
+% Et misericórdia ejus a progénie in progénies~* timéntibus eum.
+%
+% Fecit poténtiam in bráchio suo:~* dispérsit supérbos mente cordis sui.
+%
+% Depósuit poténtes de sede,~* et exaltávit húmiles.
+%
+% Esuriéntes implévit bonis:~* et dívites dimísit inánes.
+%
+% Suscépit Israel púerum suum,~* recordátus misericórdiæ suæ.
+%
+% Sicut locútus est ad patres no\-stros,~* Abraham, et sémini ejus in sǽcula.
+%
+% Glória Patri, et Fílio,~* et Spirítui San\-cto.
+%
+% Sicut erat in princípio, et nunc, et semper,~* et in sǽcula sæculórum. Amen.
+% 
+% \switchcolumn
+ \begin{otherlanguage}{english}
+My soul \cc~* doth magnify the Lord.
+
+And my spirit hath rejoiced~* in God my Saviour.
+
+Because he hath regarded the humility of his handmaid;~* for behold from henceforth all generations shall call me blessed.
+
+Because he that is mighty, hath done great things to me;~* and holy is his name.
+
+And his mercy is from generation unto generations,~* to them that fear him.
+
+He hath shewed might in his arm:~* he hath scattered the proud in the conceit of their heart.
+
+He hath put down the mighty from their seat,~* and hath exalted the humble.
+
+He hath filled the hungry with good things;~* and the rich he hath sent empty away.
+
+He hath received Israel his servant,~* being mindful of his mercy:
+
+As he spoke to our fathers,~* to Abraham and to his seed for ever.
+
+Glory be to the Father, and to the Son,~* and to the Holy Ghost.
+
+As it was in the beginning, is now,~* and ever shall be, world without end. Amen.
+\end{otherlanguage}
+% \end{paracol}
+\end{multicols}
+
+\rubrique{\begin{otherlanguage}{english}
+Sit as the antiphon is repeated. Then the usual dialogue follows. All stand from now until the end of the office, unless one sits for the antiphon sung for the commemoration of the Sunday or of the saints, according to custom.\end{otherlanguage}}
+
+\textebilingue{dv}{dv_eng}
+
+\texteparacol{Orémus.
+
+\lettrine{D}{e}us, qui miro órdine Angelórum ministéria hominúmque dispénsas:~† concéde propítius; ut a quibus tibi ministrántibus in cælo semper assístitur,~* ab his in terra vita nostra muniátur. Per Dóminum.
+Per Dóminum.}{\noindent Let us pray. O God, Who hast ordained and constituted the services of angels and men in a wonderful order, mercifully grant that as thy holy angels alway do thee service in heaven, so, by thy appointment, they may succour and defend us on earth. Through Jesus Christ, thy Son our Lord, Who liveth and reigneth with thee, in the unity of the Holy Ghost, God, world without end. Amen.}
+
+%\rubrique{\begin{otherlanguage}{english}
+%The cantor sings the verse to which all reply. The tone is chosen at the choirmaster's discretion.
+%\end{otherlanguage}}
+
+\myrule
+
+\smalltitle{At II Vespers.}
+
+\gscore[Ant.]{2.}{an_cs_o_doctor_optime_solesmes_1960_hieronyme}
+
+ \begin{otherlanguage}{english} \noindent Ant. O right excellent Doctor, Light of the Holy Church, Jerome, blessed lover of the Divine Law, pray for us to the Son of God.\end{otherlanguage}
+
+
+       \begin{paracol}{2}
+       \vv Amávit eum Dóminus, et ornávit eum. 
+
+\rr Stólam glóriæ indúit eum.
+           \switchcolumn
+    \noindent  \vv The Lord loved him and beautified him.
+         
+\noindent \rr He clothed him with a robe of glory.
+
+    \end{paracol}
+
+\texteparacol{Orémus.
+
+\lettrine{D}{e}us, qui Ecclésiæ tuæ in exponéndis sacris Scriptúris beátum Hierónymum Confessórem tuum, Doctórem máximum providére dignátus es:~† præsta, quǽsumus; ut, ejus suffragántibus méritis,~* quod ore simul et ópere dócuit, te adjuvánte, exercére valeámus. (Per Dóminum.)}{\noindent O God, Who wast pleased to give unto thy Church thy blessed Confessor Jerome to be unto her a great teacher in the way of expounding thine Holy Scriptures, be entreated, we beseech thee, for that thy servant's sake, and grant unto us the strength to put in practice what he taught both by his doctrine and by his life. (Through Jesus Christ our Lord.)}
+
+\myrule
+
+\rubrique{At both Vespers, a commemoration is made of the Sunday when occurring or concurring.}
+
+\rubrique{\begin{otherlanguage}{english}
+The cantor sings the verse to which all reply.
+\end{otherlanguage}}
+
+\myrule
+
+\smalltitle{At I Vespers.}
+
+\gscore[]{2.}{BD_Solemnis_I_Vesp}
+
+\myrule
+
+\smalltitle{At II Vespers.}
+
+\gscore[]{6.}{BD_Solemnis_mode_6}
+
+\vv Let us bless the Lord.
+
+\rr Thanks be to God.
+
+\rubrique{Or the following tone may be used:}
+
+\gscore[]{5.}{BD_Solemnis_mode_5}
+
+\textebilingue{fidelium_animae}{fidelium_animae_en}
+
+%\myrule
+%\smallscore{Magnificat_7a_Solemnis}
+%
+%   \smallskip%
+%    \noindent%
+%    \begin{itemize}[%
+%    		label=\null, %
+%			leftmargin=0pt, %
+%			itemindent=0mm, %
+%			labelsep=0pt, %
+%			labelwidth=0pt, %
+%			rightmargin=0pt, %
+%			parsep=0pt, %
+%			topsep=0pt, %
+%			itemsep=0pt]%
+%    \input{psaumes/Magnificat_7}
+%    \end{itemize}
+
+%\rubrique{\begin{otherlanguage}{english}
+%Then one Our Father is said, unless Compline follows, or even some pious exercises, a sermon, or Benediction of the Blessed Sacrament, in parish and other smaller churches.\end{otherlanguage}}
+
+%\rubrique{\begin{otherlanguage}{english}
+%Then the office is concluded with the following verses, the Marian antiphon, etc.
+%\end{otherlanguage}}
+
+\end{document}

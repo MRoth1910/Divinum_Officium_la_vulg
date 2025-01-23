@@ -1,0 +1,38 @@
+% !TEX TS-program = lualatexmk
+% !TEX parameter =  --shell-escape
+\documentclass[12pt]{book}
+
+\input{commonheaders_vespers_people}
+
+\begin{document}
+ 
+ \twosided[pc] %% to allow for the left-right switching of columns needed for bilingual liturgical typesetting (like in missals); it's unclear why this goes BEFORE everything else and not when activating the environment. %% It's OK for paper booklets to not switch, but it's probably best practice to switch.
+ 
+ \thispagestyle{empty}
+ 
+Vesperas in Sabbato Sancto.
+
+\smalltitle{Antiphona, Ad Magnificat.}
+ 
+\gscore[]{8. G}{an_vespere_autem_sabbati_solesmes}
+
+\gresetinitiallines{0}
+\gabcsnippet{(c4)Ma(g)gní(hg)fi(gj jr)cat(j.) *(:) á(j)ni(j)ma(j) <i>me</i>(i)<i>a</i>(j) <b>Dó</b>(h)mi(gr)num.(g.) (::) (Z-)
+2. Et(g) ex(hg)sul(gj)tá(j)vit(j) <i>spí</i>(ji)<i>ri</i>(jk)<i>tus</i>(k) <b>me</b>(jk jr)us(j.) *(:) in(j) De(j)o(j) sa(j)lu(j)<i>tá</i>(i)<i>ri</i>(j) <b>me</b>(h gr)o.(g.) (::) (Z-)
+3. Qui(g)a(hg) re(gj)spé(j)xit(j) hu(j)mi(j)li(j)tá(j)tem(j) <i>an</i>(ji)<i>cíl</i>(jk)<i>læ</i>(k) <b>su</b>(jk jr)æ:(j.) *(:) ec(j)ce(j) e(j)nim(j) ex(j) hoc(j) be(j)á(j)tam(j) me(j) di(j)cent(j) om(j)nes(j) ge(j)ne(j)<i>ra</i>(i)<i>ti</i>(j)<b>ó</b>(h gr)nes.(g.) (::) (Z-)
+4. Qui(g)a(hg) fe(gj)cit(j) mi(j)hi(j) <i>ma</i>(ji)<i>gna</i>(jk) <i>qui</i>(k) <b>pot</b>(jk)ens(jr) est:(j.) *(:) et(j) sanc(j)tum(j) <i>no</i>(i)<i>men</i>(j) <b>e</b>(h gr)jus.(g.) (::) (Z-)
+5. Et(g) mi(hg)se(gj)ri(j)cór(j)di(j)a(j) e(j)jus(j) a(j) pro(j)gé(j)ni(j)<i>e</i>(ji) <i>in</i>(jk) <i>pro</i>(k)<b>gé</b>(jk)ni(jr)es(j.) *(:) ti(j)mén(j)<i>ti</i>(i)<i>bus</i>(j) <b>e</b>(h gr)um.(g.) (::) (Z-)
+6. Fe(g)cit(hg) pot(gj)én(j)ti(j)am(j) in(j) <i>brá</i>(ji)<i>chi</i>(jk)<i>o</i>(k) <b>su</b>(jk jr)o:(j.) *(:) di(j)spér(j)sit(j) su(j)pér(j)bos(j) men(j)te(j) <i>cor</i>(i)<i>dis</i>(j) <b>su</b>(h gr)i.(g.) (::) (Z-)
+7. De(g)pó(hg)su(gj)it(j) pot(j)<i>én</i>(ji)<i>tes</i>(jk) <i>de</i>(k) <b>se</b>(jk jr)de,(j.) *(:) et(j) ex(j)al(j)<i>tá</i>(i)<i>vit</i>(j) <b>hú</b>(h)mi(gr)les.(g.) (::) (Z-)
+8. E(g)su(hg)ri(gj)én(j)tes(j) <i>im</i>(ji)<i>plé</i>(jk)<i>vit</i>(k) <b>bo</b>(jk jr)nis:(j.) *(:) et(j) dí(j)vi(j)tes(j) di(j)mí(j)<i>sit</i>(i) <i>in</i>(j)<b>á</b>(h gr)nes.(g.) (::) (Z-)
+9. Su(g)scé(hg)pit(gj) Is(j)ra(j)el(j) <i>pú</i>(ji)<i>e</i>(jk)<i>rum</i>(k) <b>su</b>(jk jr)um,(j.) *(:) re(j)cor(j)dá(j)tus(j) mi(j)se(j)ri(j)cór(j)<i>di</i>(i)<i>æ</i>(j) <b>su</b>(h gr)æ.(g.) (::) (Z-)
+10. Sic(g)ut(hg) lo(gj)cú(j)tus(j) est(j) <i>ad</i>(ji) <i>pa</i>(jk)<i>tres</i>(k) <b>nos</b>(jk jr)tros,(j.) *(:) A(j)bra(j)ham(j) et(j) sé(j)mi(j)ni(j) e(j)<i>jus</i>(i) <i>in</i>(j) <b>sǽ</b>(h)cu(gr)la.(g.) (::) (Z-)
+11. Gló(g)ri(hg)a(gj jr) <i>Pa</i>(ji)<i>tri</i>,(jk) <i>et</i>(k) <b>Fí</b>(jk)li(jr)o,(j.) *(:) et(j) Spi(j)rí(j)<i>tu</i>(i)<i>i</i>(j) <b>Sanc</b>(h gr)to.(g.) (::) (Z-)
+12. Sic(g)ut(hg) e(gj)rat(j) in(j) prin(j)cí(j)pi(j)o,(j) <i>et</i>(ji) <i>nunc</i>,(jk) <i>et</i>(k) <b>sem</b>(jk jr)per,(j.) *(:) et(j) in(j) sǽ(j)cu(j)la(j) sæ(j)cu(j)<i>ló</i>(i)<i>rum</i>.(j) <b>A</b>(h gr)men.(g.) (::) (Z-)}
+\gresetinitiallines{1}
+
+\rubrique{Repeat the antiphon \normaltext{Vespére autem.}}
+
+\rubrique{The rest as in the Holy Week book.}
+
+\end{document}

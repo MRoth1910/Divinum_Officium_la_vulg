@@ -1,0 +1,350 @@
+% !TEX TS-program = lualatexmk
+% !TEX parameter =  --shell-escape
+\documentclass[12pt]{book}
+
+\input{commonheaders_vespers_people} %%% will need to fix spacing problem in psalms at a later date.
+
+\begin{document}
+ 
+ \twosided[pc] %% to allow for the left-right switching of columns needed for bilingual liturgical typesetting (like in missals); it's unclear why this goes BEFORE everything else and not when activating the environment. %% It's OK for paper booklets to not switch, but it's probably best practice to switch.
+ 
+  \thispagestyle{empty}
+  
+\feasttitle{FEAST OF THE TRINITY.}
+ 
+% {\centering{\huge{FEAST OF THE TRINITY.}}\par}
+ \header{feast of the trinity.}
+ 
+\smalltitle{Before the Office.}
+
+\rubrique{These prayers are said kneeling. End when the priest stands.}
+
+\textebilingue{orationes_ante_do}{orationes_ante_do_eng}
+
+\smalltitle{\prayers}
+
+\rubrique{The celebrant intones the following verse. All sing the response and doxology.}
+
+\begin{otherlanguage}{english}
+\rubrique{Make the sign of the cross at the beginning and at the Magnificat, and bow the head when the Trinity is mentioned, when mention is made of the ``Holy Name'' in some way, and at ``Orémus.''}\end{otherlanguage}
+
+\gscore[]{℣.}{Deus_In_Adjutorium_Festivus}
+
+\noindent
+\begin{otherlanguage}{english}
+O God, \cc{} come to my assistance. \rr O Lord, make haste to help me. Glory be to the Father, and to the Son,~* and to the Holy Ghost. As it was in the beginning, is now,~* and ever shall be, world without end. Amen. Alleluia.\end{otherlanguage}
+
+\smalltitle{First Antiphon. 1. f.}
+\initialscore{an_gloria_tibi_trinitas_solesmes_1961}
+
+\begin{otherlanguage}{english} \noindent Ant. Glory be to thee, O equal Trinity one Deity, from before all ages, so now and for evermore.\end{otherlanguage}
+
+\rubrique{\begin{otherlanguage}{english}
+Sit at the word ``Sede.'' The cantor sings odd verses; all sing even verses, and this for the hymn and Magnificat, when sung entirely in chant, as well.
+\end{otherlanguage}}
+
+\psalmus{109}{109_1f}{109_1f}{109_en}
+
+\rubrique{\begin{otherlanguage}{english}
+Clerics in descending order, or a cantor, intone the subsequent antiphons.\end{otherlanguage}}
+
+ \gscore[2. Ant.]{2. D}{an_laus_et_perennis_gloria_solesmes_1961}
+ \begin{otherlanguage}{english} \noindent Ant. Praise and endless glory be to God the Father, the Son, and the Holy Paraclete, for ever and ever..\end{otherlanguage}
+\psalmus{110}{110_2}{110_2}{110_en}
+
+  \gscore[3. Ant.]{3. a2}{an_gloria_laudis_resonet_solesmes_1961}
+  \begin{otherlanguage}{english} \noindent Ant. Let the glory of praise be heard from the mouth of all to the Father, and to the begotten Son; let it equally resound with perpetual praise to the Holy Spirit.\end{otherlanguage}
+ \psalmus{111}{111_3a2}{111_3a2_g}{111_en}
+
+\gscore[4. Ant.]{4. E}{an_laus_deo_patri_solesmes_1961.gabc}
+\begin{otherlanguage}{english} \noindent Ant. Praise be to God the Father, and to his co-equal Son, and to thee, O Holy Ghost: with perpetual delight may it resound from our lips for ever.\end{otherlanguage}
+\psalmus{112}{112_4E}{112_4E}{112_en}
+
+ \gscore[5. Ant.]{5. a}{an_ex_quo_omnia_solesmes_1961.gabc}
+\begin{otherlanguage}{english} \noindent Ant. From whom are all things, through whom are all things, and in whom are all things: to him be glory for evermore. \end{otherlanguage}
+\psalmus{113}{113_5a}{113_5a}{113_en}
+
+\myrule
+\smalltitle{At I Vespers.}
+\psalmus{116}{116_5a}{116_5}{116_en}
+\myrule
+
+\rubrique{\begin{otherlanguage}{english}
+Having sung the last antiphon in full, stand when the celebrant does.
+\end{otherlanguage}}
+
+\bigtitle{Chapter.}
+
+\scripture{Rom. 11, 33.}
+
+\texteparacol{\lettrine{O}{} Altitúdo divitiárum sapiéntiæ et sciéntiæ Dei:~† quam incomprehensibília sunt judícia ejus,~* et investigábiles viæ ejus!
+\rr Deo grátias.}{\noindent O the depth of the riches of the wisdom and of the knowledge of God! How incomprehensible are his judgments, and how unsearchable his ways! Thanks be to God.}
+
+\smalltitle{Hymn.}
+
+\gscore[]{8.}{hy_jam_sol_recedit_igneus_blessed_trinity_solesmes_1961}
+
+\begin{multicols}{2}
+\begin{otherlanguage}{english}
+\raggedcolumns
+As fades the glowing orb of day,\\
+To thee, great source of light, we pray;\\
+Blest Three in One, to every heart\\
+Thy beams of life and love impart.
+
+At early dawn, at close of day,\\
+To thee our vows we humbly pay;\\
+May we, mid joys that never end,\\
+With thy bright saints in homage bend.
+
+To God the Father, and the Son,\\
+And Holy Spirit, Three in One,\\
+Be endless glory, as before\\
+The world began, so evermore. Amen.
+
+\end{otherlanguage}
+\end{multicols}
+
+\rubrique{\begin{otherlanguage}{english}
+The cantor sings the verse to which all reply.
+\end{otherlanguage}}
+
+\myrule
+
+\smalltitle{At I Vespers.}
+\gresetinitiallines{0}
+
+\gabcsnippet{(c3) ℣. Be(h)ne(h)di(h)ca(h)mus(h) Pa(h)trem(h) et(h) Fí(h)li(h)um(h) cum(h) San(h)cto(h) Spí(h)ri(h)tu.(g_hvGFEfgf.) (::) (Z-)
+℟. Lau(h)dé(h)mus(h) et(h) su(h)per(h)ex(h)al(h)té(h)mus(h) in(h) sǽ(h)cu(h)la.(g_hvGFEfgf.) (::)}
+   
+ \begin{otherlanguage}{english} \noindent \vv Let us bless the Father, and the Son with the Holy Ghost.
+ 
+\noindent \rr Let us praise him and exalt him above all forever.\end{otherlanguage}
+\myrule
+
+\gabcsnippet{(c3) ℣. Be(h)ne(h)dí(h)ctus(h) es,(h) Dó(h)mi(h)ne(h) in(h) fir(h)ma(h)men(h)to(h) cæ(h)li.(g_hvGFEfgf.) (::) (Z-)
+℟. Et(h) lau(h)dá(h)bi(h)lis(h) et(h) glo(h)rió(h)sus(h) in(h) sǽ(h)cu(h)la.(g_hvGFEfgf.) (::)}
+\gresetinitiallines{1}
+   
+   \begin{otherlanguage}{english} \noindent \vv Blessed art thou, O Lord, in the firmament of heaven.
+   
+\noindent \rr And worthy of praise, and glorious for ever.\end{otherlanguage}
+ 
+\smalltitle{Antiphon at the Magnificat.}
+
+\rubrique{Sit when the celebrant does, after he sings the first words. Rise at the end. Otherwise, remain standing.}
+
+\myrule
+
+\smalltitle{At I Vespers.}
+
+\gscore[]{1. D}{an_gratias_tibi_deus_solesmes_1961}
+ 
+ \begin{otherlanguage}{english} \noindent Ant. Thanks be to thee, O God, thanks be unto thee, O True and One Trinity, O one almighty Deity, Holy and One Unity.\end{otherlanguage}
+ 
+\gresetinitiallines{0}
+\gabcsnippet{(c4)1. Ma(f)gní(gh)fi(h)cat(h.) *(:) á(h)ni(h)ma(h) <i>me</i>(g)<i>a</i>(f) <b>Dó</b>(gh)mi(gr)num.(gvFED.) (::) (Z-)
+2. Et(f) ex(gh)sul(h)tá(h)vit(h) <i>spí</i>(hg)<i>ri</i>(ixgi)<i>tus</i>(h hr[ocb:1{]) <b>me</b>(hg[ocb:0}])us(gh..) *(:) in(h) De(h)o(h) sa(h)lu(h)<i>tá</i>(g)<i>ri</i>(f) <b>me</b>(gh gr)o.(gvFED.) (::)}
+\gresetinitiallines{1}
+
+\begin{enumerate}[label=\arabic*.,%
+			leftmargin=10pt, %
+			itemindent=15pt, %
+			labelsep=3pt, %
+			labelwidth=0pt, %
+			rightmargin=0pt, %
+			parsep=0pt, %
+			topsep=0pt, %
+			itemsep=0pt,%
+			start=3]
+
+\item Quia respéxit humilitátem \textit{an}\textit{cíl}\textit{læ} \textbf{su}æ:~* ecce enim ex hoc beátam me dicent omnes gene\textit{ra}\textit{ti}\textbf{ó}nes.
+\item Quia fecit mihi \textit{ma}\textit{gna} \textit{qui} \textbf{pot}\textbf{ens} est:~* et sanctum \textit{no}\textit{men} \textbf{e}jus.
+\item Et misericórdia ejus a progéni\textit{e} \textit{in} \textit{pro}\textbf{gé}\textbf{ni}es~* timén\textit{ti}\textit{bus} \textbf{e}um.
+\item Fecit poténtiam in \textit{brá}\textit{chi}\textit{o} \textbf{su}o:~* dispérsit supérbos mente \textit{cor}\textit{dis} \textbf{su}i.
+\item Depósuit pot\textit{én}\textit{tes} \textit{de} \textbf{se}de,~* et exal\textit{tá}\textit{vit} \textbf{hú}miles.
+\item Esuriéntes \textit{im}\textit{plé}\textit{vit} \textbf{bo}nis:~* et dívites dimí\textit{sit} \textit{in}\textbf{á}nes.
+\item Suscépit Israel \textit{pú}\textit{e}\textit{rum} \textbf{su}um,~* recordátus misericór\textit{di}\textit{æ} \textbf{su}æ.
+\item Sicut locútus est \textit{ad} \textit{pa}\textit{tres} \textbf{no}stros,~* Abraham et sémini e\textit{jus} \textit{in} \textbf{sǽ}cula.
+\item Glória \textit{Pa}\textit{tri,} \textit{et} \textbf{Fí}\textbf{li}o,~* et Spirí\textit{tu}\textit{i} \textbf{San}cto.
+\item Sicut erat in princípio, \textit{et} \textit{nunc,} \textit{et} \textbf{sem}per,~* et in sǽcula sæcu\textit{ló}\textit{rum.} \textbf{A}men.
+
+\end{enumerate}
+
+\myrule
+
+ \smalltitle{At II Vespers.}
+ \gscore[]{4. E}{an_te_deum_patrem_solesmes.gabc}
+ \begin{otherlanguage}{english} \noindent Ant. With all our heart and with all our voice do we acknowledge thee, praise thee, and bless thee, O God the Father the Unbegotten, O God the Only-Begotten Son, O God the Holy Ghost the Comforter, One Holy and Undivided Trinity, To thee be glory for ever.\end{otherlanguage}
+% 
+
+\gresetinitiallines{0}
+\gabcsnippet{(c4)1. Ma(h)gní(gh)fi(h)cat(h.) *(:) á(h)ni(h)<i>ma</i>(g) <i>me</i>(h)<i>a</i>(ih) <b>Dó</b>(gr[ocb:1{])<b>mi</b>(gf[ocb:0}])num.(e.) (::) (Z-)
+2. Et(h) ex(gh)sul(h)tá(h)vit(h) <i>spí(hg)ri(gi)tus</i>(i) <b>me</b>(hi//hr)us(h.) *(:) in(h) De(h)o(h) sa(h)<i>lu</i>(g)<i>tá</i>(h)<i>ri</i>(ih) ()(gr) <b>me</b>(gf)o.(e.) (::)}
+\gresetinitiallines{1}
+
+\begin{enumerate}[label=\arabic*.,%
+			leftmargin=10pt, %
+			itemindent=15pt, %
+			labelsep=3pt, %
+			labelwidth=0pt, %
+			rightmargin=0pt, %
+			parsep=0pt, %
+			topsep=0pt, %
+			itemsep=0pt,%
+			start=3]
+
+\item Quia respéxit humilitátem \textit{ancíllæ} \textbf{su}æ:~* ecce enim ex hoc beátam me dicent omnes ge\textit{nerati}\textbf{ó}nes.
+
+\item Quia fecit mihi \textit{magna} \textit{qui} \textbf{pot}ens est:~* et san\textit{ctum} \textit{nomen} \textbf{e}jus.
+
+\item Et misericórdia ejus a progéni\textit{e} \textit{in} \textit{pro}\textbf{gé}nies~* ti\textit{méntibus} \textbf{e}um.
+
+\item Fecit poténtiam in \textit{bráchio} \textbf{su}o:~* dispérsit supérbos men\textit{te} \textit{cordis} \textbf{su}i.
+
+\item Depósuit po\textit{téntes} \textit{de} \textbf{se}de,~* et ex\hspace{0.03em}\textit{altávit} \textbf{hú}\textbf{mi}les.
+
+\item Esuriéntes \textit{implévit} \textbf{bo}nis:~* et dívites di\textit{mísit} \textit{in}\textbf{á}nes.
+
+\item Suscépit Israel \textit{púerum} \textbf{su}um,~* recordátus miseri\hspace{0.01em}\textit{córdiæ} \textbf{su}æ.
+
+\item Sicut locútus est \textit{ad} \textit{patres} \textbf{no}stros,~* Abraham et sémini \textit{ejus} \textit{in} \textbf{sǽ}\textbf{cu}la.
+
+\item Glória \textit{Patri,} \textit{et} \textbf{Fí}lio,~* et Spi\textit{rítui} \textbf{San}cto.
+
+\item Sicut erat in princípio, \textit{et} \textit{nunc,} \textit{et} \textbf{sem}per,~* et in sǽcula sæ\hspace{0.01em}\textit{culórum.} \textbf{A}men.
+\end{enumerate}
+
+\smalltitle{Canticle of the Blessed Virgin Mary.}
+
+\scripture{Luc. 1, 46–55.}
+
+\begin{multicols}{2}
+ \begin{otherlanguage}{english}
+My soul \cc~* doth magnify the Lord.
+
+And my spirit hath rejoiced~* in God my Saviour.
+
+Because he hath regarded the humility of his handmaid;~* for behold from henceforth all generations shall call me blessed.
+
+Because he that is mighty, hath done great things to me;~* and holy is his name.
+
+And his mercy is from generation unto generations,~* to them that fear him.
+
+He hath shewed might in his arm:~* he hath scattered the proud in the conceit of their heart.
+
+He hath put down the mighty from their seat,~* and hath exalted the humble.
+
+He hath filled the hungry with good things;~* and the rich he hath sent empty away.
+
+He hath received Israel his servant,~* being mindful of his mercy:
+
+As he spoke to our fathers,~* to Abraham and to his seed for ever.
+
+Glory be to the Father, and to the Son,~* and to the Holy Ghost.
+
+As it was in the beginning, is now,~* and ever shall be, world without end. Amen.
+\end{otherlanguage}
+% \end{paracol}
+\end{multicols}
+
+\rubrique{\begin{otherlanguage}{english}
+Sit as the antiphon is repeated. Then the usual dialogue follows. All stand from now until the end of the office.\end{otherlanguage}}
+
+\textebilingue{dv}{dv_eng}
+
+   \begin{paracol}{2}
+   Orémus.
+   
+\label{oratio_dom_pent}\phantomsection
+\lettrine{O}{m}nípotens sempitérne Deus, qui dedísti fámulis tuis in confessióne veræ fídei, ætérnæ Trinitátis glóriam agnóscere, et in poténtia majestátis adoráre Unitátem:~† quǽsumus; u ejúsdem fídei firmitáte,~* ab ómnibus semper muniámur advérsis. Per Dóminum.
+
+   ℟. Amen.
+\switchcolumn
+\begin{otherlanguage}{english}
+\noindent Let us pray.
+Almighty and everlasting God, thou hast given thy servants in the confession of the true faith, to acknowledge the glory of the Eternal Trinity, and to adore the unity in the power of thy Majesty; grant, that by steadfastness in this faith we may ever be defended from all adversities.
+Through Jesus Christ, thy Son our Lord, Who liveth and reigneth with thee, in the unity of the Holy Ghost, God, world without end.
+Amen.
+\end{otherlanguage}
+    \end{paracol}
+    
+\rubrique{Then follow any commemorations of the saints, and a commemoration of the I Sunday after Pentecost is always made:}
+
+\myrule
+
+\smalltitle{At I Vespers.}
+
+\gscore[Ant.]{1.}{an_loquere_domine_solesmes_1961}
+ \begin{otherlanguage}{english} \noindent Ant. Speak, Lord, for thy servant heareth.\end{otherlanguage}
+ 
+        \begin{paracol}{2}
+\vv Vespertína orátio ascéndat ad te Dómine.
+
+\rr Et descéndat super nos misericórdia tua.
+           \switchcolumn
+ \noindent \vv Let the evening prayer ascend unto thee, O Lord.
+                  
+\noindent \rr And let there descend upon us thy mercy.
+    \end{paracol}
+
+\myrule
+    
+\gscore[Ant.]{8.}{an_nolite_judicare_solesmes_1961}
+ \begin{otherlanguage}{english} \noindent Ant. Judge not, that ye be not judged, for with what judgment ye judge, ye shall be judged, saith the Lord.\end{otherlanguage}
+ 
+        \begin{paracol}{2}
+\noindent \vv Dirigátur Dómine orátio mea.
+
+\noindent \rr Sicut incénsum in conspéctu tuo.
+           \switchcolumn
+ \noindent \vv Direct, O Lord, my prayer.
+                  
+\noindent \rr As incense in thy sight.
+    \end{paracol}
+
+\textebilingue{dv}{dv_eng}
+
+   \begin{paracol}{2}
+   Orémus.
+   
+   \lettrine{D}{e}us, in te sperántium fortitúdo, adésto propítius invocatiónibus nostris:~† et quia sine te nihil potest mortális infírmitas, præsta auxílium grátiæ tuæ;~* ut in exsequéndis mandátis tuis, et voluntáte tibi et actióne placeámus. Per Dóminum.
+
+   ℟. Amen.
+\switchcolumn
+\begin{otherlanguage}{english}
+\noindent Let us pray.
+O God, the Strength of all them that put their trust in thee, mercifully accept our prayers, and because through the weakness of our mortal nature we can do no good thing without thee, grant us the help of thy grace, that in keeping of thy commandments we may please thee, both in will and deed.
+Through the same Jesus Christ, thy Son, Our Lord, Who liveth and reigneth with thee in the unity of the Holy Ghost, God, world without end.
+ Amen.
+\end{otherlanguage}
+    \end{paracol}    
+
+\textebilingue{dv}{dv_eng}
+
+\rubrique{\begin{otherlanguage}{english}
+The cantor sings the verse to which all reply.
+\end{otherlanguage}}
+
+\myrule
+
+\smalltitle{At I Vespers.}
+
+\gscore[]{2.}{BD_Solemnis_I_Vesp}
+
+\myrule
+
+%
+%\rubrique{Or:}
+
+\gscore[]{5.}{BD_Solemnis_mode_5}
+
+\noindent \vv Let us bless the Lord.
+
+\noindent \rr Thanks be to God.
+
+\textebilingue{fidelium_animae}{fidelium_animae_en}
+
+%\rubrique{During the octave, the office is the same except for the Magnificat antiphon and the collect.}
+
+\end{document}

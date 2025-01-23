@@ -1,0 +1,265 @@
+% !TEX TS-program = lualatexmk
+% !TEX parameter =  --shell-escape
+
+\documentclass[12pt]{book}
+
+\input{commonheaders_vespers_people} %%% will need to fix spacing problem in psalms at a later date.
+
+\begin{document}
+ 
+ \twosided[pc] %% to allow for the left-right switching of columns needed for bilingual liturgical typesetting (like in missals); it's unclear why this goes BEFORE everything else and not when activating the environment. %% It's OK for paper booklets to not switch, but it's probably best practice to switch.
+ 
+  \thispagestyle{empty}
+ 
+ {\centering{\huge\capspace{{NATIVITY OF THE LORD.}}}\par}\header{nativity of the lord.}
+ \vspace{0.5\baselineskip}
+ 
+{\centering{\huge{At I Vespers.}}\par}
+ 
+\smalltitle{Before the Office.}
+
+\rubrique{These prayers are said kneeling. End when the priest stands.}
+
+\textebilingue{orationes_ante_do}{orationes_ante_do_eng}
+
+\smalltitle{\prayers}
+
+\rubrique{The celebrant intones the following verse. All sing the response and doxology.}
+
+\begin{otherlanguage}{english}
+\rubrique{Make the sign of the cross at the beginning and at the Magnificat, and bow the head when the Trinity is mentioned, when mention is made of the ``Holy Name'' in some way, and at ``Orémus.''}\end{otherlanguage}
+
+\gscore[]{℣.}{Deus_in_adjutorium_tonus_solemnior}
+
+\noindent
+\begin{otherlanguage}{english}
+O God, \cc{} come to my assistance. \rr O Lord, make haste to help me. Glory be to the Father, and to the Son,~* and to the Holy Ghost. As it was in the beginning, is now,~* and ever shall be, world without end. Amen. Alleluia.\end{otherlanguage}
+
+\smalltitle{First Antiphon. 8. G.}
+\initialscore{an_rex_pacificus_solesmes_1961}
+
+\begin{otherlanguage}{english} \noindent Ant. The King of Peace is magnified, whose face the whole earth desireth. \end{otherlanguage}
+
+\rubrique{\begin{otherlanguage}{english}
+Sit at the word ``Sede.'' The cantor sings odd verses; all sing even verses, and this for the hymn and Magnificat, when sung entirely in chant, as well.
+\end{otherlanguage}}
+
+\psalmus{109}{109_8G}{109_8G}{109_en}
+
+\rubrique{\begin{otherlanguage}{english}
+Clerics in descending order, or a cantor, intone the subsequent antiphons.\end{otherlanguage}}
+
+ \gscore[2. Ant.]{7. a}{an_magnificatus_est_solesmes_1961}
+ 
+ \begin{otherlanguage}{english} \noindent Ant. The Peaceful King exceeded all the kings of the whole earth. \end{otherlanguage}
+
+\psalmus{110}{110_7a}{110_7}{110_en}
+
+  \gscore[3. Ant.]{8. G}{an_completi_sunt_solesmes_1961}
+  
+  \begin{otherlanguage}{english} \noindent Ant. The days of Mary were accomplished that she should bring forth her first-born Son. \end{otherlanguage}
+
+  \psalmus{111}{111_8G}{111_8}{111_en}
+
+  \gscore[4. Ant.]{8. G}{an_scitote_quia_prope_solesmes_1961}
+
+\begin{otherlanguage}{english} \noindent Ant. Know ye that the kingdom of God is at hand? Amen, I say unto you, it will not tarry. \end{otherlanguage}
+
+  \psalmus{112}{112_8G}{112_8}{112_en}
+
+ \gscore[5. Ant.]{1. g}{an_levate_capita_vestra_solesmes_1961}
+ 
+\begin{otherlanguage}{english} \noindent Ant. Lift up your heads; behold, your redemption draweth nigh. \end{otherlanguage}
+
+\psalmus{116}{116_1g}{116_1}{116_en}
+
+\rubrique{\begin{otherlanguage}{english}
+Having sung the last antiphon in full, stand when the celebrant does.
+\end{otherlanguage}}
+
+\smalltitle{Chapter.}
+\scripture{Tit. 3, 4 – 5.}
+
+\texteparacol{\lettrine{A}{p}páruit benígnitas et humánitas Salvatóris nostri Dei:~† non ex opéribus justítiæ, quæ fécimus nos,~* sed secúndum suam misericórdiam salvos nos fecit.\par
+\rr Deo grátias.}{\noindent But when the goodness and kindness of God our Saviour appeared: Not by the works of justice, which we have done, but according to his mercy, he saved us. Thanks be to God.}
+
+\smalltitle{Hymn. Mode I.}
+
+\rubrique{At the words \normaltext{Jesu Redémptor ómnium,} the celebrant extends and then closes his hands while turning to the cross.}
+
+\initialscore{hy_jesu_redemptor_omnium_nativitatis_solesmes_1961}
+
+\begin{multicols}{2}
+\begin{otherlanguage}{english}
+Jesus, the Redeemer of all,\\
+who, being the equal of the Father's glory,\\
+was begotten of the Sovereign Father\\
+before the beginning of light.
+
+Thou light and splendor of the Father,\\
+Thou neverfailing hope of all,\\
+give ear to the prayers\\
+ which thy servants throughout the world pour forth.
+ 
+Remember, O Creator of the world,\\
+that in being born\\
+Thou didst once assume the form of our body\\
+ from the sacred womb of a Virgin.
+ 
+The present day recurring\\
+ in the course of each year,\\
+ bears witness to this, that Thou alone didst come forth\\
+ from the bosom of the Father, the salvation of the world.
+ 
+The stars, the earth, and the seas,\\
+and every creature under heaven\\
+doth greet Him with a new canticle,\\
+as the author of the new salvation.
+ 
+We also, whom the sacred stream\\
+ of thy blood hath cleansed,\\pay thee the tribute of a hymn\\
+ on Thy birthday.
+ 
+Jesus, unto thee be the glory,\\
+ Thou who wast born of a virgin,\\
+ with the Father and the loving Spirit,\\
+ in the eternal age. Amen.
+
+\end{otherlanguage}
+\end{multicols}
+
+\rubrique{\begin{otherlanguage}{english}
+The cantor sings the verse to which all reply.
+\end{otherlanguage}}
+
+\smallscore{versiculus_i_vesperis_nativitatis_domini}
+
+\begin{otherlanguage}{english} \noindent \vv Tomorrow the iniquity of the earth shall be blotted out.
+
+\noindent \rr And the Saviour of the world shall reign over us.
+ \end{otherlanguage}
+ 
+%\rubrique{This tone is used on the feast itself, but not during the octave.}
+ 
+\smalltitle{Antiphon at the Magnificat.}
+
+\rubrique{Sit when the celebrant does, after he sings the first words. Rise at the end.}
+
+\gscore[]{8. G}{an_cum_ortus_fuerit_solesmes_1961}
+ 
+ \begin{otherlanguage}{english} \noindent Ant. When the sun shall have risen from heaven, ye shall see the King of kings proceeding from the Father, as a bridegroom from his chamber. \end{otherlanguage}
+ 
+ \smallscore{Magnificat_8_G_Solemnis}
+
+   \smallskip%
+    \noindent%
+ \begin{enumerate}[label=\arabic*.,%
+			leftmargin=0pt, %
+			itemindent=0mm, %
+			labelsep=3pt, %
+			labelwidth=0pt, %
+			rightmargin=0pt, %
+			parsep=0pt, %
+			topsep=0pt, %
+			itemsep=0pt,%
+			start=3]
+    \input{psaumes/Magnificat_8_Solemnis}
+    \end{enumerate}
+
+ \rubrique{\begin{otherlanguage}{english}
+The Magnificat may be sung entirely in chant or sung alternating between a cantor singing chant and the choir singing a polyphonic or harmonized setting.\end{otherlanguage}}
+
+\smalltitle{Canticle of the Blessed Virgin Mary.}
+
+\scripture{Luc. 1, 46–55.}
+\begin{multicols}{2}
+%\begin{paracol}{2}
+%
+%\lettrine{M}agníficat~* ánima mea Dóminum.\\ Et exsultávit spíritus meus~* in Deo salutári meo.
+%
+% Quia respéxit humilitátem ancíllæ suæ:~* ecce enim ex hoc beátam me dicent o\-mnes generatiónes.
+%
+% Quia fecit mihi magna qui potens est:~* et san\-ctum nomen ejus.
+%
+% Et misericórdia ejus a progénie in progénies~* timéntibus eum.
+%
+% Fecit poténtiam in bráchio suo:~* dispérsit supérbos mente cordis sui.
+%
+% Depósuit poténtes de sede,~* et exaltávit húmiles.
+%
+% Esuriéntes implévit bonis:~* et dívites dimísit inánes.
+%
+% Suscépit Israel púerum suum,~* recordátus misericórdiæ suæ.
+%
+% Sicut locútus est ad patres no\-stros,~* Abraham, et sémini ejus in sǽcula.
+%
+% Glória Patri, et Fílio,~* et Spirítui San\-cto.
+%
+% Sicut erat in princípio, et nunc, et semper,~* et in sǽcula sæculórum. Amen.
+ 
+% \switchcolumn
+ \begin{otherlanguage}{english}
+My soul \cc~* doth magnify the Lord.
+
+And my spirit hath rejoiced~* in God my Saviour.
+
+Because he hath regarded the humility of his handmaid;~* for behold from henceforth all generations shall call me blessed.
+
+Because he that is mighty, hath done great things to me;~* and holy is his name.
+
+And his mercy is from generation unto generations,~* to them that fear him.
+
+He hath shewed might in his arm:~* he hath scattered the proud in the conceit of their heart.
+
+He hath put down the mighty from their seat,~* and hath exalted the humble.
+
+He hath filled the hungry with good things;~* and the rich he hath sent empty away.
+
+He hath received Israel his servant,~* being mindful of his mercy:
+
+As he spoke to our fathers,~* to Abraham and to his seed for ever.
+
+Glory be to the Father, and to the Son,~* and to the Holy Ghost.
+
+As it was in the beginning, is now,~* and ever shall be, world without end. Amen.
+\end{otherlanguage}
+% \end{paracol}
+\end{multicols}
+
+\rubrique{\begin{otherlanguage}{english}
+Sit as the antiphon is repeated. Then the usual dialogue follows. All stand from now until the end of the office.\end{otherlanguage}}
+
+\textebilingue{dv}{dv_eng}
+
+%\textebilingue{oratio_15_aug_old}{oratio_15_aug_old_en}
+
+\texteparacol{Orémus.
+
+\lettrine{C}{o}ncéde, quǽsumus, omnípotens Deus:~* ut nos Unigéniti tui nova per carnem Natívitas líberet; quos sub peccáti jugo vetústa sérvitus tenet.
+Per eúmdem Dóminum.
+
+\rr Amen.}{\noindent Let us pray. Grant, we beseech thee, almighty God, that the new birth of thy Only-begotten Son as man may set us free, who are held by the old bondage under the yoke of sin.
+Through the same Jesus Christ, thy Son, Our Lord, Who liveth and reigneth with thee in the unity of the Holy Ghost, God, world without end. Amen.}
+
+\textebilingue{dv}{dv_eng}
+
+\rubrique{\begin{otherlanguage}{english}
+The cantor sings the verse to which all reply.
+\end{otherlanguage}}
+
+\gscore[]{2.}{BD_Solemnis_I_Vesp}
+
+\noindent \vv Let us bless the Lord.
+
+\noindent \rr Thanks be to God.
+
+\textebilingue{fidelium_animae}{fidelium_animae_en}
+    
+%\rubrique{\begin{otherlanguage}{english}
+%Then one Our Father is said, unless Compline follows, or even some pious exercises, a sermon, or Benediction of the Blessed Sacrament, in parish and other smaller churches.\end{otherlanguage}}
+
+%\rubrique{\begin{otherlanguage}{english}
+%Then the office is concluded with the following verses, the Marian antiphon, etc.
+%\end{otherlanguage}}
+
+\end{document}

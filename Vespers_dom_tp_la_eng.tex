@@ -1,0 +1,624 @@
+% !TEX TS-program = lualatexmk
+% !TEX parameter =  --shell-escape
+\documentclass[12pt]{book}
+
+\input{commonheaders_vespers_people}
+
+\begin{document}
+ 
+ \twosided[pc] %% to allow for the left-right switching of columns needed for bilingual liturgical typesetting (like in missals); it's unclear why this goes BEFORE everything else and not when activating the environment. %% It's OK for paper booklets to not switch, but it's probably best practice to switch.
+ 
+ \thispagestyle{empty}
+ 
+ {\centering{\huge{SUNDAYS OF PASCHAL TIME}}\par}\header{sundays of paschal time at vespers.}
+   \vspace{0.5\baselineskip}
+ 
+  {\centering{\huge{AT VESPERS.}}\par}
+  
+\smalltitle{Before the Office.}
+
+\rubrique{These prayers are said kneeling. End when the priest stands.}
+
+\textebilingue{orationes_ante_do}{orationes_ante_do_eng}
+
+\smalltitle{\prayers}
+
+\rubrique{The celebrant intones the following verse. All sing the response and doxology.}
+
+\begin{otherlanguage}{english}
+\rubrique{Make the sign of the cross at the beginning and at the Magnificat, and bow the head when the Trinity is mentioned, when mention is made of the ``Holy Name'' in some way, and at ``Orémus.''}\end{otherlanguage}
+
+\gscore[]{℣.}{Deus_In_Adjutorium_Festivus}
+
+\noindent
+\begin{otherlanguage}{english}
+O God, \cc{} come to my assistance. \rr O Lord, make haste to help me. Glory be to the Father, and to the Son,~* and to the Holy Ghost. As it was in the beginning, is now,~* and ever shall be, world without end. Amen. Alleluia.\end{otherlanguage}
+
+\smalltitle{Antiphon. 7. c2.}
+\gscore[]{}{alleluia_sun_tp_vespers}
+
+\rubrique{This antiphon is sung over all of the psalms. On the I Sunday after Easter, the office is of double rite, so the antiphon \normaltext{Allelúia, \pageref{duplex_antiphon}} is sung before and after.}
+
+\rubrique{\begin{otherlanguage}{english}
+Sit at the word ``Sede.'' The cantor sings odd verses; all sing even verses, and this for the hymn and Magnificat as well.
+\end{otherlanguage}}
+
+\psalmus{109}{109_7c2}{109_7}{109_en}
+
+\rubrique{\begin{otherlanguage}{english}
+The cantors then begin the psalms at the conclusion of the doxology.
+\end{otherlanguage}}
+
+\psalmus{110}{110_7c2}{110_7}{110_en}
+
+\psalmus{111}{111_7c2}{111_7}{111_en}
+
+\psalmus{112}{112_7c2}{112_7}{112_en}
+
+\psalmus{113}{113_7c2}{113_7}{113_en}
+
+\label{duplex_antiphon}
+
+\smallscore{an_alleluia_sun_tp_vespers_solesmes_1961}
+
+\rubrique{\begin{otherlanguage}{english}
+Having sung the last antiphon in full, stand when the celebrant does.
+\end{otherlanguage}}
+
+%\newpage
+
+\bigtitle{Chapter.}
+
+\smalltitle{I Sunday after Easter.}
+
+\scripture{1 Joann. 5, 4.}
+\texteparacol{\lettrine{C}{a}ríssimi: Omne quod natum est ex Deo, vincit mundum:~† et hæc est victória, quæ vincit mundum,~* fides nostra.
+
+\rr Deo grátias.}{\noindent My beloved: For whatsoever is born of God, overcometh the world: and this is the victory which overcometh the world, our faith. Thanks be to God.}
+
+\smalltitle{II Sunday after Easter.}
+
+\scripture{1 Petri 2, 21 – 22.}
+
+\texteparacol{\lettrine{C}{a}ríssimi: Christus passus est pro nobis,~† vobis relínquens exémplum ut sequámini vestígia eius.~* Qui peccátum non fecit, nec invéntus est dolus in ore ejus.
+
+\rr Deo grátias.}{\noindent Dearly beloved: Christ also suffered for us, leaving you an example that you should follow his steps. Who did no sin, neither was guile found in his mouth. Thanks be to God.}
+
+\smalltitle{III Sunday after Easter.}
+
+\scripture{1 Petri 2, 11.}
+\texteparacol{\lettrine{C}{a}ríssimi: Obsecro vos tamquam ádvenas et peregrínos,~† abstinére vos a carnálibus desidériis,~* quæ mílitant advérsus ánimam.
+
+\rr Deo grátias.}{\noindent Dearly beloved, I beseech you as strangers and pilgrims, to refrain yourselves from carnal desires which war against the soul. Thanks be to God.}
+
+\smalltitle{IV Sunday after Easter.}
+
+\scripture{Jac. 1, 17.}
+\texteparacol{\lettrine{C}{a}ríssimi: Omne datum óptimum, et omne donum perféctum desúrsum est, descéndens a Patre lúminum,~† apud quem non est transmutátio,~* nec vicissitúdinis obumbrátio.
+
+\rr Deo grátias.}{\noindent Dearly beloved: Every best gift, and every perfect gift, is from above, coming down from the Father of lights, with whom there is no change, nor shadow of alteration. Thanks be to God.}
+
+\smalltitle{V Sunday after Easter.}
+
+\scripture{Jac. 1, 22 – 24.}
+
+\texteparacol{\lettrine{C}{a}ríssimi: Estóte factóres verbi, et non auditóres tantum: falléntes vosmetípsos.~† Quia si quis audítor est verbi, et non factor: hic comparábitur viro consideránti vultum nativitátis suæ in spéculo:~* considerávit enim se, et ábiit, et statim oblítus est qualis fúerit.
+
+\rr Deo grátias.}{\noindent Dearly beloved: But be ye doers of the word, and not hearers only, deceiving your own selves. For if a man be a hearer of the word, and not a doer, he shall be compared to a man beholding his own countenance in a glass. For he beheld himself, and went his way, and presently forgot what manner of man he was. Thanks be to God.}
+
+%% The usual tone is  omitted as we do not use these tones, but they are included in the tex file and the gabc files are available, for the sake of completeness.
+
+\smalltitle{Hymn.}
+
+%\gscore[]{8.}{hy_ad_regias_agni_dapes_solesmes_1961}
+
+%\smalltitle{Another tone ad lib.}
+
+\grechangenextscorelinedim{3}{spacebeneathtext}{0.25cm}{scalable}
+
+\grechangenextscorelinedim{4,7,10}{spacebeneathtext}{0.03cm}{scalable}
+
+\gscore[]{4.}{hy_ad_regias_agni_dapes_another_chant_solesmes_1961}
+
+\begin{multicols}{2}
+\raggedcolumns
+\begin{otherlanguage}{english}
+At the Lamb’s high feast we sing\\
+Praise to our victorious King,\\
+Who hath washed us in the tide\\
+Flowing from his piercèd side.
+
+Praise we him whose love divine\\
+Gives the guests his blood for wine,\\
+Gives his body for the feast,\\
+Love the victim, love the priest.
+
+Where the paschal blood is poured,\\
+Death’s dark angel sheathes his sword;\\
+Israel’s hosts triumphant go\\
+Through the wave that drowns the foe.
+
+Christ, the Lamb whose blood was shed,\\
+Paschal victim, paschal bread;\\
+With sincerity and love\\
+Eat we manna from above.
+
+Mighty victim from the sky,\\
+Powers of hell beneath thee lie;\\
+Death is conquered in the fight;\\
+Thou hast brought us life and light.
+
+Now thy banner thou dost wave;\\
+Vanquished Satan and the grave;\\
+Angels join his praise to tell\\
+See o’erthrown the prince of hell.
+
+Paschal triumph, paschal joy,\\
+Only sin can this destroy;\\
+From the death of sin set free,\\
+Souls re-born, dear Lord, in Thee.
+
+Hymns of glory, songs of praise,\\
+Father, unto Thee we raise;\\
+Risen Lord, all praise to Thee,\\
+Ever with the Spirit be. Amen.
+
+\end{otherlanguage}
+\end{multicols}
+
+\rubrique{\begin{otherlanguage}{english}
+The cantor sings the verse to which all reply.
+\end{otherlanguage}}
+
+\smallscore{versiculus_tp}
+
+\begin{otherlanguage}{english} \noindent \vv  Stay with us, O Lord, alleluia.
+
+\noindent \rr  Because it is towards evening, alleluia.
+ \end{otherlanguage}
+ 
+ \rubrique{\begin{otherlanguage}{english}
+The celebrant intones the \normaltext{Magnificat} antiphon; this is always proper to the day. The cantor continues the \normaltext{Ma\-gnificat.}\end{otherlanguage}}
+
+\newpage
+
+\bigtitle{Canticle of the Blessed Virgin Mary.}
+
+\smalltitle{I Sunday after Easter.}\label{1_sunday}
+
+\gscore[]{Ant. 8. c}{an_post_dies_octo_solesmes_1961}
+\begin{otherlanguage}{english} \noindent Ant. After eight days, the doors being shut, the Lord being entered in, said unto them: Peace be unto you, alleluia. \end{otherlanguage}
+
+\gresetinitiallines{0}
+
+\gabcsnippet{(c4) 1. Ma(g)gní(hg)fi(gj)cat(j.) *(:) á(j)ni(j)ma(j) <i>me</i>(h)<i>a</i>(j) <b>Dó</b>(k)mi(jr)num.(j.) (::) (Z-)
+
+2. Et(g) ex(h)sul(j)tá(j)vit(j) spí(j)ri(j)tus(j) <b>me</b>(k//jr)us(j.) *(:) in(j) De(j)o(j) sa(j)lu(j)<i>tá</i>(h)<i>ri</i>(j) <b>me</b>(k//jr)o.(j.) (::)}
+
+\gresetinitiallines{1}
+   \smallskip%
+    \noindent%
+    \begin{itemize}[%
+    		label=\null, %
+			leftmargin=0pt, %
+			itemindent=0mm, %
+			labelsep=0pt, %
+			labelwidth=0pt, %
+			rightmargin=0pt, %
+			parsep=0pt, %
+			topsep=0pt, %
+			itemsep=0pt]%
+
+\item 3. Quia respéxit humilitátem ancíllæ \textbf{su}æ:~* ecce enim ex hoc beátam me dicent omnes gene\textit{rati}\textbf{ó}nes.
+
+\item 4. Quia fecit mihi magna qui \textbf{pot}ens est:~* et sanctum \textit{nomen} \textbf{e}jus.
+
+\item 5. Et misericórdia ejus a progénie in pro\textbf{gé}nies~* timén\textit{tibus} \textbf{e}um.
+
+\item 6. Fecit poténtiam in bráchio \textbf{su}o:~* dispérsit supérbos mente \textit{cordis} \textbf{su}i.
+
+\item 7. Depósuit poténtes de \textbf{se}de,~* et exal\textit{távit} \textbf{hú}miles.
+
+\item 8. Esuriéntes implévit \textbf{bo}nis:~* et dívites dimí\kern 0.04em\textit{sit} \textit{in}\textbf{á}nes.
+
+\item 9. Suscépit Israel púerum \textbf{su}um,~* recordátus misericór\textit{diæ} \textbf{su}æ.
+
+\item 10. Sicut locútus est ad patres \textbf{no}stros,~* Abraham et sémini e\kern 0.02em\textit{jus} \textit{in} \textbf{sǽ}cula.
+
+\item 11. Glória Patri, et \textbf{Fí}lio,~* et Spirí\textit{tui} \textbf{San}cto.
+
+\item 12. Sicut erat in princípio, et nunc, et \textbf{sem}per,~* et in sǽcula sæcu\kern 0.02em\textit{lórum}. \textbf{A}men.
+\end{itemize}
+
+\smalltitle{II Sunday after Easter.}
+
+\gscore[Ad Magnif.]{Ant. 3. a}{an_ego_sum_pastor_bonus_solesmes_1961}
+\begin{otherlanguage}{english} \noindent Ant. I am the Good Shepherd, Who feed My sheep: and I lay down My life for My sheep. Alleluia.\end{otherlanguage}
+
+\gresetinitiallines{0}
+\gabcsnippet{(c4)1. Ma(g)gní(hj)fi(j)cat(j) *(:) á(j)ni(j)ma(j) me(j)<i>a</i>(h) <b>Dó</b>(j)mi(jr)num.(ih..) (::) (Z-)
+2. Et(g) ex(hj)sul(j)tá(j)vit(j) <b>spí</b>(k)ri(jr)tus(j) (jr[ocb:1;8.7mm])<b>me</b>(ih)us(j.) *(:) in(j) De(j)o(j) sa(j)lu(j)tá(j)<i>ri</i>(h) me(j//jr)o.(ih..)}
+
+\gresetinitiallines{1}
+
+\begin{itemize}[label=\null, %
+			leftmargin=0pt, %
+			itemindent=0mm, %
+			labelsep=0pt, %
+			labelwidth=0pt, %
+			rightmargin=0pt, %
+			parsep=0pt, %
+			topsep=0pt, %
+			itemsep=0pt]%
+%%Magnificat
+%% each line requires \item
+
+\item 3. Quia respéxit humilitátem an\textbf{cíl}læ \textbf{su}æ:~* ecce enim ex hoc beátam me dicent omnes genera\kern 0.01 em \textit{ti}\textbf{ó}nes.
+
+\item 4. Quia fecit mihi \textbf{ma}gna qui \textbf{pot}\textbf{ens} est:~* et sanctum no\textit{men} \textbf{e}jus.
+
+\item 5. Et misericórdia ejus a progénie \textbf{in} pro\textbf{gé}\textbf{ni}es~* timénti\textit{bus} \textbf{e}um.
+
+\item 6. Fecit poténtiam in \textbf{brá}chio \textbf{su}o:~* dispérsit supérbos mente cor\textit{dis} \textbf{su}i.
+
+\item 7. Depósuit po\textbf{tén}tes de \textbf{se}de,~* et exaltá\textit{vit} \textbf{hú}miles.
+
+\item 8. Esuriéntes im\textbf{plé}vit \textbf{bo}nis:~* et dívites dimísit \textit{in}\textbf{á}nes.
+
+\item 9. Suscépit Israel \textbf{pú}erum \textbf{su}um,~* recordátus misericórdi\kern 0.02 em\textit{æ} \textbf{su}æ.
+
+\item 10. Sicut locútus est ad \textbf{pa}tres \textbf{no}stros,~* Abraham et sémini ejus \textit{in} \textbf{sǽ}cula.
+
+\item 11. Glória \textbf{Pa}tri, et \textbf{Fí}\textbf{li}o,~* et Spirítu\textit{i} \textbf{San}cto.
+
+\item 12. Sicut erat in princípio, et \textbf{nunc,} et \textbf{sem}per,~* et in sǽcula sæculó\textit{rum}. \textbf{A}men.
+\end{itemize}
+
+\smalltitle{III Sunday after Easter.}
+
+\gscore[]{Ant. 8. G}{an_amen_amen_quia_plorabitis_solesmes}
+\begin{otherlanguage}{english} \noindent Ant. Amen, amen I say to you that you shall lament and weep, but the world shall rejoice; and you shall be made sorrowful, but your sorrow shall be turned into joy, alleluia.\end{otherlanguage}
+
+\gresetinitiallines{0}
+
+\gabcsnippet{(c4) 1. Ma(g)gní(hg)fi(gj)cat(j.) *(:) á(j)ni(j)ma(j) <i>me</i>(i)<i>a</i>(j) <b>Dó</b>(h)mi(gr)num.(g.) (::) (Z-)
+2. Et(g) ex(h)sul(j)tá(j)vit(j) spí(j)ri(j)tus(j) <b>me</b>(k//jr)us(j.) *(:) in(j) De(j)o(j) sa(j)lu(j)<i>tá</i>(i)<i>ri</i>(j) <b>me</b>(h//gr)o.(g.) (::)}
+
+\gresetinitiallines{1}
+   \smallskip%
+    \noindent%
+    \begin{itemize}[%
+    		label=\null, %
+			leftmargin=0pt, %
+			itemindent=0mm, %
+			labelsep=0pt, %
+			labelwidth=0pt, %
+			rightmargin=0pt, %
+			parsep=0pt, %
+			topsep=0pt, %
+			itemsep=0pt]%
+
+\item 3. Quia respéxit humilitátem ancíllæ \textbf{su}æ:~* ecce enim ex hoc beátam me dicent omnes gene\textit{rati}\textbf{ó}nes.
+
+\item 4. Quia fecit mihi magna qui \textbf{pot}ens est:~* et sanctum \textit{nomen} \textbf{e}jus.
+
+\item 5. Et misericórdia ejus a progénie in pro\textbf{gé}nies~* timén\textit{tibus} \textbf{e}um.
+
+\item 6. Fecit poténtiam in bráchio \textbf{su}o:~* dispérsit supérbos mente \textit{cordis} \textbf{su}i.
+
+\item 7. Depósuit poténtes de \textbf{se}de,~* et exal\textit{távit} \textbf{hú}miles.
+
+\item 8. Esuriéntes implévit \textbf{bo}nis:~* et dívites dimí\kern 0.04em\textit{sit} \textit{in}\textbf{á}nes.
+
+\item 9. Suscépit Israel púerum \textbf{su}um,~* recordátus misericór\textit{diæ} \textbf{su}æ.
+
+\item 10. Sicut locútus est ad patres \textbf{no}stros,~* Abraham et sémini e\kern 0.02em\textit{jus} \textit{in} \textbf{sǽ}cula.
+
+\item 11. Glória Patri, et \textbf{Fí}lio,~* et Spirí\textit{tui} \textbf{San}cto.
+
+\item 12. Sicut erat in princípio, et nunc, et \textbf{sem}per,~* et in sǽcula sæcu\kern 0.02em\textit{lórum}. \textbf{A}men.
+\end{itemize}
+
+\smalltitle{IV Sunday after Easter.}
+
+\gscore[]{Ant. 2. D}{an_vado_ad_eum_sed_quia_solesmes_1961}
+\begin{otherlanguage}{english} \noindent Ant. I go My way to Him That sent Me, but because I have said this to you, sadness has filled your hearts, alleluia..\end{otherlanguage}
+
+\gresetinitiallines{0}
+
+\gabcsnippet{(c3@f3)1. Ma(e)gní(fe)fi(eh)cat(h.) *(:) á(h)ni(h)ma(h) me(h)<i>a</i>(g) <b>Dó</b>(e)mi(fr)num.(f.) (::) (Z-)
+2. Et<v>\hspace*{-0.3cm}\noindent</v>(e) ex(f)sul(h)tá(h)vit(h) spí(h)ri(h)tus(h) <b>me</b>(i//hr)us(h.) *(:) in(h) De(h)o(h) sa(h)lu(h)tá(h)<i>ri</i>(g) me(e//fr)o.(f.) (::)}
+
+\gresetinitiallines{1}
+
+\begin{itemize}[label=\null, %
+			leftmargin=0pt, %
+			itemindent=0mm, %
+			labelsep=0pt, %
+			labelwidth=0pt, %
+			rightmargin=0pt, %
+			parsep=0pt, %
+			topsep=0pt, %
+			itemsep=0pt]%
+%%Magnificat
+%% each line requires \item
+
+\item 3. Quia respéxit humilitátem ancíllæ \textbf{su}æ:~* ecce enim ex hoc beátam me dicent omnes genera\kern 0.01 em\textit{ti}\textbf{ó}nes.
+
+\item 4. Quia fecit mihi magna qui \textbf{pot}ens est:~* et sanctum no\textit{men} \textbf{e}jus.
+
+\item 5. Et misericórdia ejus a progénie in pro\textbf{gé}nies~* timénti\textit{bus} \textbf{e}um.
+
+\item 6. Fecit poténtiam in bráchio \textbf{su}o:~* dispérsit supérbos mente cor\textit{dis} \textbf{su}i.
+
+\item 7. Depósuit poténtes de \textbf{se}de,~* et exaltá\textit{vit} \textbf{hú}miles.
+
+\item 8. Esuriéntes implévit \textbf{bo}nis:~* et dívites dimísit \textit{in}\textbf{á}nes.
+
+\item 9. Suscépit Israel púerum \textbf{su}um,~* recordátus misericórdi\kern 0.01 em\textit{æ} \textbf{su}æ.
+
+\item 10. Sicut locútus est ad patres \textbf{no}stros,~* Abraham et sémini ejus \textit{in} \textbf{sǽ}cula.
+
+\item 11. Glória Patri, et \textbf{Fí}lio,~* et Spirítu\kern 0.01 em\textit{i} \textbf{San}cto.
+
+\item 12. Sicut erat in princípio, et nunc, et \textbf{sem}per,~* et in sǽcula sæculó\textit{rum}. \textbf{A}men.
+
+\end{itemize}
+
+\smalltitle{V Sunday after Easter.}
+
+\gscore[]{Ant. 8. G*}{an_petite_et_accipietis_solesmes_1961}
+\begin{otherlanguage}{english} \noindent Ant. Ask, and ye shall receive, that your joy may be full; for the Father Himself loveth you, because ye have loved Me, and have believed in Me, alleluia.\end{otherlanguage}
+
+\gresetinitiallines{0}
+\gabcsnippet{(c4) 1. Ma(g)gní(hg)fi(gj)cat(j.) *(:) á(j)ni(j)ma(j) <i>me</i>(i)<i>a</i>(j) <b>Dó</b>(h)mi(gr)num.(gh..) (::) (Z-)
+2. Et(g) ex(h)sul(j)tá(j)vit(j) spí(j)ri(j)tus(j) <b>me</b>(k//jr)us(j.) *(:) in(j) De(j)o(j) sa(j)lu(j)<i>tá</i>(i)<i>ri</i>(j) <b>me</b>(h//gr)o.(gh..) (::)}
+\gresetinitiallines{1}
+   \smallskip%
+    \noindent%
+    \begin{itemize}[%
+    		label=\null, %
+			leftmargin=0pt, %
+			itemindent=0mm, %
+			labelsep=0pt, %
+			labelwidth=0pt, %
+			rightmargin=0pt, %
+			parsep=0pt, %
+			topsep=0pt, %
+			itemsep=0pt]%
+
+\item 3. Quia respéxit humilitátem ancíllæ \textbf{su}æ:~* ecce enim ex hoc beátam me dicent omnes gene\textit{rati}\textbf{ó}nes.
+
+\item 4. Quia fecit mihi magna qui \textbf{pot}ens est:~* et sanctum \textit{nomen} \textbf{e}jus.
+
+\item 5. Et misericórdia ejus a progénie in pro\textbf{gé}nies~* timén\textit{tibus} \textbf{e}um.
+
+\item 6. Fecit poténtiam in bráchio \textbf{su}o:~* dispérsit supérbos mente \textit{cordis} \textbf{su}i.
+
+\item 7. Depósuit poténtes de \textbf{se}de,~* et exal\textit{távit} \textbf{hú}miles.
+
+\item 8. Esuriéntes implévit \textbf{bo}nis:~* et dívites dimí\kern 0.04em\textit{sit} \textit{in}\textbf{á}nes.
+
+\item 9. Suscépit Israel púerum \textbf{su}um,~* recordátus misericór\textit{diæ} \textbf{su}æ.
+
+\item 10. Sicut locútus est ad patres \textbf{no}stros,~* Abraham et sémini e\kern 0.02em\textit{jus} \textit{in} \textbf{sǽ}cula.
+
+\item 11. Glória Patri, et \textbf{Fí}lio,~* et Spirí\textit{tui} \textbf{San}cto.
+
+\item 12. Sicut erat in princípio, et nunc, et \textbf{sem}per,~* et in sǽcula sæcu\kern 0.02em\textit{lórum}. \textbf{A}men.
+\end{itemize}
+
+\scripture{Luc. 1, 46–55.}
+
+%\begin{paracol}{2}
+%
+%\lettrine{M}agníficat~* ánima mea Dóminum.\\ Et exsultávit spíritus meus~* in Deo salutári meo.
+%
+% Quia respéxit humilitátem ancíllæ suæ:~* ecce enim ex hoc beátam me dicent o\-mnes generatiónes.
+%
+% Quia fecit mihi magna qui potens est:~* et san\-ctum nomen ejus.
+%
+% Et misericórdia ejus a progénie in progénies~* timéntibus eum.
+%
+% Fecit poténtiam in bráchio suo:~* dispérsit supérbos mente cordis sui.
+%
+% Depósuit poténtes de sede,~* et exaltávit húmiles.
+%
+% Esuriéntes implévit bonis:~* et dívites dimísit inánes.
+%
+% Suscépit Israel púerum suum,~* recordátus misericórdiæ suæ.
+%
+% Sicut locútus est ad patres no\-stros,~* Abraham, et sémini ejus in sǽcula.
+%
+% Glória Patri, et Fílio,~* et Spirítui San\-cto.
+%
+% Sicut erat in princípio, et nunc, et semper,~* et in sǽcula sæculórum. Amen.
+% 
+% \switchcolumn
+
+\begin{multicols}{2}
+ \begin{otherlanguage}{english}
+My soul \cc~* doth magnify the Lord.
+
+And my spirit hath rejoiced~* in God my Saviour.
+
+Because he hath regarded the humility of his handmaid;~* for behold from henceforth all generations shall call me blessed.
+
+Because he that is mighty, hath done great things to me;~* and holy is his name.
+
+And his mercy is from generation unto generations,~* to them that fear him.
+
+He hath shewed might in his arm:~* he hath scattered the proud in the conceit of their heart.
+
+He hath put down the mighty from their seat,~* and hath exalted the humble.
+
+He hath filled the hungry with good things;~* and the rich he hath sent empty away.
+
+He hath received Israel his servant,~* being mindful of his mercy:
+
+As he spoke to our fathers,~* to Abraham and to his seed for ever.
+
+Glory be to the Father, and to the Son,~* and to the Holy Ghost.
+
+As it was in the beginning, is now,~* and ever shall be, world without end. Amen.
+\end{otherlanguage}
+% \end{paracol}
+\end{multicols}
+
+ \rubrique{\begin{otherlanguage}{english}
+Sit as the antiphon is sung in full. Then the usual dialogue follows. On Sundays, all stand from now until the end of the office, unless one sits for the antiphons sung for the commemorations, according to custom.\end{otherlanguage}}
+
+\textebilingue{dv}{dv_eng}
+ \rubrique{\begin{otherlanguage}{english}
+The celebrant sings the collect of the day, and any commemorations follow. When required, the Suffrage of All Saints is sung in the last place, as below.\end{otherlanguage}}
+
+\bigtitle{Collect.}
+\smallskip
+
+\smalltitle{I Sunday after Easter.}
+
+   \begin{paracol}{2}
+   Orémus.
+   
+\lettrine{P}{r}æsta, quǽsumus omnípotens Deus:~† ut qui paschália festa perégimus,~* hæc, te largiénte, móribus et vita teneámus. Per Dóminum.
+   
+   ℟. Amen.
+   
+\switchcolumn
+\begin{otherlanguage}{english}
+\noindent Let us pray.
+Grant, we beseech Thee, almighty God, that we who have celebrated the Paschal Feast, may, by Thy bounty, retain its fruits in our daily habits and behaviour.
+Through Jesus Christ, thy Son our Lord, Who liveth and reigneth with thee, in the unity of the Holy Ghost, God, world without end.
+
+ Amen.
+\end{otherlanguage}
+    \end{paracol}
+    
+    \smalltitle{II Sunday after Easter.}
+
+   \begin{paracol}{2}
+   Orémus.
+   
+\lettrine{D}{e}us, qui in Fílii tui humilitáte jacéntem mundum erexísti:~† fidélibus tuis perpétuam concéde lætítiam;~* ut, quos perpétuæ mortis eripuísti cásibus, gáudiis fácias pérfrui sempitérnis. Per eúmdem Dóminum.
+   
+   ℟. Amen.
+   
+\switchcolumn
+\begin{otherlanguage}{english}
+\noindent Let us pray.
+O God, Whose Son hath humbled Himself, and Who hast through Him raised up the whole world, grant to thy faithful people everlasting joy; and as Thou hast delivered them from the bitter pains of eternal death, make them to be glad for ever in thy presence.
+Through the same Jesus Christ, thy Son our Lord, Who liveth and reigneth with thee, in the unity of the Holy Ghost, God, world without end.
+ Amen.
+\end{otherlanguage}
+    \end{paracol}
+    
+    \smalltitle{III Sunday after Easter.}
+
+   \begin{paracol}{2}
+   Orémus.
+   
+\lettrine{D}{e}us, qui errántibus, ut in viam possint redíre justítiæ, veritátis tuæ lumen osténdis:~† da cunctis qui christiána professióne censéntur, et illa respúere quæ huic inimíca sunt nómini;~* et ea quæ sunt apta sectári.
+Per Dóminum nostrum.
+   
+   ℟. Amen.
+   
+\switchcolumn
+\begin{otherlanguage}{english}
+\noindent Let us pray.
+Almighty God, Who showest to them that be in error the light of thy truth, to the intent that they may return into the way of righteousness grant unto all them that are admitted into the fellowship of Christ's Religion, that they may eschew those things that are contrary to their profession, and follow all such things as are agreeable to the same.
+Through Jesus Christ, thy Son our Lord, Who liveth and reigneth with thee, in the unity of the Holy Ghost, God, world without end.
+ Amen.
+\end{otherlanguage}
+    \end{paracol}
+    
+    \smalltitle{IV Sunday after Easter.}
+
+   \begin{paracol}{2}
+   Orémus.
+   
+\lettrine{C}{o}ncéde, quǽsumus omnípotens Deus:~† ut, qui ex mérito nostræ actiónis afflígimur,* tuæ grátiæ consolatióne respirémus.
+Per Dóminum.
+   
+   ℟. Amen.
+   
+\switchcolumn
+\begin{otherlanguage}{english}
+\noindent Let us pray.
+Grant, we beseech thee, Almighty God, that we who for our evil deeds are worthily punished, may, by the comfort of thy grace, mercifully be relieved.
+Through Jesus Christ, thy Son our Lord, Who liveth and reigneth with thee, in the unity of the Holy Ghost, God, world without end.
+ Amen.
+\end{otherlanguage}
+    \end{paracol}
+    
+    \smalltitle{V Sunday after Easter.}
+
+   \begin{paracol}{2}
+   Orémus.
+   
+\lettrine{D}{e}us, a quo bona cuncta procédunt, largíre supplícibus tuis:~†  ut cogitémus te inspiránte quæ recta sunt;~* et, te gubernánte éadem faciámus. Per Dóminum nostrum.
+   
+   ℟. Amen.
+   
+\switchcolumn
+\begin{otherlanguage}{english}
+\noindent Let us pray.
+O God, from Whom all good things do come, grant to us thy humble servants that by thy holy inspiration we may think those things that be good, and by thy merciful guiding may perform the same.
+Through Jesus Christ, thy Son our Lord, Who liveth and reigneth with thee, in the unity of the Holy Ghost, God, world without end.
+ Amen.
+\end{otherlanguage}
+    \end{paracol}
+
+\myrule
+
+\smalltitle{Commemoration of the Cross.}
+
+\gscore[Ant.]{6.}{an_crucifixus_solesmes_1961}
+\begin{otherlanguage}{english} \noindent Ant. He that was crucified is risen from the dead, and hath redeemed us. Alleluia, Alleluia.\end{otherlanguage}
+\smallskip
+
+   \begin{paracol}{2}
+   
+\noindent \vv Dícite in natiónibus, allelúia.
+
+\noindent \rr Quia Dóminus regnávit a ligno, allelúia.
+
+Orémus.
+
+\lettrine{D}{e}us qui pro nobis Fílium tuum Crucis patíbulum subíre voluísti, ut inimíci a nobis expélleres potestátem: * concéde nobis fámulis tuis; ut resurrectiónis grátiam consequámur. Per eúndem Dóminum.
+
+\rr Amen.   
+\switchcolumn
+\begin{otherlanguage}{english}
+\noindent \vv Say among the heathen, alleluia.
+
+\noindent \rr That the Lord reigneth from the tree, alleluia.
+
+\noindent Let us pray. O God, who didst send thy Son to suffer death for us upon the Cross, that thou mightest deliver us from the power of the enemy grant unto us thy servants to be made partakers of his Resurrection.
+Through the same Jesus Christ, thy Son our Lord, Who liveth and reigneth with thee, in the unity of the Holy Ghost, God, world without end.
+ Amen.
+\end{otherlanguage}
+    \end{paracol}
+
+\textebilingue{dv}{dv_eng}
+
+\rubrique{\begin{otherlanguage}{english}
+The cantor sings the verse to which all reply.
+\end{otherlanguage}}
+
+\gscore[]{7.}{BD_TP}
+
+\noindent \vv Let us bless the Lord.
+
+\noindent \rr Thanks be to God.
+
+\textebilingue{fidelium_animae}{fidelium_animae_en}
+
+%\rubrique{\begin{otherlanguage}{english}
+%Then one Our Father is said, unless Compline follows, or even some pious exercises, a sermon, or Benediction of the Blessed Sacrament, in parish and other smaller churches.\end{otherlanguage}}
+
+%\rubrique{\begin{otherlanguage}{english}
+%Then the office is concluded with the following verses, the Marian antiphon, etc.
+%\end{otherlanguage}}
+
+
+\end{document}

@@ -1,0 +1,386 @@
+% !TEX TS-program = lualatexmk
+% !TEX parameter =  --shell-escape
+
+\documentclass[12pt]{book}
+
+\input{commonheaders_vespers_people} %%% will need to fix spacing problem in psalms at a later date.
+
+\begin{document}
+ 
+ \twosided[pc] %% to allow for the left-right switching of columns needed for bilingual liturgical typesetting (like in missals); it's unclear why this goes BEFORE everything else and not when activating the environment. %% It's OK for paper booklets to not switch, but it's probably best practice to switch.
+ 
+  \thispagestyle{empty}
+ 
+ {\centering{\huge{ANNUNCIATION OF THE B.V.M.}}\par}\header{annunciation of the b.v.m.}
+ 
+\smalltitle{Before the Office.}
+
+\rubrique{These prayers are said kneeling. End when the priest stands.}
+
+\textebilingue{orationes_ante_do}{orationes_ante_do_eng}
+
+\smalltitle{\prayers}
+
+\rubrique{The celebrant intones the following verse. All sing the response and doxology.}
+
+\begin{otherlanguage}{english}
+\rubrique{Make the sign of the cross at the beginning and at the Magnificat, and bow the head when the Trinity is mentioned, when mention is made of the ``Holy Name'' in some way, and at ``Orémus.''}\end{otherlanguage}
+
+\gscore[]{℣.}{Deus_in_adjutorium_tonus_solemnior_laus.gabc}
+
+\rubrique{If the feast is transferred to the Monday after the Octave of Easter:}
+
+\gresetinitiallines{0}
+\gabcsnippet{(c4) Al(h)le(ixi)lú(hg~)ia.(g.) (::)}
+\gresetinitiallines{1}
+
+\noindent
+\begin{otherlanguage}{english}
+O God, \cc{} come to my assistance. \rr O Lord, make haste to help me. Glory be to the Father, and to the Son,~* and to the Holy Ghost. As it was in the beginning, is now,~* and ever shall be, world without end. Amen. Praise be to Thee, King of Endless Glory. \textit{T.P.} Alleluia.\end{otherlanguage}
+
+\smalltitle{First Antiphon. 8. G*.}
+\initialscore{an_missus_est_gabriel_solesmes_1961}
+
+\rubrique{\begin{otherlanguage}{english}
+Sit at the word ``Sede.'' The cantor sings odd verses; all sing even verses, and this for the hymn and Magnificat, when sung entirely in chant, as well.
+\end{otherlanguage}}
+
+\psalmus{109}{109_8G_star}{109_8}{109_en}
+
+\begin{otherlanguage}{english} \noindent Ant. The Angel Gabriel was sent to a virgin espoused to a man whose name was Joseph; and the virgin's name was Mary. \textit{T.P.} Alleluia. \end{otherlanguage}
+
+\rubrique{\begin{otherlanguage}{english}
+Clerics in descending order, or a cantor, intone the subsequent antiphons.\end{otherlanguage}}
+
+ \gscore[2. Ant.]{1. g}{an_ave_maria_alleluia_solesmes_1961}
+ 
+ \begin{otherlanguage}{english} \noindent Ant.  Hail, Mary, full of grace, the Lord is with thee; blessed art thou among women. \textit{T.P.} Alleluia. \end{otherlanguage}
+
+\psalmus{112}{112_1f}{112_1}{112_en}
+
+  \gscore[3. Ant.]{8. G}{an_ne_timeas_alleluia_solesmes_1961}
+  
+  \begin{otherlanguage}{english} \noindent Ant. Fear not, Mary, thou hast found grace with the Lord; behold, thou shalt conceive, and bring forth a Son. \textit{T.P.} Alleluia. \end{otherlanguage}
+
+ \psalmus{121}{121_8G}{121_8}{121_en}
+
+  \gscore[4. Ant.]{1. f}{an_dabit_ei_dominus_solesmes_1961}
+
+\begin{otherlanguage}{english} \noindent Ant. The Lord shall give unto Him the throne of His father David, and of His kingdom there shall be no end. \textit{T.P.}  Alleluia.\end{otherlanguage}
+
+\psalmus{126}{126_1f}{126_1}{126_en}
+
+ \gscore[5. Ant.]{8. c}{an_ecce_ancilla_domini_solesmes_1961}
+ 
+\begin{otherlanguage}{english} \noindent Ant. Behold the handmaid of the Lord, be it unto me according to thy word. \textit{T.P.} Alleluia.\end{otherlanguage}
+
+\psalmus{147}{147_8c}{147_8}{147_en}
+
+\rubrique{\begin{otherlanguage}{english}
+Having sung the last antiphon in full, stand when the celebrant does.
+\end{otherlanguage}}
+
+\smalltitle{Chapter.}
+\scripture{Isaiae 7, 14 – 15.}
+
+\texteparacol{\lettrine{E}{c}ce virgo concípiet, et páriet fílium,~† et vocábitur nomen ejus Emmánuel.~* Butýrum et mel cómedet, ut sciat reprobáre malum, et elígere bonum.
+
+\rr Deo grátias.}{\noindent Behold a virgin shall conceive, and bear a son, and his name shall be called Emmanuel. He shall eat butter and honey, that he may know to refuse the evil, and to choose the good. Thanks be to God.}
+
+%\textebilingue{cap_15_aug_old}{cap_15_aug_old_en}
+
+%% Only the usual tone of the hymn is given.
+
+\smalltitle{Hymn.}
+
+\rubrique{The first verse is sung kneeling.}
+
+\gscore[]{1.}{hy_ave_maris_stella_mode_1_LA1949}
+
+\begin{multicols}{2}
+\begin{otherlanguage}{english}
+Hail, star of the sea,\\
+loving Mother of God,\\
+and also always a virgin,\\
+Happy gate of heaven.
+
+Receiving that Ave\\
+from Gabriel's mouth\\
+confirm us in peace,\\
+Reversing Eva's name.
+
+Break the chains of sinners,\\
+Bring light to the blind,\\
+Drive away our evils,\\
+Ask for all good.
+
+Show thyself to be a mother,\\
+May he accept prayers through thee,\\
+he who, born for us,\\
+Chose to be thine.
+
+O unique virgin,\\
+Meek above all,\\
+Make us, absolved from sin,\\
+Gentle and chaste.
+
+Keep life pure,
+Make the journey safe,
+So that, seeing Jesus,
+We may always rejoice together.
+
+Let there be praise to God the Father,\\
+Glory to Christ in the highest,\\
+To the Holy Spirit,\\
+One honor to all three. Amen
+\end{otherlanguage}
+\end{multicols}
+
+\rubrique{\begin{otherlanguage}{english}
+The cantor sings the verse to which all reply.
+\end{otherlanguage}}
+
+\smallscore{versiculus_25_mars}
+\begin{otherlanguage}{english} \noindent \vv Hail Mary, full of grace.
+
+\noindent \rr The Lord is with thee.
+ \end{otherlanguage}
+ 
+\rubrique{In Paschal Time, \normaltext{Allelúia} is added.}
+ 
+ \smallscore{versiculus_25_mars_tp}
+ 
+\smalltitle{Antiphon at the Magnificat.}
+
+\rubrique{Sit when the celebrant does, after he sings the first words. Rise at the end.}
+
+ \smalltitle{At I Vespers.}
+ \gscore[]{8. G}{an_spiritus_sanctus_solesmes_1961}
+ 
+ \begin{otherlanguage}{english} \noindent Ant. The Holy Ghost shall come upon thee, O Mary, and the power of the Highest shall overshadow thee. \textit{T.P.} Alleluia. \end{otherlanguage}
+ 
+ \gresetinitiallines{0}
+\gabcsnippet{(c4) 1. Ma(g)gní(hg)fi(gj jr)cat(j.) *(:) á(j)ni(j)ma(j) <i>me</i>(i)<i>a</i>(j) <b>Dó</b>(h)mi(gr)num.(g.) (::) (Z-)
+2. Et(g) ex(hg)sul(gj)tá(j)vit(j) <i>spí</i>(ji)<i>ri</i>(jk)<i>tus</i>(k) <b>me</b>(jk jr)us(j.) *(:) in(j) De(j)o(j) sa(j)lu(j)<i>tá</i>(i)<i>ri</i>(j) <b>me</b>(h gr)o.(g.) (::)}
+\gresetinitiallines{1}
+
+    \smallskip%
+    \noindent%
+    \begin{itemize}[%
+    		label=\null, %
+			leftmargin=0pt, %
+			itemindent=0mm, %
+			labelsep=0pt, %
+			labelwidth=0pt, %
+			rightmargin=0pt, %
+			parsep=0pt, %
+			topsep=0pt, %
+			itemsep=0pt]%
+\item 3. Quia respéxit humilitátem \textit{ancíllæ} \textbf{su}æ:~* ecce enim ex hoc beátam me dicent omnes gene\textit{rati}\textbf{ó}nes.
+
+\item 4. Quia fecit mihi \textit{magna} \textit{qui} \textbf{pot}ens est:~* et sanctum \textit{nomen} \textbf{e}jus.
+
+\item 5. Et misericórdia ejus a progéni\textit{e} \textit{in} \textit{pro}\textbf{gé}nies~* timén\textit{tibus} \textbf{e}um.
+
+\item 6. Fecit poténtiam in \textit{bráchio} \textbf{su}o:~* dispérsit supérbos mente \textit{cordis} \textbf{su}i.
+
+\item 7. Depósuit po\textit{téntes} \textit{de} \textbf{se}de,~* et exal\textit{távit} \textbf{hú}miles.
+
+\item 8. Esuriéntes \textit{implévit} \textbf{bo}nis:~* et dívites dimí\kern 0.04em \textit{sit} \textit{in}\textbf{á}nes.
+
+\item 9. Suscépit Israel \textit{púerum} \textbf{su}um,~* recordátus misericór\textit{diæ} \textbf{su}æ.
+
+\item 10. Sicut locútus est \textit{ad} \textit{patres} \textbf{no}stros,~* Abraham et sémini e\kern 0.02em\textit{jus} \textit{in} \textbf{sǽ}cula.
+
+\item 11. Glória \textit{Patri,} \textit{et} \textbf{Fí}lio,~* et Spirí\textit{tu}\textit{i} \textbf{San}cto.
+
+\item 12. Sicut erat in princípio, \textit{et} \textit{nunc,} \textit{et} \textbf{sem}per,~* et in sǽcula sæcu\kern 0.02em\textit{lórum.} \textbf{A}men.
+\end{itemize}
+
+\myrule
+
+ \smalltitle{At II Vespers.}
+ \gscore[]{7. d}{an_gabriel_angelus_ave_solesmes_1961}
+ 
+ \begin{otherlanguage}{english} \noindent Ant.  The Angel Gabriel said unto Mary: Hail, thou that art full of grace, the Lord is with thee; blessed art thou among women. \textit{T.P.} Alleluia.\end{otherlanguage}
+ 
+ \gresetinitiallines{0}
+\gabcsnippet{(c3) 1. Ma(ehg)gní(hi)fi(i)cat(i.) *(:) á(i)ni(i)ma(i) <b>me</b>(j ir)a(i) <b>Dó</b>(h)mi(hr)num.(gi..) (::)
+
+(Z-)
+2. Et(ehg) ex(hi)sul(i)tá(i)vit(i) <b>spí</b>(ik)ri(jr)tus(j) (jr[ocb:1{]) <b>m{e}</b>(ji[ocb:0}])us(ij..) *(:) in(i) De(i)o(i) sa(i)lu(i)<b>tá</b>(j)ri(i) <b>me</b>(h//hr)o.(gi..) (::) }
+ \gresetinitiallines{1}
+
+    \smallskip%
+    \noindent%
+    \begin{itemize}[%
+    		label=\null, %
+			leftmargin=0pt, %
+			itemindent=0mm, %
+			labelsep=0pt, %
+			labelwidth=0pt, %
+			rightmargin=0pt, %
+			parsep=0pt, %
+			topsep=0pt, %
+			itemsep=0pt]%
+    \input{psaumes/Magnificat_7}
+    \end{itemize}
+
+
+\myrule
+
+\smalltitle{Canticle of the Blessed Virgin Mary.}
+
+\scripture{Luc. 1, 46–55.}
+
+%\begin{paracol}{2}
+\begin{multicols}{2}
+%\lettrine{M}agníficat~* ánima mea Dóminum.\\ Et exsultávit spíritus meus~* in Deo salutári meo.
+%
+% Quia respéxit humilitátem ancíllæ suæ:~* ecce enim ex hoc beátam me dicent o\-mnes generatiónes.
+%
+% Quia fecit mihi magna qui potens est:~* et san\-ctum nomen ejus.
+%
+% Et misericórdia ejus a progénie in progénies~* timéntibus eum.
+%
+% Fecit poténtiam in bráchio suo:~* dispérsit supérbos mente cordis sui.
+%
+% Depósuit poténtes de sede,~* et exaltávit húmiles.
+%
+% Esuriéntes implévit bonis:~* et dívites dimísit inánes.
+%
+% Suscépit Israel púerum suum,~* recordátus misericórdiæ suæ.
+%
+% Sicut locútus est ad patres no\-stros,~* Abraham, et sémini ejus in sǽcula.
+%
+% Glória Patri, et Fílio,~* et Spirítui San\-cto.
+%
+% Sicut erat in princípio, et nunc, et semper,~* et in sǽcula sæculórum. Amen.
+% 
+% \switchcolumn
+ \begin{otherlanguage}{english}
+My soul \cc~* doth magnify the Lord.
+
+And my spirit hath rejoiced~* in God my Saviour.
+
+Because he hath regarded the humility of his handmaid;~* for behold from henceforth all generations shall call me blessed.
+
+Because he that is mighty, hath done great things to me;~* and holy is his name.
+
+And his mercy is from generation unto generations,~* to them that fear him.
+
+He hath shewed might in his arm:~* he hath scattered the proud in the conceit of their heart.
+
+He hath put down the mighty from their seat,~* and hath exalted the humble.
+
+He hath filled the hungry with good things;~* and the rich he hath sent empty away.
+
+He hath received Israel his servant,~* being mindful of his mercy:
+
+As he spoke to our fathers,~* to Abraham and to his seed for ever.
+
+Glory be to the Father, and to the Son,~* and to the Holy Ghost.
+
+As it was in the beginning, is now,~* and ever shall be, world without end. Amen.
+\end{otherlanguage}
+% \end{paracol}
+\end{multicols}
+
+\rubrique{\begin{otherlanguage}{english}
+Sit as the antiphon is repeated. Then the usual dialogue follows. All stand from now until the end of the office, unless one sits for the antiphon of a commemorated Sunday or Lenten feria, according to custom.\end{otherlanguage}}
+
+\textebilingue{dv}{dv_eng}
+
+   \begin{paracol}{2}
+   Orémus.
+   
+\lettrine{D}{e}us, qui de beátæ Maríæ Vírginis útero Verbum tuum, Angelo nuntiánte, carnem suscípere voluísti:~† præsta supplícibus tuis; ut, qui vere eam Genetrícem Dei crédimus,~* ejus apud te intercessiónibus adjuvémur. Per eúmdem Dóminum.
+   
+   ℟. Amen.
+   
+\switchcolumn
+\begin{otherlanguage}{english}
+\noindent Let us pray.
+O God, Who didst will that thy Word should, by the message of an Angel, take flesh in the womb of the Blessed Virgin Mary, grant unto us, we beseech thee, that all who do believe her to be in very deed the Mother of God, may be helped by her prayers in thy sight.
+Through the same Jesus Christ, thy Son, Our Lord, Who liveth and reigneth with thee in the unity of the Holy Ghost, God, world without end. Amen.
+\end{otherlanguage}
+    \end{paracol}
+
+\myrule
+
+\rubrique{In Lent, a commemoration of the feria is made, and the Sunday is commemorated in Lent and in Paschal Time.}
+
+\myrule
+
+\textebilingue{dv}{dv_eng}
+
+\rubrique{\begin{otherlanguage}{english}
+The cantor sings the verse to which all reply. One of the following tones is chosen according to the Vespers sung, at the choirmaster's discretion.
+\end{otherlanguage}}
+
+\smalltitle{At I Vespers.}
+
+\gscore[]{2.}{BD_Solemnis_I_Vesp}
+
+\noindent \vv Let us bless the Lord.
+
+\noindent \rr Thanks be to God.
+
+\smalltitle{At II Vespers.}
+
+\gscore[]{6.}{BD_Solemnis_mode_6}
+
+\rubrique{Or the following tone may be used:}
+
+\gscore[]{5.}{BD_Solemnis_mode_5}
+
+\smalltitle{At either Vespers.}
+
+\gscore[]{1.}{BD_BVM}
+
+\textebilingue{fidelium_animae}{fidelium_animae_en}
+
+%\smalltitle{Chant for the Magnificat.}
+%
+%\smallscore{Magnificat_1_f_Solemnis}
+%
+%   \smallskip%
+%    \noindent%
+%    \begin{itemize}[%
+%    		label=\null, %
+%			leftmargin=0pt, %
+%			itemindent=0mm, %
+%			labelsep=0pt, %
+%			labelwidth=0pt, %
+%			rightmargin=0pt, %
+%			parsep=0pt, %
+%			topsep=0pt, %
+%			itemsep=0pt]%
+%    \input{psaumes/Magnificat_1_Solemnis}
+%    \end{itemize}
+%    
+%\smallscore{Magnificat_8_G*_Solemnis}
+%
+%   \smallskip%
+%    \noindent%
+%    \begin{itemize}[%
+%    		label=\null, %
+%			leftmargin=0pt, %
+%			itemindent=0mm, %
+%			labelsep=0pt, %
+%			labelwidth=0pt, %
+%			rightmargin=0pt, %
+%			parsep=0pt, %
+%			topsep=0pt, %
+%			itemsep=0pt]%
+%    \input{psaumes/Magnificat_8_Solemnis}
+%    \end{itemize}
+
+%\rubrique{\begin{otherlanguage}{english}
+%Then one Our Father is said, unless Compline follows, or even some pious exercises, a sermon, or Benediction of the Blessed Sacrament, in parish and other smaller churches.\end{otherlanguage}}
+
+%\rubrique{\begin{otherlanguage}{english}
+%Then the office is concluded with the following verses, the Marian antiphon, etc.
+%\end{otherlanguage}}
+
+\end{document}

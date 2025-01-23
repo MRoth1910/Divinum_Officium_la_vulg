@@ -1,0 +1,160 @@
+% !TEX TS-program = LuaLaTeX+se
+\documentclass[11pt]{book}
+
+\input{commonheaders_vespers_people}
+
+\begin{document}
+
+\twosided[pc] %%% why this goes at beginning, IDK, unclear what p does exactly, but it's necessary for flipping columns correctly. ; it's unclear why this goes BEFORE everything else and not when activating the environment. %% It's OK for paper booklets to not switch, but it's probably best practice to switch.
+
+\thispagestyle{empty}
+
+\bigtitle{At the End of Lauds or Vespers Celebrated in the Absence of a Deacon or Priest.}
+
+\medskip
+
+\rubrique{Before the collect and the verse \normaltext{Benedicámus Dómino:}}
+
+\gresetinitiallines{0}
+\gabcsnippet{(c4) ℣. Dó(g)mi(h)ne(h) ex(h)aú(h)di(g) o(g)ra(g)ti(g)ó(g)nem(h) me(gh)am.(g.) (::) <sp>R/</sp>. Et(g) cla(h)mor(h) me(h)us(g) ad(g) te(g) vé(h)ni(h)at.(h.) (::)}
+\gresetinitiallines{1}
+
+\begin{otherlanguage}{english}
+\noindent \vv O Lord hear my prayer.
+
+\noindent \rr And let my cry come unto Thee.
+\end{otherlanguage}
+
+\rubrique{After the verse \normaltext{Fidélium ánimæ} is sung, the Lord's Prayer is said silently. Then the following is sung, also on a lower note.}
+
+ \begin{paracol}{2}
+\noindent \vv Dóminus det nobis suam pacem.
+
+\noindent \rr Et vitam ætérnam. Amen.
+\switchcolumn
+\begin{otherlanguage}{english}
+\noindent \vv May the Lord grant us his peace.
+
+\noindent \rr And life everlasting. Amen.
+\end{otherlanguage}
+\end{paracol}
+
+\rubrique{The officiant intones the Marian antiphon according to the season, followed by the versicle and collect in the usual way. The versicle \normaltext{Divínum auxílium} follows, \normaltext{\pageref{conclusion}.}}
+
+\smalltitle{Alma Redemptoris Mater.}
+
+\rubrique{¶ From Vespers of the Saturday before the I Sunday of Advent to Vespers of February 2 inclusive.}
+
+%\gscore[]{5.}{an--alma_redemptoris--solesmes_1961}
+%%\vspace{1ex}
+
+%\smalltitle{Simple Tone.}
+\gscore[]{5.}{an--alma_redemptoris_simple_solesmes}
+
+%\newpage
+
+\begin{sloppypar}
+ \begin{paracol}{2}
+  \setlength{\columnsep}{1.5em} %EB Garamond, Octavio Pardo; should define this so that there are no magic numbers
+\textes{Alma_Redemptoris_en}
+
+%\columnbreak
+\switchcolumn
+\textes{Alma_Redemptoris_la}
+\end{paracol}
+\end{sloppypar}
+%\end{multicols}
+%\smallskip
+
+%\newpage
+
+\smalltitle{Ave Regina Cælorum.}
+
+\rubrique{¶ After the Purification, that is, from Compline of February 2 even if the feast is transferred, until Compline of Wednesday in Holy Week.}
+
+%\gscore[]{6.}{an--ave_regina_caelorum--solesmes_1961}
+%\vspace{1ex}
+
+%\smalltitle{Simple Tone.}
+\gscore[]{6.}{an--ave_regina_caelorum_simple_tone--solesmes}
+
+\begin{sloppypar}
+ \begin{paracol}{2}
+  \setlength{\columnsep}{1.5em} %EB Garamond, Octavio Pardo; should define this so that there are no magic numbers
+\textes{Ave_Regina_la}
+
+%\columnbreak
+\switchcolumn
+\textes{Ave_Regina_en}
+\end{paracol}
+\end{sloppypar}
+%\end{multicols}
+%\smallskip
+
+%\newpage
+\smalltitle{Regina Cæli.}
+
+\rubrique{¶ From Compline of Holy Saturday until None of Saturday after Pentecost inclusive.}
+
+%\gscore[]{6.}{an--regina_caeli--solesmes}
+%\vspace{1ex}
+
+%\smalltitle{Simple Tone.}
+\gscore[]{6.}{an--regina_caeli_simple_tone--solesmes}
+
+\begin{sloppypar}
+ \begin{paracol}{2}
+  \setlength{\columnsep}{1.5em} %EB Garamond, Octavio Pardo; should define this so that there are no magic numbers
+\textes{Regina_Caeli_la}
+
+%\columnbreak
+\switchcolumn
+\textes{Regina_Caeli_en}
+\end{paracol}
+\end{sloppypar}
+%\end{multicols}
+%\smallskip
+
+%\newpage
+
+\smalltitle{Salve Regina.}
+
+\rubrique{¶ From Vespers of the Holy Trinity until None of the Saturday before Advent inclusive.}
+
+%\gscore[]{1.}{an--salve_regina--solesmes}
+%\vspace{1ex}
+
+%\smalltitle{Simple Tone.}
+\gscore[]{5.}{an--salve_regina_simple_tone_solesmes}
+
+\begin{sloppypar}
+ \begin{paracol}{2}
+  \setlength{\columnsep}{1.5em} %EB Garamond, Octavio Pardo; should define this so that there are no magic numbers
+\textes{Salve_Regina_la}
+
+%\columnbreak
+\switchcolumn
+\textes{Salve_Regina_en}
+\end{paracol}
+\end{sloppypar}
+%\end{multicols}
+
+%\bigskip
+
+\rubrique{The versicle is sung on a lower pitch. Make the sign of the cross at \normaltext{Divínum auxílium.}}
+\label{conclusion}
+
+\begin{paracol}{2}
+\noindent \vv Divínum auxílium máneat semper nobíscum.
+
+\noindent \rr Amen.
+
+\switchcolumn
+\begin{otherlanguage}{english}
+\noindent \vv May the divine assistance remain always with us.
+
+\noindent \rr Amen.
+\end{otherlanguage}
+\end{paracol}
+
+\enddocument
