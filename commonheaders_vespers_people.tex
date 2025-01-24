@@ -362,15 +362,28 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
     \input{psaumes/#2}
     \end{paracol}}
 
-%%new version;  no need for input (too many chapter/collect files) + is the equivalent of long, allows \par
-    \NewDocumentCommand{\texteparacol}{ +m+m }{%
+%%2nd version;  no need for input (too many chapter/collect files) + is the equivalent of long, allows \par
+%    \NewDocumentCommand{\texteparacol}{ +m+m }{%
+%    \smallskip%
+%       \begin{paracol}{2}
+%           #1
+%           \switchcolumn
+%    #2
+%    \end{paracol}}
+
+%%3rd version: need to switch languages!
+    \NewDocumentCommand{\texteparacol}{ +mm+m }{%
     \smallskip%
        \begin{paracol}{2}
            #1
            \switchcolumn
-    #2
+           \begin{otherlanguage}{#2}
+    #3
+    \end{otherlanguage}
     \end{paracol}}
     
+    
+    %%psalm vernacular file has language command
     \NewDocumentCommand{\pstexte}{mm}{%
     \smallskip%
     \noindent%%
