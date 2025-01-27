@@ -13,11 +13,14 @@
 \usepackage{fancyhdr}
 \usepackage{needspace} %%pour réserver de l'espace en bas de page ; ça évite des séparations entre les titres et la partition ou le texte qui les suivent.
 \usepackage[compact]{titlesec}
+\usepackage{emptypage}
 \usepackage{xcolor}
+\usepackage{perpage}%%%to reset footnotes at each page%%%
 %\usepackage{xstring}
 \usepackage{enumitem} %% nécessaire pour les textes des psaumes.
+\usepackage{etoolbox}
 \usepackage{lettrine}
-\usepackage{tocloft}%%to fix toc title. titlesec companion packages could also work.
+%\usepackage{tocloft}%%to fix toc title. titlesec companion packages could also work.
 \usepackage{indentfirst}%% to allow for \section with indented 1st paragraphs in good Franco-Latin style (LaTeX default is to suppress this. Package sets  \@afterindentfalse to (always) true.
 \usepackage[savepos]{zref}
 \usepackage{hyperref}
@@ -178,6 +181,12 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
 %Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if this font is abandoned. %%StylisticSet=6 is, in Pardo EBGaramond, the long-tailed Q.
 %\newfontfamily\symbolfont{liturgy} 
   %% text must be written {\symbolfont{+}} (you can use V and R as well) but may conflict as + is † in gabc. Cross should be \small or even \footnotesize
+  
+  %%%Roman numerals for the year %% https://tex.stackexchange.com/questions/185548/the-year-in-roman-and-the-month-in-text
+
+\makeatletter
+\newcommand{\YEAR}{\@Roman{\the\year}}
+\makeatother
 
 
 %%% TYPOGRAPHICAL AND SYMBOL COMMANDS  %%%%
@@ -231,6 +240,15 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
 
 \newcommand{\vvrub}{{\normalfont ℣.~}}
 \newcommand{\rrrub}{{\normalfont ℟.~}}
+
+\NewDocumentCommand{\antiphona}{mm}
+{\begin{otherlanguage*}{#1}%
+\noindent%
+ Ant. #2.%
+ \end{otherlanguage*}%
+ }
+ 
+
 
 %%rubrics: black italics, smaller than body of psalms etc
 
@@ -361,7 +379,7 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
     \input{psaumes/#2}
     \end{paracol}}
 
-%%2nd version;  no need for input (too many chapter/collect files) + is the equivalent of long, allows \par
+%2nd version;  no need for input (too many chapter/collect files) + is the equivalent of long, allows \par
 %    \NewDocumentCommand{\texteparacol}{ +m+m }{%
 %    \smallskip%
 %       \begin{paracol}{2}
@@ -370,7 +388,7 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
 %    #2
 %    \end{paracol}}
 
-%%3rd version: need to switch languages!
+%%%3rd version: need to switch languages!
     \NewDocumentCommand{\texteparacol}{ +mm+m }{%
     \smallskip%
        \begin{paracol}{2}
@@ -474,11 +492,19 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
 
 
 %% TITLE Commands %%%% %% TITLE Commands %%%% currently dead but Matthias says this isn't a good idea.
-\titleformat{\section}[display]{\huge\filcenter\addfontfeature{LetterSpace=5.0}}{}{}{}
-\titleformat{\subsection}[display]{\large\scshape\filcenter\addfontfeature{LetterSpace=5.0}}{}{}{}
+ \titleformat{\chapter}[display]{\Huge\filcenter\sc\addfontfeature{LetterSpace=5.0}}{}{0pt}{} %%
+\titleformat{\section}[display]{\LARGE\filcenter\sc\addfontfeature{LetterSpace=5.0}}{}{}{} %%
+\titleformat{\subsection}[display]{\Large\filcenter\sc\addfontfeature{LetterSpace=5.0}}{}{}{} %%originally \large
 \setcounter{secnumdepth}{0}
+\titlespacing*{\chapter}{0pt}{-25pt}{20pt} %%this should reduce spacing before chapter title while putting it flush with the top of the text area
+%% see https://tex.stackexchange.com/questions/63390/how-to-decrease-spacing-before-chapter-title
+%%\titlespacing*{\chapter}{0pt}{-50pt}{40pt}  %%this puts chapter title in HEADER which we do not want
 \titlespacing{\section}{0pt}{*0}{*0}
 
+%%need section titleformat more appropriate for weekdays of psalter and minor feasts 
+% See https://tex.stackexchange.com/questions/623797/multiple-section-styles-in-same-document.
+
+\addto\captionsecclesiasticlatin{\renewcommand\contentsname{\centerline{INDEX GENERALIS.}}}
 
 % \NewDocumentCommand{\mysection}{m}{\section{#1}\setheaders{{\scshape\addfontfeature{LetterSpace=5.0}#1}}{{\scshape\addfontfeature{LetterSpace=5.0} #1}}}
  
@@ -496,11 +522,101 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
   
 %   \setheaders{{{\scshape\addfontfeature{LetterSpace=3.0}}}{{{\scshape\addfontfeature{LetterSpace=3.0} {#1}}}
 
+%%formatting date of feasts where this listed at top of page
+\NewDocumentCommand{\litdate}{m}{%
+\smalltitle{Die #1.}%
+}
+
+\NewDocumentCommand{\litdateen}{m}{%
+\smalltitle{#1.}%
+}
+
+%%formatting for Sunday feasts : inter, post… name is for consistency
+\NewDocumentCommand{\dominicadate}{m}{%
+\smalltitle{Dominica #1.}%
+}
+
+\NewDocumentCommand{\sundaydate}{m}{%
+\smalltitle{Sunday #1.}%
+}
+
+%%will use litdaten for English
+%%formatting for feasts that fall on a weekday fixed to some other thing, like Corpus Christi, Sacred Heart, BVM in Passiontide, and the new feasts found in the appendix (Feria Roman numeral in Latin: inter, post… name is for consistency
+\NewDocumentCommand{\feriadate}{m}{%
+\smalltitle{Feria #1.}%
+}
+
+ %%looks like xparse formatting changed so o just has No Default Value whereas O{} is that OR you can insert something in braces!
+%%answer thanks to David Carlisle
+\NewDocumentCommand{\duplexclassis}{mo}{%
+\needspace{5\baselineskip}%
+\vspace{\baselineskip}%
+ {\centering\textit{\large Duplex #1 classis\IfValueT{#2}{ #2}.}\par}%
+}
+
+\NewDocumentCommand{\doubleclass}{mo}{%
+\needspace{5\baselineskip}%
+\vspace{\baselineskip}%
+ {\centering\textit{\large Double of the #1 class\IfValueT{#2}{ #2}.}\par}%
+}
+
+
+\NewDocumentCommand{\duplexmajus}{}{%
+\needspace{5\baselineskip}%
+\vspace{\baselineskip}%
+ {\centering{\textit{\large Duplex majus.}}\par}%
+}
+
+\NewDocumentCommand{\doublemajor}{}{%
+\needspace{5\baselineskip}%
+\vspace{\baselineskip}%
+ {\centering{\textit{\large Double major.}}\par}%
+}
+
+%%is Duplex even specified.as it's the default?
+\NewDocumentCommand{\duplex}{}{%
+\needspace{5\baselineskip}%
+\vspace{\baselineskip}%
+ {\centering{\textit{\large Duplex.}}\par}%
+}
+
+\NewDocumentCommand{\double}{}{%
+\needspace{5\baselineskip}%
+\vspace{\baselineskip}%
+ {\centering{\textit{\large Double.}}\par}%
+}
+
+\NewDocumentCommand{\semiduplex}{}{%
+\needspace{5\baselineskip}%
+\vspace{\baselineskip}%
+ {\centering{\textit{\large semiuplex.}}\par}%
+}
+
+\NewDocumentCommand{\semidouble}{}{%
+\needspace{5\baselineskip}%
+\vspace{\baselineskip}%
+ {\centering{\textit{\large Semidouble.}}\par}%
+}
+
+\NewDocumentCommand{\simplex}{}{%
+\needspace{5\baselineskip}%
+\vspace{\baselineskip}%
+ {\centering{\textit{\large Simplex.}}\par}%
+}
+
+\NewDocumentCommand{\simple}{}{%
+\needspace{5\baselineskip}%
+\vspace{\baselineskip}%
+ {\centering{\textit{\large Simple.}}\par}%
+}
+
 \NewDocumentCommand{\rank}{m}{
 \needspace{5\baselineskip}  %% very small if there are neumes above the staff, including flats in mode 2, e.g. O Doctor optime
 \vspace{\baselineskip}
  {\centering{\textit{\large #1}}\par}
 }
+
+
 
 \NewDocumentCommand{\bigtitle}{m}{
 \needspace{5\baselineskip}  %% very small if there are neumes above the staff, including flats in mode 2, e.g. O Doctor optime
@@ -538,8 +654,16 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
 
 \NewDocumentCommand{\pateravecredo}{}{\large{Pater noster, Ave María, \textit{et} Credo.}}
 
+\NewDocumentCommand{\pateravedeus}{}{%
+Pater noster et Ave María. ℣. Deus in adjutórium.%
+}
+
 \NewDocumentCommand{\prayers}{}{%
 Our Father and Hail Mary, \rubrique{silently.}%
+}
+
+\NewDocumentCommand{\orationes}{}{%
+Pater noster et Ave María \rubrique{secreto.}%
 }
 
 %%for litanies
@@ -614,3 +738,12 @@ Our Father and Hail Mary, \rubrique{silently.}%
   {\par\end{otherlanguage*}}
 %\renewcommand{\contentsname}{\hfill\bfseries\LARGE Index Generalis.\hfill\null}  %% modifies TOC title
 %\renewcommand{\cfttoctitlefont}{\hfil\LARGE}
+
+%%%SUBFILES%%%
+\usepackage{xr} %%to allow cross-references between documents%%%
+  \usepackage{subfiles}
+  
+  %% When we start a new subfile (new chapter or section) , 
+%% we start on a new page (with blank filling on the previous page) and create a corresponding label.
+
+\newcommand{\customsubfile}[1]{\newpage\label{#1}\thispagestyle{empty}\subfile{#1}}
