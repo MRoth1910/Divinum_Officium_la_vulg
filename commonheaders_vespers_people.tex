@@ -139,12 +139,12 @@ headsep=0.75in
 \NewDocumentCommand{\altupright}{}{\grechangestyle{abovelinestext}{\normalfont}} %%
 
 
-%% fine-tuning of space beween the staff and the text above lines (used for Magnificats; needs to be rethought (again, should 2 and 3 be raised or not?) and worked into \smallscore
-\newcommand{\altraise}{0.1cm} %% default is -0.1cm %% needs to be fine-tuned for \rubrique command with EB Garamond font. -0.2cm is MB value
-\grechangedim{abovelinestextraise}{\altraise}{scalable}
-
-\newcommand{\altheight}{0.5cm} %% default is 0.3cm and value must be bigger than text height; this should fix the problem. but needs further investigation.
-\grechangedim{abovelinestextheight}{\altheight}{scalable} %% this is a very finicky command.
+%%% fine-tuning of space beween the staff and the text above lines (used for Magnificats; needs to be rethought (again, should 2 and 3 be raised or not?) and worked into \smallscore
+%\newcommand{\altraise}{0.1cm} %% default is -0.1cm %% needs to be fine-tuned for \rubrique command with EB Garamond font. -0.2cm is MB value
+%\grechangedim{abovelinestextraise}{\altraise}{scalable}
+%
+%\newcommand{\altheight}{0.5cm} %% default is 0.3cm and value must be bigger than text height; this should fix the problem. but needs further investigation.
+%\grechangedim{abovelinestextheight}{\altheight}{scalable} %% this is a very finicky command.
 
 \newcommand{\comraise}{0.4cm} %% default is 0,2m %%
 \grechangedim{commentaryraise}{\comraise}{scalable}
@@ -346,24 +346,6 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
 {\symbolfont\small{{+}}}%
 {}
 } %% can replace <+> with <U+2720> if a suitable font is found (or EB Garamond font is fixed); command will be useful in lieu of typing the Unicode.
-
-%% macro to format psalm text
-
-%\NewDocumentCommand{\pstexte}{ m }{%
-%    \smallskip%
-%    \noindent%
-%    \begin{itemize}[%
-%    		label=\null, %
-%			leftmargin=0pt, %
-%			itemindent=0mm, %
-%			labelsep=0pt, %
-%			labelwidth=0pt, %
-%			rightmargin=0pt, %
-%			parsep=0pt, %
-%			topsep=0pt, %
-%			itemsep=0pt]%
-%    \input{psaumes/#1}
-%    \end{itemize}}
           
       \setlength{\columnsep}{3pc}
 %\setlength{\columnsep}{10pt}
@@ -399,6 +381,24 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
     \end{otherlanguage}
     \end{paracol}}
     
+%    for Magnificat text
+        \NewDocumentCommand{\magnificattexte}{m}{%
+    \smallskip%
+    \noindent%
+    \begin{enumerate}[%
+			label=\arabic*.,%
+%			align=left,%
+			leftmargin=10pt, %
+			itemindent=15pt, %
+			labelsep=3pt, %
+			labelwidth=0pt,
+			rightmargin=0pt, %
+			parsep=0pt, %
+			topsep=0pt, %
+			itemsep=0pt,%
+			start=3]
+       \input{psaumes/#1}
+    \end{enumerate}}
     
     %%psalm vernacular file has language command
     \NewDocumentCommand{\pstexte}{mm}{%
@@ -546,6 +546,20 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
 \smalltitle{Feria #1.}%
 }
 
+%%for most important feasts (as of 16 dec 2023 leaving section alone as is, but it's similar styling)
+\NewDocumentCommand{\festum}{m}{%
+\needspace{5\baselineskip}%
+\vspace{\baselineskip}%
+ {\centering{\LARGE%
+ {\MakeUppercase{%
+ {\capspace{#1.}}
+ }%
+ }%
+\par}%
+ }%
+ }
+
+
  %%looks like xparse formatting changed so o just has No Default Value whereas O{} is that OR you can insert something in braces!
 %%answer thanks to David Carlisle
 \NewDocumentCommand{\duplexclassis}{mo}{%
@@ -617,7 +631,6 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
 }
 
 
-
 \NewDocumentCommand{\bigtitle}{m}{
 \needspace{5\baselineskip}  %% very small if there are neumes above the staff, including flats in mode 2, e.g. O Doctor optime
 \vspace{\baselineskip}
@@ -630,8 +643,86 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
  {\centering #1\par}
 }
 
+ \NewDocumentCommand{\invesperis}{m}{%
+\needspace{5\baselineskip}%
+\vspace{\baselineskip}%
+ {\centering{\LARGE%
+ {\scspace{in #1 vesperis.}%
+ }%
+ }\par}%
+}
+
+ \NewDocumentCommand{\atvespers}{m}{%
+\needspace{5\baselineskip}%
+\vspace{\baselineskip}%
+ {\centering{\LARGE%
+ {\scspace{at #1 vespers.}%
+ }%
+ }\par}%
+}
+
+\NewDocumentCommand{\ivesperisrubrique}{}{%
+{\rubrique{Antiphonæ, Psalmi, Capit.\@ et Hymnus ut in I Vesperis.}%
+}%
+}
+
+\NewDocumentCommand{\sedlocoultimi}{mm}{%
+{\rubrique{Antiphonæ et Psalmi ut in #1 Vesperis, sed loco ultimi Ps.\@ \normaltext{#2,} ut infra.}%
+}%
+} 
+
+\NewDocumentCommand{\lastplace}{mm}{%
+{\rubrique{Antiphons et Psalms as at #1 Vespers, but in the last place, Ps.\@ \normaltext{#2,} as below.}%
+}%
+} 
+
+%%for referring to chapter and/or hymn and/or verse placed at I or II Vespers (where II has different parts)
+\NewDocumentCommand{\caphymn}{m}{%
+\rubrique{Capitulum et Hymnus ut in #1 Vesperis.}%
+}
+
+\NewDocumentCommand{\caphymnen}{m}{%
+\rubrique{Chapter and Hymn as at #1 Vespers.}%
+}
+
+\NewDocumentCommand{\caphymnvv}{m}{%
+\rubrique{Capitulum, Hymnus, et ℣.\@ ut in #1 Vesperis.}%
+}
+
+\NewDocumentCommand{\caphymnvven}{m}{%
+\rubrique{Chapter, Hymn, and ℣.\@ as at #1 Vespers.}%
+}
+
+\NewDocumentCommand{\primaantiphona}{m}{%
+\smalltitle{I Antiphona. #1}%
+}
+
+\NewDocumentCommand{\firstantiphon}{m}{%
+\smalltitle{I Antiphon. #1}%
+}
+
 \NewDocumentCommand{\chapterlateng}{}{%
 \smalltitle{Chapter.}%
+}
+
+\NewDocumentCommand{\hymnlateng}{}{%
+\smalltitle{Hymn.}%
+}
+
+\NewDocumentCommand{\collectlateng}{}{%
+\smalltitle{Collect.}%
+}
+
+%%%these are used before II Vespers
+\NewDocumentCommand{\omniapraeter}{}{%
+{\rubrique{Omnia ut in I Vesperis, præter sequentia.}%
+}%
+}
+
+%%%these are used before II Vespers
+\NewDocumentCommand{\allexcept}{}{%
+{\rubrique{All as at I Vespers, except the following.}%
+}%
 }
 
 
