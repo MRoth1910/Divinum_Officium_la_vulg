@@ -21,15 +21,17 @@
 
 %%for gesima, Lent, Advent, Easter etc.
 
-\smalltitle{Antiphona ad Magnificat.} %%add mode number and final letter, e.g. 4. A.
+%\smalltitle{Antiphona ad Magnificat.} %%add mode number and final letter, e.g. 4. A.
 \gscore[]{}{}
 
-\begin{otherlanguage}{english} \noindent Ant. \end{otherlanguage} %%translation
+\antiphona{english}{}
+%%if we end with another punctuation mark
+%%\begin{otherlanguage}{english} \noindent Ant. \end{otherlanguage} %%translation
 
 \smallscore{} %%Magnificat file 
 
 %\gabcsnippet{}%%
-
+%%\magnificattexte{}
 \begin{enumerate}[label=\arabic*.,%
 			leftmargin=0pt, %
 			itemindent=0mm, %
@@ -44,58 +46,56 @@
 %% each line requires \item
 \end{enumerate}
 
-\smalltitle{Collect.}
-\smallskip
+\collectlateng
+%%\smallskip
 
-\texteparacol{Orémus.
+\texteparacol{
 
 \lettrine{}{}
 
-\rr Amen.}{\noindent Let us pray.}
+\rr }{english}{\noindent }
    
     %%repeat for collects of commemorations
 
-\gscore[]{.}{}
-
-\begin{otherlanguage}{english} \noindent Ant. \end{otherlanguage} %%translation
+\gscore[]{}{}
+\antiphona{english}{}
+%\begin{otherlanguage}{english} \noindent Ant. \end{otherlanguage} %%translation
 
 \texteparacol{\vv
 
-\rr}{\noindent \vv
+\rr}{english}{\noindent \vv
 
 \noindent \rr}
 
-\smalltitle{Collect.}
-\smallskip
+\collectlateng
+%%\smallskip
 
-\texteparacol{Orémus.
+\texteparacol{
 
 \lettrine{}{}
 
-\rr Amen.}{\noindent Let us pray.}
+}{english}{\noindent }
 %%the last collect ends with the conclusion and Amen.
 
 
-\gscore[Ant.]{.}{}
-
-\begin{otherlanguage}{english} \noindent Ant. \end{otherlanguage} %%translation
+\gscore[Ant.]{}{}
+\antiphona{english}{}
+%%\begin{otherlanguage}{english} \noindent Ant. \end{otherlanguage} %%translation
 
 \texteparacol{\vv
 
-\rr}{\noindent \vv
+\rr}{english}{\noindent \vv
 
 \noindent \rr}
 
-\smalltitle{Collect.}
-\smallskip
+\collectlateng
+%%\smallskip
 
-\texteparacol{Orémus.
+\texteparacol{
 
 \lettrine{}{}
 
-\rr Amen.}{\noindent Let us pray.
-
-Amen.}
+\rr }{english}{\noindent }
 
 \end{document}
 
