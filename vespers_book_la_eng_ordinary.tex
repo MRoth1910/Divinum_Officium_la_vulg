@@ -1,0 +1,302 @@
+% !TEX TS-program = lualatexmk
+% !TEX parameter =  --shell-escape
+
+\documentclass[vespers_book_la_eng.tex]{subfiles}
+
+\ifcsname preamble@file\endcsname
+  \setcounter{page}{\getpagerefnumber{M-vespers_book_ordinary_la_eng.tex}}
+\fi
+
+\begin{document}
+
+ \thispagestyle{empty}
+
+% {\centering{\huge\capspace{{SUNDAY AT VESPERS.}}}\par}
+
+\chapter*{ORDINARY OF THE OFFICE.}
+\phantomsection
+\addcontentsline{toc}{chapter}{Ordinary of the Office.}
+ \header{ordinary of the office.}
+ 
+ \section[Beginning — — —.]{BEGINNING OF THE OFFICE.}
+ 
+\smalltitle{Before the Office.}
+
+\rubrique{These prayers are said kneeling. End when the priest stands.}
+
+\textes{orationes_ante_do_la_en}
+
+\smalltitle{\orationes}
+\label{pater} \phantomsection
+\textes{pater_ave_la_eng}
+
+\rubrique{The celebrant intones the following verse. All sing the response and doxology.}
+
+\begin{enpars}
+\rubrique{Make the sign of the cross at the beginning and at the Magnificat, and bow the head when the Trinity is mentioned, when mention is made of the ``Holy Name'' in some way, at the name of the Blessed Virgin Mary, at the mention of a saint whose feast it is, even merely commemorated, and at ``Orémus.''}\end{enpars}
+
+\label{Deus_In_Adjutorium} \phantomsection
+\gscore[]{℣.}{Deus_In_Adjutorium_Festivus}
+
+\noindent
+\begin{enpars}
+O God, \cc{} come to my assistance. \rr O Lord, make haste to help me. Glory be to the Father, and to the Son, and to the Holy Ghost. As it was in the beginning, is now, and ever shall be, world without end. Amen. Alleluia.\end{enpars}
+
+\rubrique{After Septuagesima:}
+
+\smallscore{Laus_tibi_Domine}
+
+\noindent
+\begin{enpars}
+Praise be unto thee, O Lord, King of Eternal Glory.
+\end{enpars}
+
+\rubrique{The festive tone is used on Sundays and on feasts which are of double or semidouble rite.}
+
+\label{Deus_in_adjutorium_tonus_solemnior}
+\rubrique{On solemn feasts of the I class, including those of the temporal cycle which must fall on a Sunday and feasts of the sanctoral cycle fixed to Sunday, the following tone may be used.}
+
+\gscore[]{}{Deus_in_adjutorium_tonus_solemnior}
+
+\rubrique{After Septuagesima:}
+
+\smallscore{Laus_tibi_Domine_tonus_solemnior}
+\newpage
+
+\rubrique{\begin{enpars}
+On doubles, sit as the antiphon is sung in full.\end{enpars}}
+\smalltitle{Canticle of the Blessed Virgin Mary.}
+
+\scripture{Luc. 1, 46–55.}
+
+\textes{magnificat_la_en}
+
+\rubrique{\begin{enpars}
+Sit as the antiphon is sung in full. Then the usual dialogue follows, as below. On Sundays and on feasts, and on all days which are not penitential, all stand from now until the end of the office, unless one sits for the antiphons sung for the commemorations, according to custom.\end{enpars}}
+\newpage
+\section[End — — —.]{END OF THE OFFICE.}
+
+\label{dv} \phantomsection
+\textes{dv_la_en}
+
+\myrule
+\label{domine_exaudi}
+
+\rubrique{In a choir of nuns or in the absence of a deacon or priest, this replaces ``Dóminus vobíscum'' when it is to be said.}
+
+\gresetinitiallines{0}
+\gabcsnippet{(c4) <sp>V/</sp> Dó(g)mi(h)ne(h) ex(h)aú(h)di(g) o(g)ra(g)ti(g)ó(g)nem(h) me(gh)am.(g.) (::) <sp>R/</sp> Et(g) cla(h)mor(h) me(h)us(g) ad(g) te(g) vé(h)ni(h)at.(h.) (::)}
+\gresetinitiallines{1}
+
+\begin{enpars}
+\noindent \vv O Lord hear my prayer. \rr And let my cry come unto thee.
+
+%\noindent \rr And let my cry come unto thee.
+\end{enpars}
+
+\myrule
+
+ \rubrique{\begin{enpars}
+The celebrant sings the collect of the day, and any commemorations follow. When required, the Suffrage of All Saints, or the Commemoration of the Cross in Paschal Time, is sung in the last place, as below.\end{enpars}}
+
+\myrule
+
+\smalltitle{Suffrage of All Saints.}
+
+\gscore[Ant.]{2.}{an_beata_dei_genitrix_virgo_solesmes_1961}
+\antiphona{english}{May the Blessed Virgin Mary, Mother of God, and all the Saints, intercede for us with the Lord}
+
+\textes{suffragium_la_en}
+
+\rubrique{In this collect, at \normaltext{N.,} the name of the titular of the proper church is said, provided that it is not a Divine Person or a mystery of the Lord, or that an office or commemoration has not been made by reason of a feast, or that the name is not in the same suffrage prayer. And the names of the holy Angels and of Saint John the Baptist, if they are titular, are placed before that of Saint Joseph.}
+
+\smalltitle{Commemoration of the Cross.}
+
+\gscore[Ant.]{6.}{an_crucifixus_solesmes_1961}
+\antiphona{english}{He that was crucified is risen from the dead, and hath redeemed us. Alleluia, Alleluia}
+\smallskip
+
+\textes{comm_crucis_la_en}
+ 
+\myrule
+
+\textes{dv_la_en}
+
+\newpage
+\section[Tones of the ℣. Benedicamus Domino.]{TONES OF THE ℣. BENEDICAMUS DOMINO.}
+%\header{tones of the ℣. benedicamus domino.}
+
+\textes{cantor_rubric}
+
+\begin{enpars}
+\noindent \vv Let us bless the Lord. \rr Thanks be to God.
+\end{enpars}
+
+%\textes{BD_rubrique}
+
+\smalltitle{On Solemn Feasts.} %% this is bigger.
+
+\smalltitle{At I Vespers.} %% this is smaller %% also this is in Roman text, then switches to italics like in the AM1934.
+% possibly need a vspace here
+
+\gscore[]{2.}{BD_Solemnis_I_Vesp}
+
+%\smalltitle{ Ad Laudes.}
+%
+%\gscore[]{5.}{BD_Solemnis_Laudes}
+
+\smalltitle{At II Vespers.}
+
+\gscore[]{6.}{BD_Solemnis_mode_6}
+% the rubric contained as alt is too high if they're on the same page.
+
+\gscore[]{5.}{BD_Solemnis_mode_5}
+
+\newpage
+
+\smalltitle{On Double Feasts.}
+
+\smalltitle{At I Vespers.}%% switches to italics in LA1949 and in AM1934, it's all italicized.
+
+\gscore[]{2.}{BD_Duplex_I_Vesp}
+
+%\smalltitle{ Ad Laudes.}
+% %% \smalltitle{In Laudibus.} 
+% 
+% \gscore[]{5.}{BD_Duplex_Laudes}
+
+\smalltitle{At II Vespers.}
+
+\gscore[]{8.}{BD_Duplex_II_Vesp}
+%this alignment needs work
+\smalltitle{On Semidouble feasts.\\and on the Vigil of the Epiphany, on the Sundays within the Octave of Christmas and Corpus Christi, and within all octaves not of the Blessed Virgin Mary (except those of Easter, the Ascension, and Pentecost)} %%the seconds lines are all smaller headings. %% \\ should be considered a placeholder, this is not good syntax
+
+%\smalltitle{ Ad Laudes.}
+%
+%\gscore[]{1.}{BD_Semiduplex_Laudes}
+
+\smalltitle{At both Vespers.}
+
+\gscore[]{2.}{BD_Semiduplex_Vesp}
+
+\smalltitle{On Feasts of Blessed Virgin Mary.}
+
+%\textes{tc_BMV_rubrique}
+
+\rubrique{\begin{enpars}On major feasts, the tone of solemn feasts is to be used, but otherwise, this tone may be used.\end{enpars}}
+
+\gscore[]{1.}{BD_BVM}
+
+%\smalltitle{In Festis Simplicibus.}
+%
+%\gscore[]{1.}{BD_Simplex}
+%
+%\smalltitle{In Officium de B.M.V. in Sabbato.}
+%
+%\gscore[]{1.}{BD_BMV_in_sabbato}
+
+\smalltitle{On Sundays of the year\\ and on Septuagesima, Sexagesima et Quinquagesima Sundays.}
+%\textes{tc_dominica_rubrique}
+
+\rubrique{\begin{enpars}At both Vespers if they are of the Sunday.\end{enpars}}
+
+\gscore[]{1.}{BD_per_annum}
+
+\smalltitle{On the Sundays of Advent and Lent.}
+
+%\textes{tc_dominica_rubrique}
+
+\rubrique{\begin{enpars}At both Vespers if they are of the Sunday.\end{enpars}}
+
+\gscore[]{6.}{BD_Dominicis_Adventus_Quadragesimae}
+
+\smalltitle{On Sundays and weekdays of Paschal Time\\ (When the Office is of the season.)} %% see page 1284 of IA edition of Antiphonale Monasticum
+
+\gscore[]{7.}{BD_TP}
+
+\rubrique{This versicle is sung on a lower note.}
+\textes{fidelium_la_en}
+
+\rubrique{\begin{enpars}
+Then the Lord's Prayer is said silently, \normaltext{\pageref{pater},} and the office is concluded with the following verses, the Marian antiphon, etc., unless Compline follows, or, in parish and other churches not bound to the office in choir, Benediction of the Blessed Sacrament or a sermon, or even some other pious exercises.\end{enpars}}
+
+\rubrique{This versicle is sung in the same way as the concluding versicle \normaltext{Fidélium.}}
+
+\texteparacol{
+\noindent \vv Dóminus det nobis suam pacem.
+
+\noindent \rr Et vitam ætérnam. Amen.}
+{english}{
+\noindent \vv May the Lord grant us his peace.
+
+\noindent \rr And life everlasting. Amen.}
+
+\section[Marian Antiphons.]{MARIAN ANTIPHONS.}
+%\header{marian antiphons.}
+
+\rubrique{\begin{enpars}On Sundays and in Paschal Time, all remain standing, but on weekdays, the choir and congregation kneel, then the officiant kneels after intoning the antiphon. He rises for the collect on feasts and on any weekday which is not a penitential feria.\end{enpars}}
+
+\rubrique{\begin{enpars} The officiant intones the Marian antiphon according to the season, followed by the versicle and collect in the usual way. The versicle \normaltext{Divínum auxílium} follows, \normaltext{\pageref{conclusion}.}\end{enpars}}
+
+\smalltitle{Alma Redemptoris Mater.}
+
+\rubrique{¶ From Vespers of the Saturday before the I Sunday of Advent to Vespers of February 2 inclusive.}
+
+\gscore[]{5.}{an--alma_redemptoris--solesmes_1961}
+%%\vspace{1ex}
+
+\smalltitle{Simple Tone.}
+\gscore[]{5.}{an--alma_redemptoris_simple_solesmes}
+
+\textes{alma_redemptoris_la_en}
+
+\smalltitle{Ave Regina Cælorum.}
+
+\rubrique{¶ After the Purification, that is, from Compline of February 2 even if the feast is transferred, until Compline of Wednesday in Holy Week.}
+
+\gscore[]{6.}{an--ave_regina_caelorum--solesmes_1961}
+%\vspace{1ex}
+
+\smalltitle{Simple Tone.}
+
+\gscore[]{6.}{an--ave_regina_caelorum_simple_tone--solesmes}
+
+\textes{ave_regina_la_en}
+
+\smalltitle{Regina Cæli.}
+
+\rubrique{¶ From Compline of Holy Saturday until None of Saturday after Pentecost inclusive.}
+
+\gscore[]{6.}{an--regina_caeli--solesmes}
+%\vspace{1ex}
+
+\smalltitle{Simple Tone.}
+
+\gscore[]{6.}{an--regina_caeli_simple_tone--solesmes}
+
+\textes{regina_caeli_la_en}
+
+\smalltitle{Salve Regina.}
+
+\rubrique{¶ From Vespers of the Holy Trinity until None of the Saturday before Advent inclusive.}
+
+\gscore[]{1.}{an--salve_regina--solesmes}
+%\vspace{1ex}
+
+\smalltitle{Simple Tone.}
+\gscore[]{5.}{an--salve_regina_simple_tone_solesmes}
+
+\textes{salve_regina_la_en}
+
+\rubrique{The versicle is sung on a lower note.}
+\label{conclusion} \phantomsection
+
+\texteparacol{\vv Divínum auxílium máneat semper nobíscum.
+
+\noindent \rr Amen.}
+{english}
+{\noindent \vv May the divine assistance remain always with us.
+
+\noindent \rr Amen.}
+
+\end{document}
