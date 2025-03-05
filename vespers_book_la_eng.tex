@@ -1,0 +1,100 @@
+% !TEX TS-program = lualatexmk
+% !TEX parameter =  --shell-escape
+
+\documentclass[12pt]{book}
+
+\input{commonheaders_vespers_people}
+\externaldocument[M-]{\subfix{vespers_book_la_eng}}
+\begin{document}
+
+%%need to tighten up paracol settings so as to eliminate ghastly white space from aggressive tracking
+
+\twosided[pc] %% to allow for the left-right switching of columns needed for bilingual liturgical typesetting (like in missals); it's unclear why this goes BEFORE everything else and not when activating the environment. %% It's OK for paper booklets to not switch, but it's probably best practice to switch.
+
+\customsubfile{vespers_book_la_eng_intro}
+
+\customsubfile{vespers_book_la_eng_ordinary}
+
+\customsubfile{vespers_book_la_eng_magnificat}
+
+\customsubfile{vespers_book_la_eng_sunday_psalms}
+
+\customsubfile{vespers_book_la_eng_sundays_advent} %%need all O Antiphons
+
+\customsubfile{vespers_book_la_eng_christmas_jan_5} 
+%%Xmas, comites + commemorations and St Thomas, Sunday, 1 Jan, Holy Name, Epiphany, H Fam, octave
+
+\customsubfile{vespers_book_la_eng_epiphany_octave}
+%Epiphany, H Fam, octave
+
+\customsubfile{vespers_book_la_eng_sundays_pe_gesima}
+
+\customsubfile{vespers_book_la_eng_sundays_lent}
+
+\customsubfile{vespers_book_la_eng_easter_octave}
+
+\customsubfile{vespers_book_la_eng_sundays_tp}
+
+\customsubfile{vespers_book_la_eng_ascension_pentecost}
+
+\customsubfile{vespers_book_la_eng_trinity_sc}
+
+%%need to fix paracol problem at page breaks where it adds line
+\customsubfile{vespers_book_la_eng_sundays_pp}
+
+%%Common commemorations (or after end of office, as in liber??)
+
+%%common of Apostles
+
+%% in TP
+
+%%BMV
+
+%%Dedicatio
+\customsubfile{vespers_book_la_eng_common_saints}
+%%Defunctorum
+\customsubfile{vespers_book_la_eng_proper_saints}
+
+%%St John is in temporale along with St Stephen and Holy Innocents
+
+%%St Andrew
+%%IC
+%%St Thomas
+%%Candlemas — added
+%St Matthias
+%St Joseph
+%Annunciation
+%St Mark
+%St Joseph in TP
+%% Pip and Jim
+%Finding of Holy Cross
+%* (1954 only) Queenship of the BVM
+%* Nativity of Saint John the Baptist
+%* Saints Peter and Paul
+%* Precious Blood
+%* Visitation
+%St James
+%* Saint Anne
+%* Transfiguration
+%* Saint Lawrence
+%* Saint Joachim
+%* Post-43, IHM
+%St Bartholomew
+%* Nativity of the BVM
+%* Holy Cross (I Vespers) 
+%* Seven Sorrows of the BVM
+%St Matthew
+%* Saint Michael
+%* Most Holy Rosary
+%* Maternity of the BVM
+%St Luke
+%SS Simon and Jude
+%* Christ the King
+%* All Saints
+%* Dedication of the Lateran and Dedication of Saints Peter and Paul (all from common)
+%
+\newpage
+\tableofcontents
+\thispagestyle{empty}
+
+\end{document}

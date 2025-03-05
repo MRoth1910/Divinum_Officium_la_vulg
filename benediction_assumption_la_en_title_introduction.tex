@@ -1,0 +1,35 @@
+% !TEX TS-program = lualatexmk
+% !TEX parameter =  --shell-escape
+\documentclass[benediction_assumption_la_en.tex]{subfiles}
+
+\ifcsname preamble@file\endcsname
+  \setcounter{page}{\getpagerefnumber{M-benediction_assumption_la_en_title_introduction}}
+\fi
+
+\begin{document}
+
+
+ \begin{titlepage}
+ \begin{center}
+% \fontsize{36}{45}\selectfont\capspace{CANTUS VARII}
+\Huge\capspace{CANTUS VARII}
+ \end{center}
+% \vspace{2mm}
+\centering
+\includegraphics[width=10.5cm,height=10.5cm,keepaspectratio]{Dürer_Gregoriusmis}
+
+\begin{center}\Huge\capspace{AD BENEDICTIONEM S.S. SACRAMENTI}\end{center}
+% \vspace{-1mm}
+\begin{center}
+% \fontsize{23}{28.9}\selectfont{Secundum usum\\ Ecclesiæ Assumptionis B.M.V.}
+\huge\selectfont{Secundum usum\\ Ecclesiæ Assumptionis B.M.V.}
+ \end{center}
+ \begin{center}
+ \LARGE\scspace{latin - english}
+ \end{center}
+\end{titlepage}
+\newpage\null\thispagestyle{empty}\newpage
+
+\thispagestyle{empty}
+
+\end{document}

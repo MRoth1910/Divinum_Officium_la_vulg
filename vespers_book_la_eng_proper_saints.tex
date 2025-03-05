@@ -1,0 +1,113 @@
+% !TEX TS-program = lualatexmk
+% !TEX parameter =  --shell-escape
+
+\documentclass[vespers_book_la_eng.tex]{subfiles}
+
+\ifcsname preamble@file\endcsname
+  \setcounter{page}{\getpagerefnumber{M-vespers_book_proper_saints}}
+\fi
+
+\begin{document}
+\addcontentsline{toc}{chapter}{Excerpts from the Proper of Saints}\phantomsection
+
+%\rubrique{\begin{enpars}In Paschal Time, \normaltext{Allelúia} is added to the versicles and responses given here in the common as at Vespers throughout the year.\end{enpars}}
+
+\litdateen{February 2}
+\festum{purification of the blessed virgin mary}
+\addcontentsline{toc}{section}{Purification of the Bl. Virgin Mary}\phantomsection
+
+\header{excerpts from the proper of saints.}
+
+\doubleclass{II}
+
+\atvespers{i}
+
+\rubrique{Antiphons and psalms of I Vespers of the Circumcision, \normaltext{\pageref{M-1_vespers_jan_1}.}}
+
+\chapterlateng
+\scripture{Malach. 3, 1.}
+
+\texteparacol{\lettrine{E}{c}ce ego mitto Angelum meum, et præparábit viam ante fáciem meam.~† Et statim véniet ad templum sanctum suum Dominátor, quem vos quǽritis,~* et Angelus Testaménti, quem vos vultis.}{english}{\noindent Behold I send my angel, and he shall prepare the way before my face. And presently the Lord, whom you seek, and the angel of the testament, whom you desire, shall come to his temple.}
+
+\rubrique{Hymn \normaltext{Ave maris stella,} from the common, \normaltext{\pageref{M-hy_ave_maris_stella_mode_1_LA1949}.}}
+%\hymnlateng
+
+%\rubrique{The first verse is sung kneeling.}
+%
+%%%%for now, but cross ref later since there are 3 tones
+%\grechangenextscorelinedim{3}{spacebeneathtext}{0.1cm}{scalable}
+%\gscore[]{1.}{hy_ave_maris_stella_mode_1_LA1949}
+
+%\textes{ams_en}
+
+\smallscore{versiculus_2_feb}
+\begin{enpars}\noindent \vv It was revealed unto Simeon by the Holy Ghost.
+
+\noindent \rr That he should not see death before he had seen the Lord's Christ.
+\end{enpars}
+
+\collectlateng
+
+\label{oratio_2_feb} \phantomsection
+
+\texteparacol{
+\lettrine{O}{m}nípotens sempitérne Deus, majestátem tuam súpplices exorámus:~† ut sicut unigénitus Fílius tuus hodiérna die cum nostræ carnis substántia in templo est præsentátus;~* ita nos fácias purificátis tibi méntibus præsentári.
+Per eumdem Dóminum.}{english}
+{\noindent 
+Almighty and everliving God, we humbly beseech thy majesty, that as thy Only-begotten Son was this day presented in the temple in substance of our flesh, so we may be presented unto thee with pure and clean hearts. Through the same Lord.}
+
+%\rubrique{Commemoration of the preceding feast of Saint Ignatius, bishop and martyr; a commemoration of the Sunday of the Lenten feria is also made in the appropriate place, whether Sunday be the next day or the preceding day.}
+
+\rubrique{Commemoration of the preceding feast of Saint Ignatius, bishop and martyr.}
+
+%%should really be a crossreference!
+\gscore[Ant.]{1.}{an_cs_qui_vult_venire_solesmes_1960}
+%
+\antiphona{english}{If any man will come after me, let him deny himself and take up his cross daily and follow me¡}
+%%translation
+%
+\texteparacol{\vv Justus ut palma florébit.
+
+\rr Sicut cedrus Líbani multiplicábitur.}{english}{
+ \noindent  \vv The righteous shall flourish like the palm-tree.
+
+\noindent \rr He shall grow like a cedar in Lebanon.}
+
+\collectlateng
+\texteparacol{
+\lettrine{I}{n}firmitátem nostram réspice, omnípotens Deus:~† et quia pondus própriæ actiónis gravat,~* beáti lgnátii Mártyris tui atque Pontíficis intercéssio gloriósa nos prótegat. Per Dóminum.}{english}{\noindent Mercifully consider our weakness, O Almighty God, and whereas by the burden of our sins we are sore, let Ignatius thy Martyr be mercifully pleased to deliver us from all things which may hurt our bodies, and from all evil thoughts which may defile our souls. Through our Lord.}
+
+\atvespers{ii}
+
+\firstantiphon{3. b.}
+
+\initialscore{an_simeon_justus_solesmes_1961}
+ \antiphona{english}{Simeon was just and devout, waiting for the consolation of Israel, and the Holy Ghost was upon him}
+\psalmus{109}{109_3b}{109_3a_b}{109_en}
+
+\gscore[2. Ant.]{7 .a}{an_responsum_accepit__solesmes_1961} 
+  \antiphona{english}{It was revealed unto Simeon by the Holy Ghost that he should not see death before he had seen the Lord}
+\psalmus{112}{112_7a}{112_7}{112_en}
+
+\gscore[3. Ant.]{3. b}{an_accipiens_simeon_solesmes_1961}
+ \antiphona{english}{Simeon took the Child up in his arms, and gave thanks, and blessed the Lord}
+ \psalmus{121}{121_3b}{121_3a_b}{121_en}
+
+\gscore[4. Ant.]{8. c}{an_lumen_ad_revelationem__solesmes_1961}
+ \antiphona{english}{A light to lighten the Gentiles, and the glory of thy people Israel}
+\psalmus{126}{126_8c}{126_8}{126_en}
+
+\gscore[5. Ant.]{8. G}{an_obtulerunt_pro_eo_solesmes_1961}
+ \antiphona{english}{They offered for him unto the Lord, a pair of turtle doves, or two young pigeons.}
+\psalmus{147}{147_8G}{147_8}{147_en}
+
+\caphymnvven{I}
+
+\gscore[Ad Magnif.]{Ant. 8. G*}{an_hodie_beata_virgo_solesmes_1961}
+ \antiphona{english}{This day did the Blessed Virgin Mary present the Child Jesus in the temple; and Simeon, filled with the Holy Ghost, took him up in his arms, and blessed God for ever and ever}
+ 
+\rubrique{Collect \normaltext{Omnípotens sempitérne Deus, \pageref{oratio_2_feb}.}}
+
+\rubrique{A commemoration of the following day is not made.}
+
+\end{document}

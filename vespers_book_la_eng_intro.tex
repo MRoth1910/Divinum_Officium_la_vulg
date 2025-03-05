@@ -1,0 +1,66 @@
+% !TEX TS-program = lualatexmk
+% !TEX parameter =  --shell-escape
+
+\documentclass[vespers_book_la_eng.tex]{subfiles}
+
+\ifcsname preamble@file\endcsname
+  \setcounter{page}{\getpagerefnumber{M-vespers_book_la_eng_intro}}
+\fi
+
+\begin{document}
+
+%%this code when \customsubfiles is used should allow for continuous pagination when subfiles are compiled individually.
+
+\begin{titlepage}
+ \begin{center}
+\fontsize{40}{50}\selectfont\capspace{VESPERS OF SUNDAYS AND MAJOR FEASTS}
+
+%%originally 36 and 45
+
+% \begin{center}
+%{\LARGE\scspace{of sundays and major feasts}}
+% \end{center}
+ 
+%  \begin{center}
+%{\LARGE\scspace{for sundays and major feasts of the temporal cycle}}
+% \end{center}
+ \vfill
+{\LARGE\scspace{according to the office published by saint pius x}}
+ \end{center}
+%\centering
+%\includegraphics[width=10cm,height=10cm,keepaspectratio]{Dürer_The_Visitation} %% need arms of some kind…
+ 
+  \begin{center}
+{\large\scspace{with the rhythmic signs of the monks of solesmes}}
+ \end{center}
+ 
+ %%commission a drawing: something Marian and Benedictine like a lilium inter spinas (a classic day lilly to be precise)
+ 
+% \vfill
+ 
+{\centering{\LARGE\scspace{sancta maria ab assumptione}\par}}
+ {\centering{\capspace{\YEAR}\par}}
+\end{titlepage}
+
+\thispagestyle{empty}
+%\noindent Vespers Of Sundays And Major Feasts according to the Office published by Saint Pius \textsc{x}\\
+%with the rhythmic signs of the monks of Solesmes.
+%
+%\vfill
+
+First edition:
+
+Typeset using Lua\LaTeX{} and Gregorio 6.0.
+
+All material in the public domain or free of known copyright restrictions.
+
+%\shipout\null
+%\shipout\null
+
+\frontmatter
+
+\textes{intro_en}
+
+\mainmatter
+
+\end{document}

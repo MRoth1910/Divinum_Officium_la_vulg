@@ -1,0 +1,81 @@
+% !TEX TS-program = lualatexmk
+% !TEX parameter =  --shell-escape
+\documentclass[benediction_assumption_la_en.tex]{subfiles}
+
+\ifcsname preamble@file\endcsname
+  \setcounter{page}{\getpagerefnumber{M-benediction_assumption_la_en_before_benediction}}
+\fi
+
+\begin{document}
+
+\chapter*{BEFORE BENEDICTION.}
+\addcontentsline{toc}{chapter}{Before Benediction}
+
+\begin{enpars}
+\rubrique{Devotions follow according to the month or the occasion.}
+
+January: Litany of the Holy Name, \pageref{lit_san_nom_en}.
+
+March: Litany of Saint Joseph, \pageref{lit_san_jos_en}.
+
+May and October: Litany of the Blessed Virgin Mary, \pageref{lit_bvm_en}.
+
+June and on First Fridays: Litany of the Sacred Heart, \pageref{lit_sac_cor_en}.
+
+July: Litany of the Precious Blood, \pageref{lit_pb_en}.
+\end{enpars}
+
+\bigtitle{On Sundays.}
+
+\begin{enpars}
+
+\textes{Cardinal_Wiseman_Prayer}
+
+\rubrique{On the Second Sunday of each month, instead of the prayer \normaltext{O Blessed Virgin Mary,} the following prayer is said, all kneeling.}
+
+\textes{Second_Sunday_Prayer}
+
+\rubrique{Then follows Benediction of the Most Blessed Sacrament, as usual.}
+
+\bigtitle{On Weekdays.}
+
+\rubrique{On First Friday, the Sacred Heart devotions are said instead.}
+
+%\begin{otherlanguage}{english}
+{\centering{Prayer Before Benediction at Holy Hour.}\par}
+
+\textes{Prayer_Before_Benediction}
+
+\rubrique{Then follows Benediction of the Most Blessed Sacrament, as usual.}
+\end{enpars}
+
+\bigtitle{On First Fridays.}
+
+\textes{reparation_sacred_heart}
+
+\bigtitle{Litanies.}
+
+\smalltitle{Litany of the Most Holy Name of Jesus.}
+\label{lit_san_nom_en}
+
+%%deliver us, O Jesus.
+%%Jesus, deliver us.??
+\textes{lit_san_nom_en}
+
+\smalltitle{Litany of Saint Joseph.}
+\label{lit_san_jos_en}
+\textes{lit_san_jos_en}
+
+\smalltitle{Litany of the Blessed Virgin Mary.}
+\label{lit_bvm_en}
+\textes{lit_bvm_en}
+
+\smalltitle{Litany of the Most Sacred Heart of Jesus.}
+\label{lit_sac_cor_en}
+\textes {lit_sac_cor_en}
+
+\smalltitle{Litany of the Most Precious Blood of Jesus.}
+\label{lit_pb_en}
+\textes{lit_pb_en}
+
+\end{document}

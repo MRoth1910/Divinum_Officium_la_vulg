@@ -1,0 +1,33 @@
+% !TEX TS-program = lualatexmk
+% !TEX parameter =  --shell-escape
+\documentclass[12pt]{book}
+\input{commonheaders_vespers_people}
+\externaldocument[M-]{\subfix{benediction_assumption_la_en}}
+
+\begin{document}
+ 
+ \twosided[pc] %% to allow for the left-right switching of columns needed for bilingual liturgical typesetting (like in missals); it's unclear why this goes BEFORE everything else and not when activating the environment. %% It's OK for paper booklets to not switch, but it's probably best practice to switch.
+%% %%future revisions of this and Vespers need to consider translations: no hodgepodge, best archaic-but-literal prose translations of some hymns like Jesu redemptor omnium, that Bute is
+%% too poetic
+ %%need new titlepage image
+ %%extra pages
+ %%intro
+ %%toc!!
+ %%what devotions to include
+ \thispagestyle{empty}
+ 
+ \customsubfile{benediction_assumption_la_en_title_introduction}
+ 
+  \customsubfile{benediction_assumption_la_en_exposition}
+ 
+ \customsubfile{benediction_assumption_la_en_benediction}
+ 
+ \customsubfile{benediction_assumption_la_en_before_benediction}
+ 
+ \customsubfile{benediction_assumption_la_en_after_benediction}
+ 
+  \customsubfile{benediction_assumption_la_en_other_chants}
+ 
+ \customsubfile{benediction_assumption_la_en_other}
+ 
+ \end{document}
