@@ -376,9 +376,9 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
        \begin{paracol}{2}
            #1
            \switchcolumn
-           \begin{otherlanguage}{#2}
+           \begin{otherlanguage*}{#2}
     #3
-    \end{otherlanguage}
+    \end{otherlanguage*}
     \end{paracol}}
     
 %    for Magnificat text
@@ -457,6 +457,21 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
 	\smallscore[n]{#3}
 	\pstexte{#4}
 }
+
+\NewDocumentCommand{\vel}{}{%
+{\rubrique{Vel:}%
+}%
+}
+
+\NewDocumentCommand{\orrubrique}{}{%
+{\rubrique{Or:}%
+}%
+}
+
+\NewDocumentCommand{\nomen}{}{%
+\textit{N.}%
+}
+
 	
     %% macro to print any additional text (Capitiulum, oratio, rubrics)
  \NewDocumentCommand{\textes}{ m }{%
@@ -661,6 +676,20 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
  }\par}%
 }
 
+%%for double major and below
+ \NewDocumentCommand{\invesperisminor}{m}{%
+\needspace{5\baselineskip}%
+\vspace{\baselineskip}%
+ {\centering{\Large In #1 Vesperis.}\par}%
+ }
+ 
+ %%for double major and below
+ \NewDocumentCommand{\atvespersminor}{m}{%
+\needspace{5\baselineskip}%
+\vspace{\baselineskip}%
+ {\centering{\Large In #1 Vesperis.}\par}%
+ }
+ 
 \NewDocumentCommand{\ivesperisrubrique}{}{%
 {\rubrique{Antiphonæ, Psalmi, Capit.\@ et Hymnus ut in I Vesperis.}%
 }%
@@ -709,6 +738,28 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
 \smalltitle{Hymn.}%
 }
 
+%%for 2nd tone of hymn
+\NewDocumentCommand{\altertonus}{}{%
+\smalltitle{Alter Tonus.}%
+}
+
+%%for 2nd tone of hymn where Alius is employed %%optional argument is in particular for Iste Confessor tones of which there are 4 per common of confessors (bishop and not a bishop)
+\NewDocumentCommand{\aliustonus}{O{}}{%
+\smalltitle{Alius Tonus. #1}%
+}
+
+%%for 2nd tone of hymn
+\NewDocumentCommand{\anothertone}{}{%
+\smalltitle{Another Tone.}%
+}
+
+%%for 2nd tone of hymn where Alius is employed %%optional argument is in particular for Iste Confessor tones of which there are 4 per common of confessors (bishop and not a bishop)
+\NewDocumentCommand{\anothertonemultiple}{O{}}{%
+\smalltitle{Another Tone. #1}%
+}
+
+
+
 \NewDocumentCommand{\collectlateng}{}{%
 \smalltitle{Collect.}%
 }
@@ -735,12 +786,6 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
   %% something has broken here
   %% see https://tex.stackexchange.com/questions/545841/paragraph-ended-before-ttlformatsi-was-complete
 
-%% originally used apparently for typesetting portions of the Common of the BVM
-\newcommand{\espacetitre}{\vspace{-0.5cm}}
-\newcommand{\espaceps}{\vspace{-3mm}} %% ps =psaume
-\newcommand{\espacecap}{\vspace{-3mm}} %% cap is capitulum
-\newcommand{\espace}{\vspace{2mm}}
-
 \NewDocumentCommand{\secreto}{}{Pater noster. \rubrique{secreto.}}
 
 \NewDocumentCommand{\pateravecredo}{}{\large{Pater noster, Ave María, \textit{et} Credo.}}
@@ -756,6 +801,27 @@ Our Father and Hail Mary, \rubrique{silently.}%
 \NewDocumentCommand{\orationes}{}{%
 Pater noster et Ave María \rubrique{secreto.}%
 }
+
+%%%%%%%SPACING%%
+
+%\NewDocumentCommand{\baselineskipvspace}{m}{%
+%\vspace{#1\baselineskip}%
+%}
+
+%%does this count as a magic number?
+
+\NewDocumentCommand{\baselineskipvspace}{m}{%
+\vspace{1\baselineskip}%
+}
+
+\NewDocumentCommand{\halfbaselineskipvspace}{m}{%
+\vspace{0.5\baselineskip}%
+}
+
+\NewDocumentCommand{\negativebaselineskipvspace}{m}{%
+\vspace{-1\baselineskip}%
+}
+
 
 %%for litanies
 \makeatletter  
@@ -812,6 +878,13 @@ Pater noster et Ave María \rubrique{secreto.}%
     \fi
     \fi
 }
+
+%%FOOTNOTES%%%
+
+%%from perpage package \MakePerPage{footnote} as footnotes are just per page as it says
+\MakePerPage{footnote}
+
+
 \newcommand{\@romannoblank}[1]{%
     \@roman{\numexpr#1-\value{blankpages}\relax}%
 }
