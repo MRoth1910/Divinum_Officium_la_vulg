@@ -822,6 +822,20 @@ Pater noster et Ave María \rubrique{secreto.}%
 \vspace{-1\baselineskip}%
 }
 
+%%needed for Litanies since new lines cannot use, apparently, space commands which do not overried beginning-of-line restriction
+\NewDocumentCommand{\emspace}{}{%
+\hspace*{1em}%
+}
+
+%%in like manner, hfill is ignored after
+\NewDocumentCommand{\zeroptspace}{}{%
+\hspace*{0pt}%
+}
+
+%%
+\NewDocumentCommand{\tinyhspace}{}{%
+\hspace*{0.03em}%
+}
 
 %%for litanies
 \makeatletter  
