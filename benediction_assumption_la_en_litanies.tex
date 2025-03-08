@@ -1,0 +1,48 @@
+% !TEX TS-program = lualatexmk
+% !TEX parameter =  --shell-escape
+\documentclass[benediction_assumption_la_en.tex]{subfiles}
+
+\ifcsname preamble@file\endcsname
+  \setcounter{page}{\getpagerefnumber{M-benediction_assumption_la_en_litanies}}
+\fi
+
+\begin{document}
+
+\chapter*{LITANIES.}
+\addcontentsline{toc}{chapter}{Litanies}
+%%litanies have to start on ODD page for trick to work.
+
+%%chant litanies :BVM (usual tone only), 
+%%St Joseph, SC, Saints (XL Hours, rogation?!)
+
+\gscore[]{}{Litaniae_BMV_01}
+
+\gresetlastline{justified}
+\smallscore{Litaniae_BMV_02}
+
+%\hspace{0.03em}
+\begin{nstabbing}
+%\>Fili \>Re-\>dém\>ptor \>mundi \>\textbf{De}-\>us, \>mi-\>se-\>\textit{ré}-\>\textit{re} \>no-\>bis.\\
+\>Fili Redem-\>\>ptor \>mun-\>di \>De-\>us, \>mi-\>se-\>ré-\>re \>no-\>bis.\\
+\>Spí-\>ri-\>tus \>San-\hspace{0.5em}cte \>\>De-\>us, \>mi-\>se-\>ré-\>re \>no-\>bis.\\
+\>Sancta Trínitas\>\> \>\hspace{0.5em}u-\hspace{1em}nus \>\>De-\>us,\>mi-\>se-\>ré-\>re \>no-\>bis.\\
+\end{nstabbing}
+
+\gresetlastline{ragged}
+\smallscore{Litaniae_BMV_03}
+\smallscore{Litaniae_BMV_04}
+
+%\begin{nstabbing}
+\hspace*{-0.5em}Sancta \>\hspace{2.3em}Vir-\>go \>\>vír-gi-\>num, \>\>\hspace{-0.3em}o-\>ra \>pro \>no-bis.
+%\end{nstabbing}
+
+\smallscore{Litaniae_BMV_05}
+\begin{multicols}{2}
+\textes{Litaniae_BMV}
+\end{multicols}
+
+\smallscore{Litaniae_BMV_06}
+
+\textes{litaniae_bmv_orationes}
+
+\end{document}

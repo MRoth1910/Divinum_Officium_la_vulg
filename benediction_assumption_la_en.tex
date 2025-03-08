@@ -8,26 +8,39 @@
  
  \twosided[pc] %% to allow for the left-right switching of columns needed for bilingual liturgical typesetting (like in missals); it's unclear why this goes BEFORE everything else and not when activating the environment. %% It's OK for paper booklets to not switch, but it's probably best practice to switch.
 %% %%future revisions of this and Vespers need to consider translations: no hodgepodge, best archaic-but-literal prose translations of some hymns like Jesu redemptor omnium, that Bute is
-%% too poetic
+%% too poetic and unfortunately I need permission to really use all of Mass & Vespers translations
  %%need new titlepage image
  %%extra pages
  %%intro
  %%toc!!
  %%what devotions to include
+ %%Litany saints translation goes in other, I think, but I don't know where to actually PUT Litany
+%%works best starting on odd page and at head of section, not buried in rogation or xl hours
+ 
  \thispagestyle{empty}
  
  \customsubfile{benediction_assumption_la_en_title_introduction}
  
   \customsubfile{benediction_assumption_la_en_exposition}
+  
+   \customsubfile{benediction_assumption_la_en_before_benediction}
  
  \customsubfile{benediction_assumption_la_en_benediction}
- 
- \customsubfile{benediction_assumption_la_en_before_benediction}
  
  \customsubfile{benediction_assumption_la_en_after_benediction}
  
   \customsubfile{benediction_assumption_la_en_other_chants}
+  
+\customsubfile{benediction_assumption_la_en_marian_antiphons}
+
+\customsubfile{benediction_assumption_la_en_litanies}
  
  \customsubfile{benediction_assumption_la_en_other}
+ 
+ %%XL Hours
+ 
+ \newpage
+\tableofcontents
+\thispagestyle{empty}
  
  \end{document}

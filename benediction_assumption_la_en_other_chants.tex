@@ -9,10 +9,13 @@
 
 \begin{document}
 
+%%could move chant litanies to make compilation easier…
+
 \chapter*{OTHER CHANTS.}
-\addcontentsline{toc}{chapter}{Other Chants}
+\addcontentsline{toc}{chapter}{Other Chants} \phantomsection
 
 \bigtitle{In Honor of the Blessed Sacrament.}
+\addcontentsline{toc}{section}{In Honor of the Blessed Sacrament} \phantomsection
 
 \gscore[]{8.}{hy_panis_angelicus_iii_solesmes_1957}
 \textes{Panis_Angelicus_en}
@@ -23,41 +26,14 @@
 \gscore[]{6.}{va_ave_verum_solesmes}
 \textes{Ave_verum_en}
 
-\gscore[]{6.}{re_homo_quidam_solesmes_1961}
+\gscore[Resp.]{6.}{re_homo_quidam_solesmes_1961}
 \textes{homo_quidam_en}
 
 \bigtitle{Other Chants.}
-
+\addcontentsline{toc}{section}{In Honor of the Blessed Virgin Mary} \phantomsection
 \smalltitle{In Honor of the Blessed Virgin Mary.}
 
-\gscore[]{}{Litaniae_BMV_01}
-
-\gresetlastline{justified}
-\smallscore{Litaniae_BMV_02}
-
-\begin{nstabbing}
-%\>Fili \>Re-\>dém\>ptor \>mundi \>\textbf{De}-\>us, \>mi-\>se-\>\textit{ré}-\>\textit{re} \>no-\>bis.\\
-\>\hspace*{1em}Fili Re\hspace{0.03em}dem-\>\>ptor \>\hspace{0.5em}mun-\>di \>De-\>us, \>mi-\>se-\>ré-\>re \>no-\>bis.\\
-\>\hspace*{1em}Spí-\>ri-\>tus \>\hspace{0.5em}San-\hspace{0.5em}cte \>\>\hspace{0.5em}De-\>us, \>mi-\>se-\>ré-\>re \>no-\>bis.\\
-\>\hspace*{1em}Sancta \hspace{1em}Trínitas\>\> \>\hspace{0.5em}u-\hspace{1em}nus \>\>\hspace{0.5em}De-\>us,\>mi-\>se-\>ré-\>re \>no-\>bis.\\
-\end{nstabbing}
-
-\gresetlastline{ragged}
-\smallscore{Litaniae_BMV_03}
-\smallscore{Litaniae_BMV_04}
-
-%\begin{nstabbing}
-\hspace*{-0.5em}Sancta \>\hspace{2.3em}Vir-\>go \>\>vír-gi-\>num, \>\>\hspace{-0.3em}o-\>ra \>pro \>no-bis.
-%\end{nstabbing}
-
-\smallscore{Litaniae_BMV_05}
-\begin{multicols}{2}
-\textes{Litaniae_BMV}
-\end{multicols}
-
-\smallscore{Litaniae_BMV_06}
-
-\gscore[]{7.}{an_sub_tuum_praesidium_solesmes.gabc}
+\gscore[Ant.]{7.}{an_sub_tuum_praesidium_solesmes.gabc}
 \textes{Sub_tuum_en}
 
 \gscore[]{1.}{va_ave_maria_salutatio_angelica_solesmes_1961}
@@ -81,11 +57,34 @@
 \gscore[]{5.}{va_tota_pulchra_es_solesmes}
 \textes{tota_pulchra_es_pothier_en}
 
-\smalltitle{For the Pope.}
-\gscore[]{1.}{va_oremus_pro_pontifice_solesmes}
-\textes{Pro_pontifice_en}
+\addcontentsline{toc}{section}{For the Pope and the Bishop} \phantomsection
 
-\gscore[]{7.}{an_tu_es_petrus_solesmes_ad_benedictionem.gabc}
+\smalltitle{For the Pope.}
+\gscore[]{℣. 1.}{va_oremus_pro_pontifice_solesmes}
+
+\footnotetext[1]{
+\begin{minipage}[t]{5in}%
+%{\fontsize{9}{11}\selectfont{Spondee.}}
+\gresetinitiallines{0} \gabcsnippet{(c4) 
+
+Le(g)ó(ef/gee)ne.(d.)
+(::)
+
+Pi(g/ef/gee)o.(d.) (::)
+
+Pau(g/ef/gee)lo.(d.) (::)
+
+Jo(g)á(g)ne(g) Pau(g/ef/gee)lo.(d.) (::)
+
+Be(g)ne(g)dí(g/ef/gee)cto.(d.)
+(::)
+}%
+\end{minipage}%
+}
+
+\textes{pro_papa_la_en}
+
+\gscore[Ant.]{7.}{an_tu_es_petrus_solesmes_ad_benedictionem.gabc}
 \textes{Tu_es_Petrus_en}
 
 %\begin{sloppypar}
@@ -102,8 +101,21 @@
 %\end{sloppypar}
 
 \smalltitle{For the Bishop.}
-\gscore[]{℣.}{va_oremus_pro_antistite_solesmes.gabc} %% may need to adjust ledger line (touches "p")
+\gscore[]{℣.}{va_oremus_pro_antistite_solesmes} %% may need to adjust ledger line (touches "p")
+\textes{pro_antistite_la_en}
 
+ \footnotetext[1]{
+\begin{minipage}[t]{2.7in}%
+%{\fontsize{9}{11}\selectfont{Spondee.}}
+\gresetinitiallines{0} \gabcsnippet{(c3) 
+Mar(hiH'F)co.(f.)
+(::)
+
+Sté(fh)pha(hiH'F)no.(f.)
+(::)
+
+Jo(fh)sé(hiH'F)pho.(f.)
+(::)}\end{minipage}}
 
 %\begin{sloppypar}
 % \begin{paracol}{2}
@@ -118,6 +130,7 @@
 %\end{paracol}
 %\end{sloppypar}
 
+\addcontentsline{toc}{section}{For Various Needs and Occasions} \phantomsection
 \smalltitle{For Penitential Occasions.}
 \gscore[]{1.}{va_parce_domine_solesmes_1961.gabc}
 \textes{Parce_Domine_en}
@@ -137,23 +150,53 @@
 
 \smalltitle{Invocation of the Holy Ghost.}
 
+\gscore[Ant.]{8.}{an_veni_sancte_spiritus_reple_solesmes_1961}
+\textes{veni_sancte_spiritus_ant_en}
+
 \rubrique{The first verse, from \normaltext{Veni Creátor} to \normaltext{pectóra} inclusive, is sung kneeling.}
 
-\gscore[]{8.}{hy_veni_creator_spiritus_solesmes}
+\gscore[Hy.]{8.}{hy_veni_creator_spiritus_solesmes}
 \textes{veni_creator_la_en}
 \textes{veni_creator_versicle_la_en}
 
+\addcontentsline{toc}{section}{For the Liturgical Seasons} \phantomsection
 \smalltitle{In Advent.}
+\gscore[]{1.}{va_rorate_caeli_solesmes_en}
+\textes{rorate_caeli_en}
 
 \smalltitle{Time of the Nativity.}
+%%puer natus and corde natus ex parentis
+%%adeste fideles?
 
-\smalltitle{Sunday of the Resurrection.}
+\smalltitle{Lent.}
+%%attende domine
+%%stabat mater hymn
 
-%%da pacem
+\smalltitle{Sunday of the Resurrection and in Paschal Time.}
 
-%%Rorate Caeli
-%%chant litanies BVM (usual tone only), St Joseph, SC
-%%puer natus? corde natus ex parentis?
-%% Salve festa dies?
-%%Veni Sancte antiphon and Veni Creator Spiritus
+\gscore[Hy.]{4.}{hy_salve_festa_dies}
+\textes{salve_festa_en}
+
+\gscore[]{2.}{hy_o_filii_et_filiae_solesmes_1}
+
+\rubrique{Repeat \normaltext{Allelúia.}}
+
+\smallscore{hy_o_filii_et_filiae_solesmes_2}
+\textes{o_filii_et_filiae_en}
+
+\addcontentsline{toc}{section}{In Honor of the Saints} \phantomsection
+\smalltitle{In Honor of Saint Anthony.}
+
+\gscore[Resp.]{1.}{re_si_quaeris_miracula_simple_solesmes.gabc}
+\textes{saint_anthony_la_en}
+%%miraculous responsory, ora pro nobis sancte antoni etc. with collect of feast
+
+\smalltitle{In Honor of Saint Roch.}
+%%saint roch
+
+%%what  to do? an antiphon? proper if possible
+%%for now hic vir
+\gscore[Ant.]{8.}{an_cs_hic_vir_despiciens_solesmes_1960}
+
+\textes{saint_roch_la_en}
 \end{document}
