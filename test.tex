@@ -1,0 +1,126 @@
+% !TEX TS-program = lualatexmk
+% !TEX parameter =  --shell-escape
+
+\documentclass[12pt]{book}
+
+\input{commonheaders_vespers_people}
+\usepackage{showframe}
+%%%second litany now compiles without issue with this code added
+%%% not a subfile issue per se because this document is independent
+%%but the tab stops are all in the wrong place for Lit SC
+%%https://tex.stackexchange.com/questions/694231/tab-overflow-work-around-no-longer-works
+\makeatletter
+\chardef\@firsttab=\the\allocationnumber
+%13 
+\newdimen\@gtempa\newdimen\@gtempa\newdimen\@gtempa\newdimen\@gtempa
+\newdimen\@gtempa\newdimen\@gtempa\newdimen\@gtempa\newdimen\@gtempa
+\newdimen\@gtempa\newdimen\@gtempa\newdimen\@gtempa\newdimen\@gtempa
+\newdimen\@gtempa
+%26
+\newdimen\@gtempa\newdimen\@gtempa\newdimen\@gtempa\newdimen\@gtempa
+\newdimen\@gtempa\newdimen\@gtempa\newdimen\@gtempa\newdimen\@gtempa
+\newdimen\@gtempa\newdimen\@gtempa\newdimen\@gtempa\newdimen\@gtempa
+\newdimen\@gtempa
+%39 
+\newdimen\@gtempa\newdimen\@gtempa\newdimen\@gtempa\newdimen\@gtempa
+\newdimen\@gtempa\newdimen\@gtempa\newdimen\@gtempa\newdimen\@gtempa
+\newdimen\@gtempa\newdimen\@gtempa\newdimen\@gtempa\newdimen\@gtempa
+\newdimen\@gtempa
+% .....
+\chardef\@maxtab=\the\allocationnumber
+\dimen\@firsttab=0pt
+\makeatletter
+
+\begin{document}
+
+\smalltitle{Litany of Loreto.}
+\gscore[]{}{su_litaniae_BMV_01_solesmes}
+
+\gresetlastline{justified}
+\smallscore{su_litaniae_BMV_02_solesmes}
+
+\begin{nstabbing}
+%\>Fili \>Re-\>dém\>ptor \>mundi \>\textbf{De}-\>us, \>mi-\>se-\>\textit{ré-}\>\textit{re} \>no-\>bis.\\
+\>Fili Redem-\>\>ptor \>mun-\>di \>De-\>us, \>mi-\>se-\>ré-\>re \>no-\>bis.\\
+\>Spí-\>ri-\>tus \>San-\hspace{0.5em}cte \>\>De-\>us, \>mi-\>se-\>ré-\>re \>no-\>bis.\\
+\>Sancta Trínitas\>\> \>\hspace{0.5em}u-\hspace{1em}nus \>\>De-\>us,\>mi-\>se-\>ré-\>re \>no-\>bis.\\
+\end{nstabbing}
+
+\gresetlastline{ragged}
+\smallscore{su_litaniae_BMV_03_solesmes}
+\smallscore{su_litaniae_BMV_04_solesmes}
+
+%\begin{nstabbing}
+\hspace*{-0.5em}Sancta \>\hspace{2.3em}Vir-\>go \>\>vír-gi-\>num, \>\>\hspace{-0.3em}o-\>ra \>pro \>no-bis.
+%\end{nstabbing}
+
+\smallscore{su_litaniae_BMV_05_solesmes}
+\begin{multicols}{2}
+\textes{Litaniae_BMV}
+\end{multicols}
+
+\newpage
+
+\smallscore{litaniae_sanctorum_1_kyrie_eleison_solesmes}
+
+\gresetlastline{justified}
+\smallscore{litaniae_sanctorum_2_pater_solesmes}%
+\begin{nstabbing}
+\>Fili \>Re-\>dém-\>ptor mundi \>\>\textbf{De}-\>us, \>mi-\>se-\>\textit{ré-}\>\textit{re} \>no-\>bis.\\
+%\>Fili \>Re-\>démp-\>tor \>mundi \>\textbf{De}-\>us, \>mi-\>se-\>\textit{ré-}\>\textit{re} \>no-\>bis.\\
+\>Spí-\>ri-tus Sancte \textbf{De}-\>us, mise-\textit{ré-}\textit{re} no-bis.\\
+\>Sancta \>\>Trínitas \>\>unus \>\textbf{De}-\>us, \>mi-\>se-\>\textit{ré-}\>\textit{re} \>no-\>bis.\\
+\end{nstabbing}
+
+%%can we improve alignment of dactyls?
+%%2nd syllables are all misaligned
+%%only vir- is aligned
+%%last are also wrong, but it's subtly in between e and l for Angels
+%%however it resembles example http://gregorio-project.github.io/tips/litany.html
+%%so for now we will call it a day
+
+%\smallscore{litaniae_sanctorum_3_sancta_maria_solesmes}
+%\begin{nstabbing}
+%\>Sancta Dé-\>\>i \>\textbf{Gé}-\>ni- \>trix, \>ó-\>\textit{ra} \>\textit{pro} \>nó-\>bis.\\
+%\>Sancta Vír-\>\>go \>\textbf{vír-}\>gi-\>num, \>ó-\>\textit{ra} \>\textit{pro} \>nó-\>bis.\\
+%\>Sancte \>\>\>\textbf{Mí-}\>cha-\>el, \>ó-\>\textit{ra} \>\textit{pro} \>nó-\>bis.\\
+%\>Sancte \>\>\>\textbf{Gá-}\>bri-\>el, \>ó-\>\textit{ra} \>\textit{pro} \>nó-\>bis.\\
+%\>Sancte \>\>\>\textbf{Rá-}\>pha-\>el, \>ó-\>\textit{ra} \>\textit{pro} \>nó-\>bis.\\
+%\end{nstabbing}
+%
+%\smallscore{litaniae_sanctorum_4_omnes_solesmes}
+%\begin{nstabbing}
+%\>Omnes \quad sancti \quad beatórum Spirítuum \>\>\>\>\>\textbf{ór}di-nes, \>\>o-\>rá-\>\textit{te} \>\textit{pro} \>nó-\>bis.\\
+%\>Sancte \>Joánnes \>\>Ba\>\textbf{ptí}-\>\>sta, \>\>o-\>\textit{ra} \>\textit{pro} \>nó-\>bis.\\
+%\>Sancte \>\>\>\>\>\textbf{Jó-}\>seph, \>\>o-\>\textit{ra} \>\textit{pro} \>nó-\>bis.\\
+%\>Omnes \>sancti \>Patriárchæ et \quad \>Pro-\>\>\textbf{phé}-\>tæ, \>o-\>rá-\>\textit{te} \>\textit{pro} \>nó-\>bis.\\
+%\end{nstabbing}
+
+%\input{litaniae_sanctorum}
+
+%\textes{litaniae_san_ps_vv}
+%
+%\textes{litaniae_sanctorum_orationes}
+
+%\smalltitle{Litany of the Most Sacred Heart.}
+%
+%\gscore[]{}{su_litaniae_ss_cordis_solesmes}
+%\gresetlastline{justified}
+%\smallscore{su_litaniae_ss_cordis_pater_solesmes}
+%
+%\begin{nstabbing}
+%\>Fi\>li \>\>Re\>\>dém\>\>ptor \>\>mun\>\>di \>\>De\>\>us,  \>mi\>\>se\>\>ré\>\>re \>\>no\>\>bis.\\  
+%\>Spíritus \>San\>cti \>\>De\>us,  \>mi\>se\>ré\>re \>no\>bis.\\   
+%\>Sancta Trí-\>nitas \>u\>\>\>\>\>\>\>nus De\>us, \>\>\>\>\>\>\>mi\>\>\>\>\>\>\>\>se\>\>re \>\>\>\>\>\>\>\>no\>bis.\\   
+%\end{nstabbing}
+%
+%\gresetlastline{ragged}
+%
+%\gabcsnippet{(c4) Cor(e) Je(ef)su,(e.) Fí(e)li(e)i(e) Pa(e)tris(e) <i>æ</i>(g)<b>tér</b>(gvFE)ni,(e.) (;) mi(h)se(g)ré(i)re(h) no(e.)bis.(e.) (::) (Z)
+%Cor(e) Je(ef)su,(e.) in(e) si(e)nu(e) Vír(e)gi(e)nis(e) Má(e)tris(e) a(e) Spí(e)ri(e)tu(e) San(e)cto(e) (:) <i>for-</i>(g) (:)  (gr[ocba:1{]) <b>má-</b>(gv[ocba:0}]FE) (:?) tum,(e.) (;) mi(h)se(g)ré(i)re(h) no(e.)bis.(e.) (::)}
+%
+%\begin{multicols}{2}
+%\textes{litaniae_ss_cor}
+%\end{multicols}
+
+\end{document}
