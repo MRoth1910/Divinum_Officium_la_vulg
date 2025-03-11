@@ -810,8 +810,12 @@ Pater noster et Ave María \rubrique{secreto.}%
 
 %%does this count as a magic number?
 
-\NewDocumentCommand{\baselineskipvspace}{m}{%
-\vspace{1\baselineskip}%
+\NewDocumentCommand{\baselineskipvspace}{}{%
+\vspace{\baselineskip}%
+}
+
+\NewDocumentCommand{\variablevspace}{m}{%
+\vspace{#1\baselineskip}%
 }
 
 \NewDocumentCommand{\halfbaselineskipvspace}{m}{%
