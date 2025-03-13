@@ -1,0 +1,38 @@
+% !TEX TS-program = lualatexmk
+% !TEX parameter =  --shell-escape
+\documentclass[benediction_assumption_la_en.tex]{subfiles}
+
+\ifcsname preamble@file\endcsname
+  \setcounter{page}{\getpagerefnumber{M-benediction_assumption_la_en_novenas}}
+\fi
+
+\begin{document}
+
+\chapter*{NOVENAS.}
+\addcontentsline{toc}{chapter}{Novenas}\phantomsection
+
+\addcontentsline{toc}{section}{Immaculate Conception}\phantomsection
+\textes{novena_ic}
+\newpage
+
+%\addcontentsline{toc}{section}{Christmas}\phantomsection
+
+\addcontentsline{toc}{section}{Annunciation}\phantomsection
+
+\textes{novena_annunciation}
+
+\newpage
+\addcontentsline{toc}{section}{Pentecost}\phantomsection
+
+\textes{novena_pentecost}
+
+%\addcontentsline{toc}{section}{Saint Anthony}\phantomsection
+
+%\addcontentsline{toc}{section}{— — — on Nine Consecutive Tuesdays}\phantomsection
+\newpage
+\addcontentsline{toc}{section}{Assumption}\phantomsection
+
+\textes{novena_assumption}
+
+
+\end{document}
