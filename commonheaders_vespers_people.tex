@@ -809,7 +809,6 @@ Pater noster et Ave María \rubrique{secreto.}%
 %}
 
 %%does this count as a magic number?
-
 \NewDocumentCommand{\baselineskipvspace}{}{%
 \vspace{\baselineskip}%
 }
@@ -818,12 +817,16 @@ Pater noster et Ave María \rubrique{secreto.}%
 \vspace{#1\baselineskip}%
 }
 
-\NewDocumentCommand{\halfbaselineskipvspace}{m}{%
+\NewDocumentCommand{\halfbskipvspace}{}{%
 \vspace{0.5\baselineskip}%
 }
 
-\NewDocumentCommand{\negativebaselineskipvspace}{m}{%
+\NewDocumentCommand{\negativebaselineskipvspace}{}{%
 \vspace{-1\baselineskip}%
+}
+
+\NewDocumentCommand{\neghalfbskipvspace}{}{%
+\vspace{-0.5\baselineskip}%
 }
 
 %%needed for Litanies since new lines cannot use, apparently, space commands which do not overried beginning-of-line restriction
@@ -846,6 +849,10 @@ Pater noster et Ave María \rubrique{secreto.}%
 \hspace*{0.05em}%
 }
 
+%\pretocmd{\lettrine}{\checklettrine}{}{}
+%\newcommand{\checklettrine}{%
+%  \ifnum\prevgraf<2 \vspace{\baselineskip}\fi
+%}
 
 %%for litanies
 \makeatletter  
