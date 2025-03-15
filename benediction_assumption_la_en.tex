@@ -2,6 +2,11 @@
 % !TEX parameter =  --shell-escape
 \documentclass[12pt]{book}
 \input{commonheaders_vespers_people}
+%\usepackage{showframe}
+
+%%\optgabcAtScoreBeginning
+%%index or page ref gets page wrong
+%%%https://groups.google.com/g/gregorio-users/c/WPbwsmIqHrc/m/-Z9RxtYTAgAJ
 \externaldocument[M-]{\subfix{benediction_assumption_la_en}}
 
 \begin{document}
@@ -13,33 +18,43 @@
  %%extra pages
  %%intro
  %%toc!!
- %%what devotions to include
+%% BMV litany is so easy that prep syllables and bold accents make less sense
+%%Latin only vv and collects for litanies with chant?
+%%problem is that Fr Price only does English Litany with per annum and then collect isn't same as after Alma in Advent
+ %%what devotions to include (novena?)
  %%Litany saints translation goes in other, I think, but I don't know where to actually PUT Litany
 %%works best starting on odd page and at head of section, not buried in rogation or xl hours
+%%Saint Anthony, Saint Roch (spire), SPX, who else??
+%%saints with statues: Roch (again), Anthony (again) Thérèse, Joseph (covered),
+
+%%letter paper needed for Fr Price/pastor (big book)); 9x6 better for people if we don't do spiral
+%%can we get a proper Smythe binding?? (experiment with Matthias size for Liber responsorialis); who prints Parish Book of Chant? how many then? 100? 200? in that case, insert novena! will have to adjust newpages etc in files using \textes  
  
  \thispagestyle{empty}
  
- \customsubfile{benediction_assumption_la_en_title_introduction}
- 
+\customsubfile{benediction_assumption_la_en_title_introduction}
   \customsubfile{benediction_assumption_la_en_exposition}
-  
-   \customsubfile{benediction_assumption_la_en_before_benediction}
- 
+ \customsubfile{benediction_assumption_la_en_before_benediction}
  \customsubfile{benediction_assumption_la_en_benediction}
- 
  \customsubfile{benediction_assumption_la_en_after_benediction}
- 
   \customsubfile{benediction_assumption_la_en_other_chants}
-  
 \customsubfile{benediction_assumption_la_en_marian_antiphons}
-
 \customsubfile{benediction_assumption_la_en_litanies}
- 
- \customsubfile{benediction_assumption_la_en_other}
+% \customsubfile{benediction_assumption_la_en_other}
+ \customsubfile{benediction_assumption_la_en_novenas}
  
  %%XL Hours
  
  \newpage
+\addcontentsline{toc}{chapter}{Indices}
+
+\cprintindex[Hy]{Index Hymnorum}
+\cprintindex[An]{Index Antiphonarum}
+\cprintindex[Re]{Index Responsorium}
+%\cprintindex[Ps]{Index Psalmorum}
+\cprintindex[Va]{Index Variarum}
+ 
+\newpage
 \tableofcontents
 \thispagestyle{empty}
  
