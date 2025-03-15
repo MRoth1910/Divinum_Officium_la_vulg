@@ -1,3 +1,23 @@
+\usepackage{imakeidx}
+
+%\indexsetup{level=\section*,toclevel=section,noclearpage,othercode=\footnotesize\thispagestyle{empty}}
+\indexsetup{level=\section*,toclevel=section,othercode=\footnotesize\thispagestyle{empty}}
+\makeindex[name=H,title=index hymnorum., columns=2,columnseprule]
+\makeindex[name=V,title=index variarum., columns=2,columnseprule]
+\makeindex[name=R,title=index responsoriorum., columns=2,columnseprule]
+\makeindex[name=P,title=index psalmorum., columns=2,columnseprule]
+\makeindex[name=te,title=index test., columns=2,columnseprule]
+
+%%I think that I need a separate index for Vespers book vs benediction so two-letters are for Vespers only
+%%%\makeindex[name=Hy,title=index hymnorum., columns=2,columnseprule]
+%%%\makeindex[name=A,title=Index antiphonarum., columns=2,columnseprule]
+%%%\makeindex[name=Va,title=index variarum., columns=2,columnseprule]
+%%%\makeindex[name=Re,title=index responsoriorum., columns=2,columnseprule]
+%%%\makeindex[name=P,title=index psalmorum., columns=2,columnseprule]
+%%%\makeindex[name=T,title=toni communes., columns=2,columnseprule]
+%%%\makeindex[name=F,title=index festorum., columns=2,columnseprule]
+
+
 %%%%%%%%%%%%%%% STANDARD PACKAGES %%%%%%%%%%%%%%%
 
 %% for personal reasons, the commands are a mix of French and English names. Feel free to choose one or the other if you make use of them. This file is subject to change later on.
@@ -71,21 +91,108 @@ headsep=0.75in
 \grechangestyle{initial}{\fontsize{28}{28}\selectfont}%
  \gregorioscore{partitions/#3}}
  
+ \makeatletter
+\NewDocumentCommand{\idxscore}{mO{}mmm}{
+  %% #1 : name of the score file
+  %% #2 : office part if needed
+  %% #3 :mode numeral
+  %% #4 :office part letter T, H, A, P, R, F, V
+    %% #5 : the indexed name of the piece; needs to be repeated (unfortunately — — — will be alphabetized as such, not under previous entry
+
+  
+  %% this prevents page breaks between the phantom section and its label, and the actual score.
+  \needspace{4\baselineskip} 
+  \protected@edef\@currentlabelname{#5}
+  \phantomsection
+  \label{#1}
+\gscore[#2]{#3}{#1}
+  %% if #5 (indexed name) is blank, nothing is indexed.
+  %% this is for pieces that are repetitions of another piece (antiphons after psalms)
+%  \ifblank{#5}{}
+  %% if optional arg #1 has been passed as 'n', set no initial
+%%%  \ifx n#1\gresetinitiallines{0}\fi
+%  \gregorioscore{partitions/#1}
+   {\index[#4]{#5}}
+  }
+\makeatother
+
+%% outputs a score with label, indexing, and annotations. no initials if [n] is passed
+%%from matthias
+\makeatletter
+\newcommand{\matthiasgscore}[5][y]{
+  %% #1 (passed as option) : y = initial, n = no initial
+  %% #2 : name of the score file, should be a code, e.g. Q4F4A3 or 1225N1R1
+  %% #3 : office-part among the values: T, H, A, P, R, I (toni communes, hy., ant., psalmus, resp., invit.)
+  %% #4 : if applicable, a number between 1 and 9 (rank of the ant./resp.) - else: empty
+  %% #5 : the indexed name of the piece
+  
+  %% this prevents page breaks between the phantom section and its label, and the actual score.
+  \needspace{4\baselineskip} 
+  \protected@edef\@currentlabelname{#5}
+  \phantomsection
+  \label{#2}
+  %% we add the office part, and number of that ant. or resp. in the current office, if applicable
+  %% todo : the negative hspace is here because somehow the initial and annotation (first line only) are misaligned by 1mm _with this initial font size_.
+  %% this should probably be fixed in a more elegant way.
+  \greannotation[c]{\hspace{-1.4mm}\hspace{\defaultannotationshift}\officepartannotation{#3}#4}
+  %% if #5 (indexed name) is blank, nothing is indexed.
+  %% this is for pieces that are repetitions of another piece (antiphons after psalms)
+  \ifblank{#5}{}{\index[#3]{#5}}
+  %% if optional arg #1 has been passed as 'n', set no initial
+  \ifx n#1\gresetinitiallines{0}\fi
+  %% the use of a directory called "gabc" is linked
+  %% to the management of gabc files by the website: do not change 
+  %% without also changing the website static files structure
+  \gregorioscore{\subfix{gabc/#2}}
+  %% if optional arg #1 has been passed as 'n', unset no initial
+  \ifx n#1\gresetinitiallines{1}\fi
+  \vspace{1mm}
+}
+\makeatother
+
+
+ 
  
   \NewDocumentCommand{\lectionscore}{O{}m}{%
    \grecommentary{#1}%
   \grechangestyle{initial}{\fontsize{36}{36}\selectfont}%
   \gregorioscore{partitions/#2}}
  
- %% default should be 40, if not using, annotations need to be turned off in gabc. For the first antiphon of the office, Gospel canticle etc. (initial is both to refer to first and the large illustrated initial, used sometimes with an annotation, cf. Christus factus est of Tenebrae in the ritus monasticus.
-  \NewDocumentCommand{\initialscore}{O{}m}{%
+ %% default should be 40, if not using, annotations need to be turned off in gabc. For the first antiphon of the office, Gospel canticle etc. (initial is both to refer to first and the large illustrated initial, used sometimes with an annotation, cf. Christus factus est of Tenebrae in the ritus monasticus. However, 
+  \NewDocumentCommand{\initialscore}{m}{%
       \grechangedim{initialraise}{0.5cm}{scalable}%
-  \greannotation{#1}%
+%  \greannotation{#1}%
    \grechangestyle{initial}{\fontspec{EB Garamond Initials}\fontsize{45}{45}\selectfont}%
- \gregorioscore{partitions/#2}
+%% \gregorioscore{partitions/#2}
+  \gregorioscore{partitions/#1}
    \grechangedim{initialraise}{0cm}{scalable}}
+   
+    \makeatletter
+\NewDocumentCommand{\idxinitialscore}{mmm}{
+  %% #1 : name of the score file
+  %% #2 : office part if needed
+  %% #3 :mode numeral
+  %% #4 :office part letter T, H, A, P, R, F, V
+    %% #5 : the indexed name of the piece; needs to be repeated (unfortunately — — — will be alphabetized as such, not under previous entry
 
-%% score with no initial, e.g psalms, common tones, etc.
+  
+  %% this prevents page breaks between the phantom section and its label, and the actual score.
+  \needspace{4\baselineskip} 
+  \protected@edef\@currentlabelname{#3}
+  \phantomsection
+  \label{#1}
+\initialscore{#1}
+  %% if #5 (indexed name) is blank, nothing is indexed.
+  %% this is for pieces that are repetitions of another piece (antiphons after psalms)
+%  \ifblank{#5}{}
+  %% if optional arg #1 has been passed as 'n', set no initial
+%%%  \ifx n#1\gresetinitiallines{0}\fi
+%  \gregorioscore{partitions/#1}
+   {\index[#2]{#3}}
+  }
+\makeatother
+
+%% score with no initial, e.g psalms, common tones, etc. no need for index in itself
 \newcommand{\smallscore}[2][y]{
   \gresetinitiallines{0}
   \gregorioscore{partitions/#2} %% à remplacer avec NewDocumentCommand ; les arguments ne marchent pas correctement … que fait le [y] ?
@@ -442,6 +549,34 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
 	\pstexte{#3}{#4}%
 }
 
+\makeatletter
+\NewDocumentCommand{\psalmusidx}{mO{}mmm}{
+  %% #1 : name of the score file
+  %% #2 : office part
+  %% #3 :mode numeral
+  %% #4 :office part letter T, H, A, P, R, F, V
+    %% #5 : the indexed name of the piece
+
+  
+  %% this prevents page breaks between the phantom section and its label, and the actual score.
+  \needspace{4\baselineskip} 
+  \protected@edef\@currentlabelname{#5}
+  \phantomsection
+  \label{#1}
+  \greannotation{#2}%
+\greannotation{#3}%
+\grechangestyle{initial}{\fontsize{28}{28}\selectfont}%
+  %% if #5 (indexed name) is blank, nothing is indexed.
+  %% this is for pieces that are repetitions of another piece (antiphons after psalms)
+%  \ifblank{#5}{}
+  %% if optional arg #1 has been passed as 'n', set no initial
+%%%  \ifx n#1\gresetinitiallines{0}\fi
+  \gregorioscore{partitions/#1}
+   {\index[#4]{#5}}
+  }
+\makeatother
+
+
     %% sd=semiduplex. especially for Dominica ad Vesperas in the Psalterium (the only example which comes to mind, in fact!)
  \NewDocumentCommand{\sdpsalmusbilingue}{mmm}{%
 	\needspace{4\baselineskip}%
@@ -499,9 +634,14 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
 \fancyhead[RO]{\small\rightmark\hspace{0.5cm}\thepage}
 \fancyhead[LE]{\small\thepage\hspace{0.5cm}\leftmark}
 
-\newcommand{\setheaders}[2]{
-	\renewcommand{\rightmark}{{\sc#2}}
-	\renewcommand{\leftmark}{{\sc#1}}
+%\newcommand{\setheaders}[2]{
+%	\renewcommand{\rightmark}{{\sc#2}}
+%	\renewcommand{\leftmark}{{\sc#1}}
+%}
+%\setheaders{}{}
+
+\newcommand{\setheaders}[2]{%
+    \markboth{\textsc{#1}}{\textsc{#2}}%
 }
 \setheaders{}{}
 
@@ -933,6 +1073,24 @@ Pater noster et Ave María \rubrique{secreto.}%
   {\par\end{otherlanguage*}}
 %\renewcommand{\contentsname}{\hfill\bfseries\LARGE Index Generalis.\hfill\null}  %% modifies TOC title
 %\renewcommand{\cfttoctitlefont}{\hfil\LARGE}
+
+%% command to wrap printindex and set the headers for indices
+%%\newcommand{\cprintindex}[2]{
+%%	\setheaders{Indices}{#2}
+%%	\pagestyle{fancy}
+%%	\thispagestyle{empty}
+%%	\printindex[#1]
+%%}
+
+%% command to wrap printindex and set the headers for indices
+\newcommand{\cprintindex}[2][\jobname]{% first argument is optional with
+                                % `\jobname` as default
+    \setheaders{Indices}{#2}%
+    \pagestyle{fancy}%
+    \thispagestyle{empty}%
+    \printindex[#1]
+}
+
 
 %%%SUBFILES%%%
 \usepackage{xr} %%to allow cross-references between documents%%%

@@ -58,15 +58,72 @@ headsep=0.75in
 %% should prevent flat turning custos into a clef, as Solesmes  uses an altered custos in only one chant per Élie Roux.
 \gresetcustosalteration{invisible}
 
-%produces a score with a smaller initial (default is 40 pt) and annotations like in the Solesmes books; the 1st is optional and can be omitted as needed.
- \NewDocumentCommand{\gscore}{O{}mm}{%
-%  \grechangedim{initialraise}{0.5cm}{scalable}%
+ %% default should be 40, if not using, annotations need to be turned off in gabc. For the first antiphon of the office, Gospel canticle etc. (initial is both to refer to first and the large illustrated initial, used sometimes with an annotation, cf. Christus factus est of Tenebrae in the ritus monasticus. However, 
+  \NewDocumentCommand{\initialscore}{m}{%
+      \grechangedim{initialraise}{0.5cm}{scalable}%
+%  \greannotation{#1}%
+   \grechangestyle{initial}{\fontspec{EB Garamond Initials}\fontsize{45}{45}\selectfont}%
+%% \gregorioscore{partitions/#2}
+  \gregorioscore{partitions/#1}
+   \grechangedim{initialraise}{0cm}{scalable}}
+   
+    \makeatletter
+\NewDocumentCommand{\idxinitialscore}{mmm}{
+  %% #1 : name of the score file
+  %% #2 : office part if needed
+  %% #3 :mode numeral
+  %% #4 :office part letter T, H, A, P, R, F, V
+    %% #5 : the indexed name of the piece; needs to be repeated (unfortunately — — — will be alphabetized as such, not under previous entry
+
+  
+  %% this prevents page breaks between the phantom section and its label, and the actual score.
+  \needspace{4\baselineskip} 
+  \protected@edef\@currentlabelname{#3}
+  \phantomsection
+  \label{#1}
+\initialscore{#1}
+  %% if #5 (indexed name) is blank, nothing is indexed.
+  %% this is for pieces that are repetitions of another piece (antiphons after psalms)
+%  \ifblank{#5}{}
+  %% if optional arg #1 has been passed as 'n', set no initial
+%%%  \ifx n#1\gresetinitiallines{0}\fi
+%  \gregorioscore{partitions/#1}
+   {\index[#2]{#3}}
+  }
+\makeatother
+
+%produces a score with a smaller initial (default is 40 pt) and annotations like in the Solesmes books; the 1st is optional and can be omitted as needed. %%update 23/5/23 apparently
+ \NewDocumentCommand{\gscore}{O{}mm}{%    %%you can also omit the mode and it typesets correctly.
  \greannotation{#1}%
 \greannotation{#2}%
 \grechangestyle{initial}{\fontsize{28}{28}\selectfont}%
  \gregorioscore{partitions/#3}%
-\grechangedim{initialraise}{0cm}{scalable}}
+ }
  
+  \makeatletter
+\NewDocumentCommand{\idxscore}{mO{}mmm}{
+  %% #1 : name of the score file
+  %% #2 : office part if needed
+  %% #3 :mode numeral
+  %% #4 :office part letter T, H, A, P, R, F, V
+    %% #5 : the indexed name of the piece; needs to be repeated (unfortunately — — — will be alphabetized as such, not under previous entry
+
+  
+  %% this prevents page breaks between the phantom section and its label, and the actual score.
+  \needspace{4\baselineskip} 
+  \protected@edef\@currentlabelname{#5}
+  \phantomsection
+  \label{#1}
+\gscore[#2]{#3}{#1}
+  %% if #5 (indexed name) is blank, nothing is indexed.
+  %% this is for pieces that are repetitions of another piece (antiphons after psalms)
+%  \ifblank{#5}{}
+  %% if optional arg #1 has been passed as 'n', set no initial
+%%%  \ifx n#1\gresetinitiallines{0}\fi
+%  \gregorioscore{partitions/#1}
+   {\index[#4]{#5}}
+  }
+\makeatother
  
   \NewDocumentCommand{\lectionscore}{O{}m}{%
     \grechangedim{initialraise}{0.15cm}{scalable}%
@@ -75,11 +132,6 @@ headsep=0.75in
   \gregorioscore{partitions/#2}%
   \grechangedim{initialraise}{0cm}{scalable}}
  
- %% default should be 40, if not using, annotations need to be turned off in gabc. For the first antiphon of the office, Gospel canticle etc. (initial is both to refer to first and the large illustrated initial, used sometimes with an annotation, cf. Christus factus est of Tenebrae in the ritus monasticus.
-  \NewDocumentCommand{\initialscore}{O{}m}{%
-  \greannotation{#1}%
-   \grechangestyle{initial}{\fontspec{EB Garamond Initials}\fontsize{45}{45}\selectfont}%
- \gregorioscore{partitions/#2}}
 
 %% score with no initial, e.g psalms, common tones, etc.
 \newcommand{\smallscore}[2][y]{
