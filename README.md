@@ -7,11 +7,11 @@ Ici on trouve également mon édition de l'office des Ténèbres. Tout est selon
 
 To use latexmk on a Mac with TeXShop/pour employer latexmk sur le Mac avec TeXShop : [use this file/employer ce fichier](https://github.com/MRoth1910/Vesperale-Romanum/blob/main/lualatexmk.engine) and [this one/celui-ci](https://github.com/MRoth1910/Vesperale-Romanum/blob/main/lualatexmkrc)
 
-Certain hymns from the \textit{Parish Book of Chant,} second edition,
+Certain hymns from the *Parish Book of Chant,* second edition,
 reproduced and adapted. [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)
 
 Translation of the Litany of the Saints orations © Michael Martin. Used with permission.
 
-Translation of \textit{Stabat mater dolorosa} © [the Stabat Mater Foundatiion.](https://stabatmater.info/nl/copyright/) Used with permission.
+Translation of *Stabat mater dolorosa* © [the Stabat Mater Foundatiion.](https://stabatmater.info/nl/copyright/) Used with permission.
 
 All other material from sources in the public domain or free of known copyright restrictions.
