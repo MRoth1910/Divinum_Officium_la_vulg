@@ -1,18 +1,22 @@
 \usepackage{imakeidx}
 
 %\indexsetup{level=\section*,toclevel=section,noclearpage,othercode=\footnotesize\thispagestyle{empty}}
+%%two letters for benediction
 \indexsetup{level=\section*,toclevel=section,othercode=\footnotesize\thispagestyle{empty}}
-\makeindex[name=H,title=index hymnorum., columns=2,columnseprule]
-\makeindex[name=V,title=index variarum., columns=2,columnseprule]
-\makeindex[name=R,title=index responsoriorum., columns=2,columnseprule]
-\makeindex[name=P,title=index psalmorum., columns=2,columnseprule]
+\makeindex[name=Hy,title=index hymnorum., columns=2,columnseprule]
+\makeindex[name=An,title=index antiphonarum., columns=2,columnseprule]
+\makeindex[name=Va,title=index variarum., columns=2,columnseprule]
+\makeindex[name=Re,title=index responsoriorum., columns=2,columnseprule]
+\makeindex[name=Ps,title=index psalmorum., columns=2,columnseprule]
+
+%%for testing
 \makeindex[name=te,title=index test., columns=2,columnseprule]
 
-%%I think that I need a separate index for Vespers book vs benediction so two-letters are for Vespers only
 %%%\makeindex[name=Hy,title=index hymnorum., columns=2,columnseprule]
 %%%\makeindex[name=A,title=Index antiphonarum., columns=2,columnseprule]
-%%%\makeindex[name=Va,title=index variarum., columns=2,columnseprule]
-%%%\makeindex[name=Re,title=index responsoriorum., columns=2,columnseprule]
+%%probably don't need that
+%%%\makeindex[name=V,title=index variarum., columns=2,columnseprule]
+%%%\makeindex[name=R,title=index responsoriorum., columns=2,columnseprule]
 %%%\makeindex[name=P,title=index psalmorum., columns=2,columnseprule]
 %%%\makeindex[name=T,title=toni communes., columns=2,columnseprule]
 %%%\makeindex[name=F,title=index festorum., columns=2,columnseprule]
@@ -190,7 +194,8 @@ headsep=0.75in
 %  \gregorioscore{partitions/#1}
    {\index[#2]{#3}}
   }
-\makeatother
+
+
 
 %% score with no initial, e.g psalms, common tones, etc. no need for index in itself
 \newcommand{\smallscore}[2][y]{
