@@ -154,9 +154,6 @@ headsep=0.75in
 }
 \makeatother
 
-
- 
- 
   \NewDocumentCommand{\lectionscore}{O{}m}{%
    \grecommentary{#1}%
   \grechangestyle{initial}{\fontsize{36}{36}\selectfont}%
@@ -803,6 +800,7 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
  {\centering #1\par}
 }
 
+
  \NewDocumentCommand{\invesperis}{m}{%
 \needspace{5\baselineskip}%
 \vspace{\baselineskip}%
@@ -919,6 +917,34 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
 \NewDocumentCommand{\allexcept}{}{%
 {\rubrique{All as at I Vespers, except the following.}%
 }%
+}
+
+%%for lauds
+\NewDocumentCommand{\matins}{}{%
+\bigtitle{\capspace{AT MATINS}.
+}%
+}
+
+%%for nocturns
+\NewDocumentCommand{\nocturn}{m}{%
+\bigtitle{\scspace{#1 nocturn.}%
+}%
+}
+
+%%for lauds
+\NewDocumentCommand{\lauds}{}{%
+\bigtitle{\capspace{AT LAUDS}.
+}%
+}
+
+%%for lessons
+\NewDocumentCommand{\lectionlateng}{m}{%
+\bigtitle{Lesson #1.}%
+}
+
+%%for lessons
+\NewDocumentCommand{\resplateng}{m}{%
+\bigtitle{Responsory #1.}%
 }
 
 
