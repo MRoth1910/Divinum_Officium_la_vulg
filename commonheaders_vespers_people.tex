@@ -96,6 +96,13 @@ headsep=0.75in
  \gregorioscore{partitions/#3}}
  
 %% Tenebrae
+
+%  \NewDocumentCommand{\lectionscore}{O{}m}{%
+%   \grecommentary{#1}%
+%  \grechangestyle{initial}{\fontsize{36}{36}\selectfont}%
+%  \gregorioscore{partitions/#2}}
+%  
+  
    \NewDocumentCommand{\lectionscore}{O{}m}{%
     \grechangedim{initialraise}{0.15cm}{scalable}%
    \grecommentary{#1}%
@@ -161,11 +168,6 @@ headsep=0.75in
   \vspace{1mm}
 }
 \makeatother
-
-  \NewDocumentCommand{\lectionscore}{O{}m}{%
-   \grecommentary{#1}%
-  \grechangestyle{initial}{\fontsize{36}{36}\selectfont}%
-  \gregorioscore{partitions/#2}}
  
  %% default should be 40, if not using, annotations need to be turned off in gabc. For the first antiphon of the office, Gospel canticle etc. (initial is both to refer to first and the large illustrated initial, used sometimes with an annotation, cf. Christus factus est of Tenebrae in the ritus monasticus. However, 
   \NewDocumentCommand{\initialscore}{m}{%
@@ -362,6 +364,14 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
 {\begin{otherlanguage*}{#1}%
 \noindent%
  Ant. #2.%
+ \end{otherlanguage*}%
+ }
+ 
+ \NewDocumentCommand{\versiculus}{mmm}
+{\begin{otherlanguage*}{#1}
+\vv #2.
+
+\rr #3.
  \end{otherlanguage*}%
  }
  
@@ -976,6 +986,8 @@ at lauds.}%
 
 \NewDocumentCommand{\secreto}{}{Pater noster. \rubrique{secreto.}}
 
+\NewDocumentCommand{silently}{}{Pater noster. \rubrique{silently.}}
+
 \NewDocumentCommand{\pateravecredo}{}{\large{Pater noster, Ave María, \textit{et} Credo.}}
 
 \NewDocumentCommand{\pateravedeus}{}{%
@@ -1015,6 +1027,10 @@ Pater noster et Ave María \rubrique{secreto.}%
 
 \NewDocumentCommand{\neghalfbskipvspace}{}{%
 \vspace{-0.5\baselineskip}%
+}
+
+\NewDocumentCommand{\negvariablevspace}{m}{%
+\vspace{-#1\baselineskip}%
 }
 
 %%needed for Litanies since new lines cannot use, apparently, space commands which do not overried beginning-of-line restriction
