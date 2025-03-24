@@ -95,6 +95,14 @@ headsep=0.75in
 \grechangestyle{initial}{\fontsize{28}{28}\selectfont}%
  \gregorioscore{partitions/#3}}
  
+%% Tenebrae
+   \NewDocumentCommand{\lectionscore}{O{}m}{%
+    \grechangedim{initialraise}{0.15cm}{scalable}%
+   \grecommentary{#1}%
+  \grechangestyle{initial}{\fontsize{36}{36}\selectfont}%
+  \gregorioscore{partitions/#2}%
+  \grechangedim{initialraise}{0cm}{scalable}}
+ 
  \makeatletter
 \NewDocumentCommand{\idxscore}{mO{}mmm}{
   %% #1 : name of the score file
@@ -357,8 +365,6 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
  \end{otherlanguage*}%
  }
  
-
-
 %%rubrics: black italics, smaller than body of psalms etc
 
 \NewDocumentCommand{\rubrique}{m}{%
@@ -919,11 +925,25 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
 }%
 }
 
-%%for lauds
+%%for matins and lauds
+
 \NewDocumentCommand{\matins}{}{%
-\bigtitle{\capspace{AT MATINS}.
+{\needspace{5\baselineskip}%
+\centering{\huge
+\scspace{%
+at matins.}%
+}\par
 }%
 }
+\NewDocumentCommand{\lauds}{}{%
+{\needspace{5\baselineskip}%
+\centering{\huge
+\scspace{%
+at lauds.}%
+}\par
+}%
+}
+
 
 %%for nocturns
 \NewDocumentCommand{\nocturn}{m}{%
@@ -932,10 +952,7 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
 }
 
 %%for lauds
-\NewDocumentCommand{\lauds}{}{%
-\bigtitle{\capspace{AT LAUDS}.
-}%
-}
+
 
 %%for lessons
 \NewDocumentCommand{\lectionlateng}{m}{%
