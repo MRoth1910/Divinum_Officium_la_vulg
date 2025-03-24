@@ -525,6 +525,26 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
        \input{psaumes/#1}
     \end{enumerate}}
     
+    %    for benedictus  text
+    %%too lazy to change name!
+        \NewDocumentCommand{\benedictustexte}{m}{%
+    \smallskip%
+    \noindent%
+    \begin{enumerate}[%
+			label=\arabic*.,%
+%			align=left,%
+			leftmargin=10pt, %
+			itemindent=15pt, %
+			labelsep=3pt, %
+			labelwidth=0pt,
+			rightmargin=0pt, %
+			parsep=0pt, %
+			topsep=0pt, %
+			itemsep=0pt,%
+			start=3]
+       \input{psaumes/#1}
+    \end{enumerate}}
+    
     %%psalm vernacular file has language command
     \NewDocumentCommand{\pstexte}{mm}{%
     \smallskip%
@@ -986,7 +1006,7 @@ at lauds.}%
 
 \NewDocumentCommand{\secreto}{}{Pater noster. \rubrique{secreto.}}
 
-\NewDocumentCommand{silently}{}{Pater noster. \rubrique{silently.}}
+\NewDocumentCommand{\silently}{}{Pater noster. \rubrique{silently.}}
 
 \NewDocumentCommand{\pateravecredo}{}{\large{Pater noster, Ave María, \textit{et} Credo.}}
 
