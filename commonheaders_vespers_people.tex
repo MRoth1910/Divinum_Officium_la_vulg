@@ -363,7 +363,7 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
 \NewDocumentCommand{\antiphona}{mm}
 {\begin{otherlanguage*}{#1}%
 \noindent%
- Ant. #2.%
+ Ant.\@ #2.%
  \end{otherlanguage*}%
  }
  
@@ -525,26 +525,6 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
        \input{psaumes/#1}
     \end{enumerate}}
     
-    %    for benedictus  text
-    %%too lazy to change name!
-        \NewDocumentCommand{\benedictustexte}{m}{%
-    \smallskip%
-    \noindent%
-    \begin{enumerate}[%
-			label=\arabic*.,%
-%			align=left,%
-			leftmargin=10pt, %
-			itemindent=15pt, %
-			labelsep=3pt, %
-			labelwidth=0pt,
-			rightmargin=0pt, %
-			parsep=0pt, %
-			topsep=0pt, %
-			itemsep=0pt,%
-			start=3]
-       \input{psaumes/#1}
-    \end{enumerate}}
-    
     %%psalm vernacular file has language command
     \NewDocumentCommand{\pstexte}{mm}{%
     \smallskip%
@@ -578,6 +558,40 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
       \end{enumerate}
     \end{paracol}%
     } %% modified from original in order to allow 2 column psalms
+    
+      %%miserere for tenebrae
+    \NewDocumentCommand{\specialpstexte}{mm}{%
+    \smallskip%
+    \noindent%%
+   \begin{paracol}{2}
+    \begin{enumerate}[%
+    		label=\arabic*., %
+			leftmargin=3pt, %
+			itemindent=3mm, %
+			labelsep=3pt, %
+			labelwidth=0pt, %
+			rightmargin=0pt, %
+			parsep=0pt, %
+			topsep=0pt, %
+			itemsep=0pt,%
+			]%
+    \input{psaumes/#1.tex}
+    \end{enumerate}
+    \switchcolumn
+       \begin{enumerate}[%
+    		label=\arabic*.,%
+			leftmargin=3pt, %
+			itemindent=3mm, %
+			labelsep=3pt, %
+			labelwidth=0pt, %
+			rightmargin=0pt, %
+			parsep=0pt, %
+			topsep=0pt, %
+			itemsep=0pt]%
+    \input{psaumes/#2.tex}
+      \end{enumerate}
+    \end{paracol}%
+    } 
     
     %% Command de Matthias Bry modifié, prints psalm incipit score with the text
     \NewDocumentCommand{\psalmus}{mmmm}{%
@@ -623,12 +637,12 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
 	}
 
     %% Command de Matthias Bry modifié, prints canticle incipit score with the text and scriptural commentary
-    \NewDocumentCommand{\canticum}{mmmm}{
+    \NewDocumentCommand{\canticum}{mmmmm}{
 	\needspace{4\baselineskip}
 	\smalltitle{Canticum #1.}
 	 \grecommentary{#2}
 	\smallscore[n]{#3}
-	\pstexte{#4}
+	\pstexte{#4}{#5}
 }
 
 \NewDocumentCommand{\vel}{}{%
