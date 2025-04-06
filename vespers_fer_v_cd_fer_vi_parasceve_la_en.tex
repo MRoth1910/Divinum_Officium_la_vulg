@@ -1,0 +1,87 @@
+% !TEX TS-program = lualatexmk
+% !TEX parameter =  --shell-escape
+
+\documentclass[12pt]{book}
+
+\input{commonheaders_vespers_people}
+
+\begin{document}
+ 
+ \twosided[pc] %% to allow for the left-right switching of columns needed for bilingual liturgical typesetting (like in missals); it's unclear why this goes BEFORE everything else and not when activating the environment. %% It's OK for paper booklets to not switch, but it's probably best practice to switch.
+ 
+ \thispagestyle{empty}
+ 
+ {\centering{\huge\capspace{{VESPERS OF THE \\[0.25\baselineskip]PASCHAL TRIDUUM.}}}\par}\header{vespers of the paschal triduum and stripping of the altars.}
+ 
+ \halfbskipvspace
+ 
+ {\centering{\Large{and Stripping of the Altars.}}\par}
+ 
+ \rubrique{ These Vespers are said on Thursday of the Lord's Supper and on Friday of the Preparation, but on Holy Saturday, Vespers, even when the Mass of the vigil is not sung, are as in the \normaltext{Graduale Romanum.}}
+
+\textes{pater_ave_la_eng}
+
+\rubrique{The cantor intones the first antiphon. All sit at \normaltext{Ego} and otherwise remain seated until the antiphon at the \normaltext{Magnificat.}}
+
+\rubrique{The psalms alternate in the usual way between a cantor and the others. Syllables marked in bold are lengthened slightly, or at least a pause is made at the asterisk. The antiphon is sung in full before and after the psalms and Gospel canticle, as on double feasts.}
+
+\rubrique{Although the Blessed Sacrament is no longer at the choir altar, all genuflect in the ordinary way when passing the center of the altar during the office and when leaving the choir or the body of the church at the conclusion of the office.}
+
+\texteparacol{Ant.\@ Cáli\textbf{cem} * salutáris accípiam et nomen Dómini invocá\textbf{bo.}}{english}{\noindent Ant.\@ I will take the cup of salvation; * and call upon the Name of the Lord.}
+\psalmusspecial{115}{115_triduum}{115_en_triduum}
+
+\texteparacol{Ant.\@ Cum \textbf{his,} * qui odérunt pacem eram pacífi\textbf{cus:} dum loquébar illis, impugnábant me gra\textbf{tis.}}{english}{\noindent Ant.\@ With them * that hate peace I was peaceable; when I spoke unto them they fought against me without a cause.}
+\psalmusspecial{119}{119_triduum}{119_en_triduum}
+
+\texteparacol{Ant.\@ Ab homíni\textbf{bus} * iníquis líbera me, Dómi\textbf{ne.}}{english}{\noindent Ant.\@ O Lord, preserve me * from the wicked man.}
+\psalmusspecial{139}{139_triduum}{139_en_triduum}
+
+
+\texteparacol{Ant.\@ Custódi \textbf{me} * a láqueo, quem statuérunt mi\textbf{hi,} et a scándalis operántium iniquitá\textbf{tem.}}{english}{\noindent Ant.\@ Keep me * from the snare which they have laid for me, and the gins of the workers of iniquity.}
+\psalmusspecial{140}{140_triduum}{140_en_triduum}
+
+\texteparacol{Ant.\@ Considerá\textbf{bam} * ad déxteram, et vidé\textbf{bam,} et non erat qui cognósceret \textbf{me.}}{english}{\noindent Ant.\@ I looked * on my right hand and beheld: but there was no man that would know me.}
+\psalmusspecial{141}{141_triduum}{141_en_triduum}
+
+\texteparacol{Ant.\@ Cenántibus autem ill\textbf{is} * accépit Jesus panem, et benedíxit, ac fre\textbf{git,} dedítque discípulis su\textbf{is.}}{english}{\noindent Ant.\@ And as they were eating * Jesus took bread, and blessed, and broke it, and gave to his disciples.}
+
+\myrule
+
+\smalltitle{On Friday.}
+
+\texteparacol{Ant.\@ Cum accepísset acé\textbf{tum,} * dixit: Consummátum \textbf{est:} et inclináto cápi\textbf{te,} emísit spíri\textbf{tum.}}{english}{\noindent Ant.\@ When he had received the vinegar, * he said: It is finished and he bowed his head, and gave up the ghost.}
+\myrule
+
+\canticumspecial{Beatæ Mariæ Virginis}{Luc. 1, 46 – 55.}{magnificat_triduum}{magnificat_en_triduum}
+
+\rubrique{All kneel from now until the end of the office, including the officiant.}
+
+\texteparacol{\lettrine{C}{h}ri\textbf{stus} * factus est pro nobis obédiens usque ad mor\textbf{tem.}
+
+\rubrique{In Fer.\@ VI in Parasceve:}
+
+\lettrine{M}{or}rtem autem cru\textbf{cis.}}{english}{\noindent Christ became obedient for us unto death.
+
+\rubrique{On Friday:}
+
+\noindent Even death on a cross.}
+
+\baselineskipvspace
+
+\silently
+
+\rubrique{In a lower voice:}
+
+\psalmusspecial{50}{50_recto_tono}{50_en_tenebrae}
+
+\textes{respice_triduum_la_en}
+
+\rubrique{The verscicle \normaltext{Dóminus, det nobis} and the Marian antiphon etc.\@ are omitted during the Sacred Triduum, and the antiphon resumes only after Compline of Holy Saturday.}
+
+\rubrique{After Vespers on Thursday of the Lord's Supper, the celebrant, the deacon, and subdeacon, in alb with violet stoles, together with the inferior ministers, come to the center of the altar in the usual way. The celebrant intones the antiphon \normaltext{Divisérunt,} which is continued by the choir, which intones Ps. \normaltext{Deus, Deus meus,} at the end of which the antiphon is repeated.}
+
+\texteparacol{Ant.\@ Divisérunt si\textbf{bi}~* vestiménta me\textbf{a,} et super vestem meam misérunt sor\textbf{tem.}}{english}{\noindent They part * my garments among them, and cast lots upon my vesture.}
+\psalmusspecial{21}{21_fer_v_cd}{21_en_tenebrae}
+
+\rubrique{If the \normaltext{Mandatum} ceremony is not held in the church, or is held at a later time, or is omitted, all depart in silence; when passing by the repository where adoration of the Most Blessed Sacrament occurs until midnight, one genuflects on both knees, making a profound bow at the waist before rising again, as if the Host was exposed in the monstrance.}
+ \end{document}
