@@ -593,6 +593,20 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
     \end{paracol}%
     } 
     
+        %% Command de Matthias Bry modifié, prints psalm incipit score with the text
+    \NewDocumentCommand{\psalmusspecial}{mmm}{%
+	\needspace{4\baselineskip}%
+	\smalltitle{Psalmus #1.}%
+	\specialpstexte{#2}{#3}%
+}
+
+    \NewDocumentCommand{\canticumspecial}{mmmm}{%
+	\needspace{4\baselineskip}%
+	\smalltitle{Canticum #1.}%
+	\scripture{#2}
+	\specialpstexte{#3}{#4}%
+}
+    
     %% Command de Matthias Bry modifié, prints psalm incipit score with the text
     \NewDocumentCommand{\psalmus}{mmmm}{%
 	\needspace{4\baselineskip}%
@@ -1082,6 +1096,9 @@ Pater noster et Ave María \rubrique{secreto.}%
 \hspace*{0.03em}%
 }
 
+\NewDocumentCommand{\myhspace}{}{%
+\hspace*{0.04em}%
+}
 %%spur because of n, u, etc.
 \NewDocumentCommand{\spurhspace}{}{%
 \hspace*{0.05em}%
