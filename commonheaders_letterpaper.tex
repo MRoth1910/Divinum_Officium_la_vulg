@@ -134,10 +134,10 @@ headsep=0.75in
  
 
 %% score with no initial, e.g psalms, common tones, etc.
-\newcommand{\smallscore}[2][y]{
-  \gresetinitiallines{0}
-  \gregorioscore{partitions/#2} %% à remplacer avec NewDocumentCommand ; les arguments ne marchent pas correctement … que fait le [y] ?
-  \gresetinitiallines{1}
+ \NewDocumentCommand{\smallscore}{m}{%
+   \gresetinitiallines{0}%
+  \gregorioscore{partitions/#1}%
+  \gresetinitiallines{1}%
 }
 
 \NewDocumentCommand{\zerobaroffsettextleft}{}%
