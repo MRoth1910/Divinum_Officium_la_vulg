@@ -1,0 +1,143 @@
+% !TEX TS-program = lualatexmk
+% !TEX parameter =  --shell-escape
+\documentclass[12pt]{book}
+
+\input{commonheaders_vespers_people} %%% will need to fix spacing problem in psalms at a later date.
+
+\begin{document}
+ 
+ \twosided[pc] %% to allow for the left-right switching of columns needed for bilingual liturgical typesetting (like in missals); it's unclear why this goes BEFORE everything else and not when activating the environment. %% It's OK for paper booklets to not switch, but it's probably best practice to switch.
+ 
+  \thispagestyle{empty}
+ 
+ {\centering{\capspace{\huge{VESPERS OF AN APOSTLE OR \\[0.25\baselineskip]EVANGELIST.}}}\par}\header{vespers of an apostle or evangelist in paschal time.}
+ 
+%{\centering{\huge\capspace{{ OR EVANGELIST.}}}\par}
+ 
+ \vspace{0.5\baselineskip}
+ 
+{\centering{\huge{In Paschal Time at I Vespers.}}\par}
+ 
+\smalltitle{Before the Office.}
+
+\rubrique{These prayers are said kneeling. End when the priest stands.}
+
+\textes{orationes_ante_do_la_en}
+
+\smalltitle{\prayers}
+
+\rubrique{The celebrant intones the following verse. All sing the response and doxology.}
+
+\begin{enpars}
+\rubrique{Make the sign of the cross at the beginning and at the Magnificat, and bow the head when the Trinity is mentioned, when mention is made of the ``Holy Name'' in some way, and at ``Orémus.''}\end{enpars}
+
+\gscore[]{℣.}{Deus_In_Adjutorium_Festivus}
+
+\noindent
+\begin{enpars}
+O God, \cc{} come to my assistance. \rr O Lord, make haste to help me. Glory be to the Father, and to the Son, and to the Holy Ghost. As it was in the beginning, is now, and ever shall be, world without end. Amen. Alleluia.\end{enpars}
+
+\firstantiphon{8. G}
+\initialscore{an_sancti_tui_domine_solesmes_1961}
+
+\antiphona{english}{Thy saints, O Lord, flourish like lilies, alleluia: and like the smell of balsam are before thee, alleluia}
+
+\rubrique{\begin{enpars}
+Sit at the word ``Sede.'' The cantor sings odd verses; all sing even verses, and this for the hymn and Magnificat, when sung entirely in chant, as well.
+\end{enpars}}
+
+\psalmus{109}{109_8G}{109_8}{109_en}
+
+\rubrique{\begin{enpars}
+Clerics in descending order, or a cantor, intone the subsequent antiphons.\end{enpars}}
+
+ \gscore[2. Ant.]{7. a}{an_in_caelestibus_regnis_alleluia_solesmes_1961}
+ \antiphona{english}{In the heavenly kingdom is the habitation of the saints, alleluia: and they rest in the eternity, alleluia}
+\psalmus{110}{110_7a}{110_7}{110_en}
+
+  \gscore[3. Ant.]{2. D}{an_in_velamento_clamabant_solesmes_1961}
+  \antiphona{english}{Protected by a veil thy saints turn to thee, o Lord, alleluia, alleluia}
+ \psalmus{111}{111_2}{111_2}{111_en}
+
+\gscore[4. Ant.]{8. G*}{an_spiritus_et_animae_solesmes_1961}
+\antiphona{english}{Spirits and souls of the just, sing hymns to our Lord, alleluia, alleluia}
+\psalmus{112}{112_8Gstar}{112_8}{112_en}
+
+ \gscore[5. Ant.]{2. D}{an_fulgebunt_justi_sicut_sol_solesmes_1961}
+\antiphona{english}{The just shine like the sun at the face of God, alleluia}
+\psalmus{116}{116_1g}{116_1}{116_en}
+
+\rubrique{\begin{enpars}
+Having sung the last antiphon in full, stand when the celebrant does.
+\end{enpars}}
+
+\chapterlateng
+\scripture{Sap. 5, 1.}
+
+\texteparacol{\lettrine{S}{t}abunt justi in magna constántia~† advérsus eos qui se angustiavérunt,~* et qui abstulérunt labóres eórum.}{english}{\noindent Then shall the just stand with great constancy against those that have afflicted them, and taken away their labours.}
+
+\hymnlateng
+
+\gscore[]{3.}{hy_tristes_erant_apostoli_textus_antiquus}
+
+\rubrique{From the Ascension until Pentecost, for the doxology, it is said instead as follows:}
+
+\smallscore{dox_ascensionis_tristes_erant_textus_antiquus}
+
+\textes{tristes_erant_lat_eng}
+
+\rubrique{\begin{enpars}
+The cantor sings the verse to which all reply.
+\end{enpars}}
+
+\smallscore{versiculus_1_vesperis_apostolorum_tp}
+
+\begin{enpars} \noindent \vv 
+Saints and just, rejoice in the Lord, alleluia.
+
+\noindent \rr The Lord has chosen you for his inheritance, alleluia.
+ \end{enpars}
+ 
+\smalltitle{Antiphon at the Magnificat.}
+
+\rubrique{Sit when the celebrant does, after he sings the first words. Rise at the end.}
+
+\gscore[]{1. g}{an_lux_perpetua_solesmes_1961}
+ 
+ \antiphona{english}{Eternal light will shine over thy saints, O Lord, and the eternity of times, alleluia}
+ 
+\smallscore{Magnificat_1_g_Solemnis}
+
+\magnificattexte{Magnificat_1_6_Solemnis}
+
+\textes{magnificat_en_multicols}
+
+\rubrique{\begin{enpars}
+Sit as the antiphon is repeated. Then the usual dialogue follows. All stand from now until the end of the office.\end{enpars}}
+
+\textes{dv_la_en}
+
+\rubrique{The collect is proper to the feast.}
+
+\textes{dv_la_en}
+
+\rubrique{\begin{enpars}
+The cantor sings the verse to which all reply.
+\end{enpars}}
+
+\gscore[]{2.}{BD_Solemnis_I_Vesp}
+
+\noindent \vv Let us bless the Lord.
+
+\noindent \rr Thanks be to God.
+
+\textebilingue{fidelium_animae}{fidelium_animae_en}
+    
+%\rubrique{\begin{enpars}
+%Then one Our Father is said, unless Compline follows, or even some pious exercises, a sermon, or Benediction of the Blessed Sacrament, in parish and other smaller churches.\end{enpars}}
+
+%\rubrique{\begin{enpars}
+%Then the office is concluded with the following verses, the Marian antiphon, etc.
+%\end{enpars}}
+
+\end{document}

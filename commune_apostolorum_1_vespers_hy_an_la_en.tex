@@ -1,0 +1,144 @@
+% !TEX TS-program = lualatexmk
+% !TEX parameter =  --shell-escape
+\documentclass[12pt]{book}
+
+\input{commonheaders_vespers_people} %%% will need to fix spacing problem in psalms at a later date.
+
+\begin{document}
+ 
+ \twosided[pc] %% to allow for the left-right switching of columns needed for bilingual liturgical typesetting (like in missals); it's unclear why this goes BEFORE everything else and not when activating the environment. %% It's OK for paper booklets to not switch, but it's probably best practice to switch.
+ 
+  \thispagestyle{empty}
+ 
+ {\centering{\capspace{\huge{VESPERS OF AN APOSTLE OR \\[0.25\baselineskip]EVANGELIST.}}}\par}\header{vespers of an apostle or evangelist outside paschal time.}
+ 
+%{\centering{\huge\capspace{{ OR EVANGELIST.}}}\par}
+ 
+ \vspace{0.5\baselineskip}
+ 
+{\centering{\huge{At I Vespers.}}\par}
+ 
+\smalltitle{Before the Office.}
+
+\rubrique{These prayers are said kneeling. End when the priest stands.}
+
+\textes{orationes_ante_do_la_en}
+
+\smalltitle{\prayers}
+
+\rubrique{The celebrant intones the following verse. All sing the response and doxology.}
+
+\begin{enpars}
+\rubrique{Make the sign of the cross at the beginning and at the Magnificat, and bow the head when the Trinity is mentioned, when mention is made of the ``Holy Name'' in some way, and at ``Orémus.''}\end{enpars}
+
+\gscore[]{℣.}{Deus_In_Adjutorium_Festivus}
+
+\noindent
+\begin{enpars}
+O God, \cc{} come to my assistance. \rr O Lord, make haste to help me. Glory be to the Father, and to the Son, and to the Holy Ghost. As it was in the beginning, is now, and ever shall be, world without end. Amen. Alleluia.\end{enpars}
+\newpage
+\rubrique{After Septuagesima:}
+
+\smallscore{Laus_tibi_Domine}
+\noindent Praise be unto thee, O Lord, King of Eternal Glory.
+
+\firstantiphon{8. c}
+\initialscore{an_hoc_est_praeceptum_meum_solesmes_1961}
+
+\antiphona{english}{This is my commandment that you love one another, as I have loved you}
+
+\rubrique{\begin{enpars}
+Sit at the word ``Sede.'' The cantor sings odd verses; all sing even verses, and this for the hymn and Magnificat, when sung entirely in chant, as well.
+\end{enpars}}
+
+\psalmus{109}{109_8c}{109_8}{109_en}
+
+\rubrique{\begin{enpars}
+Clerics in descending order, or a cantor, intone the subsequent antiphons.\end{enpars}}
+
+ \gscore[2. Ant.]{1. g}{an_majorem_caritatem_solesmes_1961}
+ \antiphona{english}{Greater love than this no man hath, that a man lay down his life for his friends}
+\psalmus{110}{110_1g}{110_1}{110_en}
+
+  \gscore[3. Ant.]{1. a3}{an_vos_amici_mei_estis_solesmes_1961}
+  \antiphona{english}{You are my friends if you do the things that I command you, said the Lord}
+ \psalmus{111}{111_1a3}{111_1}{111_en}
+
+\gscore[4. Ant.]{1. f}{an_beati_pacifici_solesmes_1961}
+\antiphona{english}{You are my friends if you do the things that I command you, said the Lord}
+\psalmus{112}{112_1f}{112_1}{112_en}
+
+ \gscore[5. Ant.]{1. g}{an_in_patientia_vestra_solesmes_1961}
+\antiphona{english}{In your patience you shall possess your souls}
+\psalmus{116}{116_1g}{116_1}{116_en}
+
+\rubrique{\begin{enpars}
+Having sung the last antiphon in full, stand when the celebrant does.
+\end{enpars}}
+
+\chapterlateng
+\scripture{Ephes. 2, 19 – 20.}
+
+\texteparacol{\lettrine{F}{r}atres: Jam non estis hóspites et ádvenæ:~† sed estis cives san\-ctórum et doméstici Dei: superædificáti super fundaméntum Apostolórum et Prophetárum,~* ipso summo angulári lápide Christo Jesu.}{english}{\noindent Brothers: Now therefore you are no more strangers and foreigners; but you are fellow citizens with the saints, and the domestics of God, built upon the foundation of the apostles and prophets, Jesus Christ himself being the chief cornerstone.}
+
+\hymnlateng
+
+\gscore[]{4.}{hy_exsultet_caelum_laudibus_textus_antiquus}
+
+\textes{exsultet_orbis_en}
+
+\rubrique{\begin{enpars}
+The cantor sings the verse to which all reply.
+\end{enpars}}
+
+\smallscore{versiculus_1_vesperis_apostolorum_extra_tp}
+
+\begin{enpars} \noindent \vv Their sound hath gone forth into all the earth.
+
+\noindent \rr And their words unto the ends of the world.
+ \end{enpars}
+ 
+\smalltitle{Antiphon at the Magnificat.}
+
+\rubrique{Sit when the celebrant does, after he sings the first words. Rise at the end.}
+
+\gscore[]{1. f}{an_tradent_enim_vos_solesmes_1961}
+ 
+ \antiphona{english}{For they shall deliver you up to councils: and in the synagogues you shall be beaten: and you shall stand before governors and kings for my sake, for a testimony unto them}
+
+
+\smallscore{Magnificat_1_f_Solemnis}
+
+\magnificattexte{Magnificat_1_6_Solemnis}
+
+\textes{magnificat_en_multicols}
+
+\rubrique{\begin{enpars}
+Sit as the antiphon is repeated. Then the usual dialogue follows. All stand from now until the end of the office.\end{enpars}}
+
+\textes{dv_la_en}
+
+\rubrique{The collect is proper to the feast.}
+
+\textes{dv_la_en}
+
+\rubrique{\begin{enpars}
+The cantor sings the verse to which all reply.
+\end{enpars}}
+
+\gscore[]{2.}{BD_Solemnis_I_Vesp}
+
+\noindent \vv Let us bless the Lord.
+
+\noindent \rr Thanks be to God.
+
+\textebilingue{fidelium_animae}{fidelium_animae_en}
+    
+%\rubrique{\begin{enpars}
+%Then one Our Father is said, unless Compline follows, or even some pious exercises, a sermon, or Benediction of the Blessed Sacrament, in parish and other smaller churches.\end{enpars}}
+
+%\rubrique{\begin{enpars}
+%Then the office is concluded with the following verses, the Marian antiphon, etc.
+%\end{enpars}}
+
+\end{document}

@@ -1,0 +1,82 @@
+% !TEX TS-program = lualatexmk
+% !TEX parameter =  --shell-escape
+
+\documentclass[12pt]{book}
+
+\input{commonheaders_vespers_people} %%% will need to fix spacing problem in psalms at a later date.
+
+\begin{document}
+ 
+ \twosided[pc] %% to allow for the left-right switching of columns needed for bilingual liturgical typesetting (like in missals); it's unclear why this goes BEFORE everything else and not when activating the environment. %% It's OK for paper booklets to not switch, but it's probably best practice to switch.
+
+\thispagestyle{empty}
+
+\bigtitle{Invocation of the Holy Spirit on January 1 and on other occasions.\footnote{26. § 1. Plenaria indulgentia conceditur christifideli qui, in ecclesia vel oratorio, devote interfuerit sollemni cantui vel recitationi: 1° 44 hymni Veni, Creator, vel prima anni die ad divinam opem pro totius anni decursu implorandam; vel in sollemnitate Pentecostes.}}
+
+\rubrique{Kneel for the first verse, from \normaltext{Veni Creátor} to \normaltext{pectóra} inclusive.}
+
+\rubrique{The celebrant intones, and the cantors continue. The people may join the schola on alternating verses, which begin at double bar lines.}
+
+\gscore[]{8.}{hy_vcs_dox_votiva}
+
+\begin{multicols}{2}
+\raggedcolumns
+\begin{otherlanguage}{english}
+Come, creator Spirit,\\
+visit the souls of thine own,\\
+fill with heavenly grace\\
+the breasts that thou hast created.
+
+Thou art called Paraclete,\\
+gift of the most high God,\\
+living water, flame, charity, and spiritual anointing.
+
+Thou, who art sevenfold in thy gifts,\\
+finger of God's right hand,\\
+thou who wast rightly promised by the Father,\\
+enrich our throats with speech.
+
+Inflame the light of our senses,\\
+pour love into our hearts;\\
+the weakness of our bodies\\
+strengthen with lasting power.
+
+Drive the enemy far back,\\
+and at once grant us peace:\\
+with thou going ahead of us,\\
+may we avoid all harm.
+
+Through thee may we know the Father,\\
+and recognize the Son;\\
+and may we always believe in thee, Spirit of both.
+
+Let there be praise to the Father with the Son,\\ and likewise to the Holy Paraclete;\\
+and may the Son send to us\\
+the gift of the Holy Spirit. Amen.
+\end{otherlanguage}
+\end{multicols}
+
+\texteparacol{\vv Emítte Spíritum tuum, et creabúntur.
+
+ \rr Et renovábis fáciem terræ.
+
+ \vv Dóminus vobíscum.
+
+\rr Et cum spíritu tuo.
+
+Orémus. 
+
+\lettrine{D}{e}us, qui corda fidélium Sancti Spíritus illustratióne docuísti:~† da nobis in eódem Spíritu re\-cta sápere,~* et de ejus semper consolatióne gaudére. Per Christum Dóminum nostrum.
+
+\rr Amen.}{english}{\noindent \vv Send forth thy Spirit, and they shall be created.
+
+\noindent \rr And thou shalt renew the face of the earth.
+
+\noindent \rr The Lord be with you.
+
+\noindent \rr And with thy spirit.
+
+\noindent Let us pray. O God, who didst teach the hearts of thy faithful people, by the sending to them the light of thy Holy Spirit, grant us by the same Spirit to have a right judgment in all things, and evermore to rejoice in his holy comfort. Through Christ our Lord. Amen.}
+
+
+\end{document}
