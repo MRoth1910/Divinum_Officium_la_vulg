@@ -1,0 +1,379 @@
+% !TEX TS-program = lualatexmk
+% !TEX parameter =  --shell-escape
+\documentclass[12pt]{book}
+
+\input{commonheaders_vespers_people} %%% will need to fix spacing problem in psalms at a later date.
+
+\begin{document}
+ 
+ \twosided[pc] %% to allow for the left-right switching of columns needed for bilingual liturgical typesetting (like in missals); it's unclear why this goes BEFORE everything else and not when activating the environment. %% It's OK for paper booklets to not switch, but it's probably best practice to switch.
+ 
+  \thispagestyle{empty}
+ 
+ {\centering{\huge\capspace{{VESPERS OF THE EPIPHANY}}}\par}\header{vespers of the epiphany and the octave day.}
+ 
+  \vspace{0.5\baselineskip}
+ 
+{\centering{\huge{AND OF THE OCTAVE DAY.}}\par}
+ 
+\smalltitle{Before the Office.}
+
+\rubrique{These prayers are said kneeling. End when the priest stands.}
+
+\textebilingue{orationes_ante_do}{orationes_ante_do_eng}
+
+\smalltitle{\prayers}
+
+\rubrique{The celebrant intones the following verse. All sing the response and doxology.}
+
+\begin{otherlanguage}{english}
+\rubrique{Make the sign of the cross at the beginning and at the Magnificat, and bow the head when the Trinity is mentioned, when mention is made of the ``Holy Name'' in some way, and at ``Orémus.''}\end{otherlanguage}
+
+\rubrique{On the feast itself:}
+
+\gscore[]{℣.}{Deus_in_adjutorium_tonus_solemnior}
+
+\noindent
+\begin{otherlanguage}{english}
+O God, \cc{} come to my assistance. \rr O Lord, make haste to help me. Glory be to the Father, and to the Son, and to the Holy Ghost. As it was in the beginning, is now, and ever shall be, world without end. Amen. Alleluia.\end{otherlanguage}
+
+\myrule
+
+\rubrique{On the octave day:}
+
+\gscore[]{℣.}{Deus_In_Adjutorium_Festivus}
+
+\rubrique{On the feast and its octave day, the antiphons are doubled. On all other days, the office is of semidouble rite.}
+
+\smalltitle{First Antiphon. 2. D.}
+\initialscore{an_ante_luciferum_genitus_solesmes_1961}
+
+\antiphona{english}{The Lord our Saviour, begotten before the day-star, and before the ages, is this day made manifest in the world}
+
+\rubrique{\begin{otherlanguage}{english}
+Sit at the word ``Sede.'' The cantor sings odd verses; all sing even verses, and this for the hymn and Magnificat, when sung entirely in chant, as well.
+\end{otherlanguage}}
+
+\psalmus{109}{109_2}{109_2}{109_en}
+
+\rubrique{\begin{otherlanguage}{english}
+Clerics in descending order, or a cantor, intone the subsequent antiphons.\end{otherlanguage}}
+
+ \gscore[2. Ant.]{1. g2}{an_venit_lumen_tuum_solesmes_1961}
+% 
+ \antiphona{english}{O Jerusalem, thy light is come, and the glory of the Lord is risen upon thee, and the Gentiles shall walk in thy light. Alleluia}
+
+\psalmus{110}{110_1g2}{110_1}{110_en}
+
+  \gscore[3. Ant.]{1. g2}{an_apertis_thesauris_solesmes_1961}
+ 
+  \antiphona{english}{When the wise men had opened their treasures, they presented unto the Lord gold, frankincense, and myrrh. Alleluia}
+
+ \psalmus{111}{111_1g2}{111_1}{111_en}
+
+\gscore[4. Ant.]{4. E}{an_maria_et_flumina_solesmes_1961}
+
+\antiphona{english}{O ye seas and floods, bless ye the Lord. O ye wells, bless ye the Lord. Alleluia}
+
+\psalmus{112}{112_4E}{112_4E}{112_en}
+
+ \gscore[5. Ant.]{7. c2}{an_stella_ista_solesmes_1961}
+ 
+\antiphona{english}{This star shineth as a flame of fire, and pointeth out God, the King of kings: the Wise Men beheld it, and offered gifts unto the great King}
+
+\psalmus{116}{116_7c2}{116_7}{116_en}
+
+\myrule
+
+\smalltitle{At II Vespers.}
+
+\psalmus{113}{113_7c2}{113_7}{113_en}
+\myrule
+
+\rubrique{\begin{otherlanguage}{english}
+Having sung the last antiphon in full, stand when the celebrant does.
+\end{otherlanguage}}
+
+\bigtitle{Chapter.}
+
+ \scripture{Isaiæ 60, 1.}
+
+\texteparacol{\lettrine{S}{u}rge, illumináre Jerúsalem, quia venit lumen tuum,~* et glória Dómini super te orta est.}{english}{\noindent Arise, be enlightened, O Jerusalem: for thy light is come, and the glory of the Lord is risen upon thee.}
+
+\hymnlateng
+
+\gscore[]{3.}{hy_hostis_herodes_textus_antiquus}
+
+\begin{multicols}{2}
+\begin{otherlanguage}{english}
+\raggedcolumns
+Why, impious Herod, vainly fear\\
+That Christ the Saviour cometh here?\\
+He takes no earthly realms away\\
+Who gives the crown that lasts for aye.
+
+To greet his birth the Wise Men went,\\
+Led by the star before them sent;\\
+Called on by light, towards light they pressed,\\
+And by their gifts their God confessed.
+
+In holy Jordan's purest wave\\
+The heavenly Lamb vouchsafed to lave;\\
+That He, to whom was sin unknown,\\
+Might cleanse his people from their own.
+
+New miracle of power divine!\\
+The water reddens into wine:\\
+He spake the word: and poured the wave\\
+In other streams than nature gave.
+
+All glory, Lord, to thee we pay\\
+For thine Epiphany to-day:\\
+All glory, as is ever meet,\\
+To Father and to Paraclete. Amen.
+
+\end{otherlanguage}
+\end{multicols}
+
+\rubrique{\begin{otherlanguage}{english}
+The cantor sings the verse to which all reply.
+\end{otherlanguage}}
+
+\rubrique{On the feast, the solemn tone is used, but on the octave day, the ordinary tone is used:}
+\label{versiculus_vesperis_epiphianiae_domini}\phantomsection
+   \smallscore{versiculus_vesperis_epiphianiae_domini}
+   
+   \begin{otherlanguage}{english} \noindent \vv The kings of Tarshish and of the isles shall bring presents.
+
+\noindent \rr  The kings of Arabia and Saba shall offer gifts.\end{otherlanguage}
+
+\newpage
+
+\smalltitle{Antiphon at the Magnificat.}
+
+\rubrique{Sit when the celebrant does, after he sings the first words. Rise at the end.}
+
+\rubrique{On the octave day, the antiphon is on the feast, but the ordinary tone of the canticle is used.}
+
+\smalltitle{At I Vespers.}
+
+\gscore[]{8. G}{an_magi_videntes_stellam_solesmes_1961}
+
+ \antiphona{english}{When the wise men saw the star, they said one unto another: This is the sign of the Great King; let us go and search diligently for him, and present unto him gifts, gold, and frankincense, and myrrh. Alleluia}
+ 
+ \smallscore{Magnificat_8_G_Solemnis}
+
+   \smallskip%
+    \noindent%
+ \begin{enumerate}[label=\arabic*.,%
+			leftmargin=10pt, %
+			itemindent=15pt, %
+			labelsep=3pt, %
+			labelwidth=0pt, %
+			rightmargin=0pt, %
+			parsep=0pt, %
+			topsep=0pt, %
+			itemsep=0pt,%
+			start=3]
+    \input{psaumes/Magnificat_8_Solemnis}
+    \end{enumerate}
+
+\myrule
+
+\smalltitle{On the octave day.}
+
+\gresetinitiallines{0}
+
+\gabcsnippet{(c4) 1. Ma(g)gní(hg)fi(gj)cat(j.) *(:) á(j)ni(j)ma(j) <i>me</i>(i)<i>a</i>(j) <b>Dó</b>(h)mi(gr)num.(g.) (::)}
+
+\gabcsnippet{(c4) 2. Et(g) ex(h)sul(j)tá(j)vit(j) spí(j)ri(j)tus(j) <b>me</b>(k//jr)us(j.) *(:) in(j) De(j)o(j) sa(j)lu(j)<i>tá</i>(i)<i>ri</i>(j) <b>me</b>(h//gr)o.(g.) (::)}
+
+\gresetinitiallines{1}
+   \smallskip%
+    \noindent%
+\begin{enumerate}[label=\arabic*.,%
+			leftmargin=10pt, %
+			itemindent=15pt, %
+			labelsep=3pt, %
+			labelwidth=0pt, %
+			rightmargin=0pt, %
+			parsep=0pt, %
+			topsep=0pt, %
+			itemsep=0pt,%
+			start=3]
+
+\item Quia respéxit humilitátem ancíllæ \textbf{su}æ:~* ecce enim ex hoc beátam me dicent omnes gene\textit{rati}\textbf{ó}nes.
+
+\item Quia fecit mihi magna qui \textbf{pot}ens est:~* et sanctum \textit{nomen} \textbf{e}jus.
+
+\item Et misericórdia ejus a progénie in pro\textbf{gé}nies~* timén\textit{tibus} \textbf{e}um.
+
+\item Fecit poténtiam in bráchio \textbf{su}o:~* dispérsit supérbos mente \textit{cordis} \textbf{su}i.
+
+\item Depósuit poténtes de \textbf{se}de,~* et exal\textit{távit} \textbf{hú}miles.
+
+\item Esuriéntes implévit \textbf{bo}nis:~* et dívites dimí\kern 0.04em\textit{sit} \textit{in}\textbf{á}nes.
+
+\item Suscépit Israel púerum \textbf{su}um,~* recordátus misericór\textit{diæ} \textbf{su}æ.
+
+\item Sicut locútus est ad patres \textbf{no}stros,~* Abraham et sémini e\kern 0.02em\textit{jus} \textit{in} \textbf{sǽ}cula.
+
+\item Glória Patri, et \textbf{Fí}lio,~* et Spirí\textit{tui} \textbf{San}cto.
+
+\item Sicut erat in princípio, et nunc, et \textbf{sem}per,~* et in sǽcula sæcu\kern 0.02em\textit{lórum}. \textbf{A}men.
+\end{enumerate}
+
+\myrule
+ 
+ \smalltitle{At II Vespers.}
+
+\gscore[]{1. D}{an_tribus_miraculis_solesmes_1961}
+ 
+ \antiphona{english}{This day we keep a holiday in honour of three wonders, this day a star led the wise men to the manger; this day at the marriage, water was made wine; this day was Christ, for our salvation, pleased to be baptized of John in Jordan. Alleluia}
+ 
+ \smallscore{Magnificat_1D_solemnis}
+
+   \smallskip%
+    \noindent%
+    \begin{enumerate}[%
+    		label=\arabic*., %
+			leftmargin=10pt, %
+			itemindent=15pt, %
+			labelsep=3pt, %
+			labelwidth=0pt, %
+			rightmargin=0pt, %
+			parsep=0pt, %
+			topsep=0pt, %
+			itemsep=0pt,
+			start=3]%
+    \input{psaumes/Magnificat_1_Solemnis}
+    \end{enumerate}
+  
+\myrule
+
+\smalltitle{On the octave day.}
+
+\gresetinitiallines{0}
+\gabcsnippet{(c4)1. Ma(f)gní(gh)fi(h)cat(h.) *(:) á(h)ni(h)ma(h) <i>me</i>(g)<i>a</i>(f) <b>Dó</b>(gh)mi(g)num.(gvFED.) (::) (Z-)
+2. Et(f) ex(gh)sul(h)tá(h)vit(h) <b>spí</b>(ixi)ri(h)tus(h) <b>me</b>(g)us(h.) *(:) in(h) De(h)o(h) sa(h)lu(h)<i>tá</i>(g)<i>ri</i>(f) <b>me</b>(gh)o.(gvFED.) (::)}
+\gresetinitiallines{1}
+
+\begin{enumerate}[label=\arabic*.,%
+			leftmargin=10pt, %
+			itemindent=15pt, %
+			labelsep=3pt, %
+			labelwidth=0pt, %
+			rightmargin=0pt, %
+			parsep=0pt, %
+			topsep=0pt, %
+			itemsep=0pt,%
+			start=3]
+%%Magnificat
+%% each line requires \item
+\item Quia respéxit humilitátem an\textbf{cíl}læ \textbf{su}æ:~* ecce enim ex hoc beátam me dicent omnes gene\textit{rati}\textbf{ó}nes.
+
+\item Quia fecit mihi \textbf{ma}gna qui \textbf{pot}ens est:~* et sanctum \textit{nomen} \textbf{e}jus.
+
+\item Et misericórdia ejus a progénie \textbf{in} pro\textbf{gé}nies~* timén\textit{tibus} \textbf{e}um.
+
+\item Fecit poténtiam in \textbf{brá}chio \textbf{su}o:~* dispérsit supérbos mente \textit{cordis} \textbf{su}i.
+
+\item Depósuit po\textbf{tén}tes de \textbf{se}de,~* et exal\textit{távit} \textbf{hú}miles.
+
+\item Esuriéntes im\textbf{plé}vit \textbf{bo}nis:~* et dívites dimí\kern 0.02em\textit{sit} in\textbf{á}nes.
+
+\item Suscépit Israel \textbf{pú}erum \textbf{su}um,~* recordátus misericór\textit{diæ} \textbf{su}æ.
+
+\item Sicut locútus est ad \textbf{pa}tres \textbf{no}stros,~* Abraham et sémini e\kern 0.02em\textit{jus} \textit{in} \textbf{sǽ}cula.
+
+\item Glória \textbf{Pa}tri, et \textbf{Fí}lio,~* et Spirí\tinyhspace\textit{tui} \textbf{San}cto.
+
+\item Sicut erat in princípio, et \textbf{nunc,} et \textbf{sém}per, ~* et in sǽcula sæcu\tinyhspace\textit{lórum.} \textbf{A}men.
+\end{enumerate}
+
+\myrule
+   
+\smalltitle{Canticle of the Blessed Virgin Mary.}
+
+\scripture{Luc. 1, 46–55.}
+
+\begin{multicols}{2}
+ \begin{otherlanguage}{english}
+My soul \cc~* doth magnify the Lord.
+
+And my spirit hath rejoiced~* in God my Saviour.
+
+Because he hath regarded the humility of his handmaid;~* for behold from henceforth all generations shall call me blessed.
+
+Because he that is mighty, hath done great things to me;~* and holy is his name.
+
+And his mercy is from generation unto generations,~* to them that fear him.
+
+He hath shewed might in his arm:~* he hath scattered the proud in the conceit of their heart.
+
+He hath put down the mighty from their seat,~* and hath exalted the humble.
+
+He hath filled the hungry with good things;~* and the rich he hath sent empty away.
+
+He hath received Israel his servant,~* being mindful of his mercy:
+
+As he spoke to our fathers,~* to Abraham and to his seed for ever.
+
+Glory be to the Father, and to the Son,~* and to the Holy Ghost.
+
+As it was in the beginning, is now,~* and ever shall be, world without end. Amen.
+\end{otherlanguage}
+% \end{paracol}
+\end{multicols}
+
+\rubrique{\begin{otherlanguage}{english}
+Sit as the antiphon is repeated. Then the usual dialogue follows. All stand from now until the end of the office.\end{otherlanguage}}
+
+\textebilingue{dv}{dv_eng}
+
+\texteparacol{\lettrine{D}{e}us, qui hodiérna die Unigénitum tuum géntibus stella duce revelásti:~† concéde propítius; ut qui jam te ex fide cognóvimus,~* usque ad contemplándam spéciem tuæ celsitúdinis perducámur. Per eúmdem Dóminum.}{english}{\noindent Let us pray.
+O God, who by the leading of a star didst, as on this day, manifest thine Only-begotten Son to the Gentiles, mercifully grant that we, which know thee now by faith, may after this life have the fruition of thy glorious Godhead:
+Through the same Jesus Christ.}
+    
+    \myrule
+    
+    \smalltitle{On the octave day.}
+
+\texteparacol{
+\lettrine{D}{e}us, cujus Unigénitus in substántia nostræ carnis appáruit:~† præsta, quǽsumus; ut per eum, quem símilem nobis foris agnóvimus,~* intus reformári mereámur. 
+Qui tecum vivit et regnat in unitáte.
+
+   ℟. Amen.}{english}{\noindent O God, whose only-begotten Son appeared in the substance of our flesh, grant, we beseech thee, that we who acknowledge his outward likeness to us may deserve to be inwardly refashioned in his image. Who with thee liveth and reigneth.}
+    
+    \textebilingue{dv}{dv_eng}
+
+\rubrique{\begin{otherlanguage}{english}
+The cantor sings the verse to which all reply.
+\end{otherlanguage}}
+    \myrule
+    \smalltitle{At I Vespers.}
+
+\gscore[]{2.}{BD_Solemnis_I_Vesp}
+
+\noindent \vv Let us bless the Lord.
+
+\noindent \rr Thanks be to God.
+
+    \myrule
+    \smalltitle{At II Vespers.}
+\gscore[]{6.}{BD_Solemnis_mode_6}
+
+\rubrique{Or}
+
+\gscore[]{5.}{BD_Solemnis_mode_5}
+
+    \myrule
+    
+    \smalltitle{Within the octave.}
+
+\gscore[]{2.}{BD_Semiduplex_Vesp}
+\myrule
+
+\textebilingue{fidelium_animae}{fidelium_animae_en}
+
+\end{document}
