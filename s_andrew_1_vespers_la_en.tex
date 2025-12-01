@@ -1,0 +1,220 @@
+% !TEX TS-program = lualatexmk
+% !TEX parameter =  --shell-escape
+\documentclass[12pt]{book}
+
+\input{commonheaders_vespers_people} %%% will need to fix spacing problem in psalms at a later date.
+
+\begin{document}
+ 
+ \twosided[pc] %% to allow for the left-right switching of columns needed for bilingual liturgical typesetting (like in missals); it's unclear why this goes BEFORE everything else and not when activating the environment. %% It's OK for paper booklets to not switch, but it's probably best practice to switch.
+ 
+  \thispagestyle{empty}
+ 
+ {\centering{\capspace{\huge{VESPERS OF SAINT ANDREW, \\[0.25\baselineskip]APOSTLE.}}}\par}\header{vespers of saint andrew, apostle.}
+ 
+%{\centering{\huge\capspace{{ OR EVANGELIST.}}}\par}
+ 
+ \vspace{0.5\baselineskip}
+ 
+{\centering{\huge{At I Vespers.}}\par}
+ 
+\smalltitle{Before the Office.}
+
+\rubrique{These prayers are said kneeling. End when the priest stands.}
+
+\textes{orationes_ante_do_la_en}
+
+\smalltitle{\prayers}
+
+\rubrique{The celebrant intones the following verse. All sing the response and doxology.}
+
+\begin{enpars}
+\rubrique{Make the sign of the cross at the beginning and at the Magnificat, and bow the head when the Trinity is mentioned, when mention is made of the ``Holy Name'' in some way, and at ``Orémus.''}\end{enpars}
+
+\gscore[]{℣.}{Deus_In_Adjutorium_Festivus}
+
+\noindent
+\begin{enpars}
+O God, \cc{} come to my assistance. \rr O Lord, make haste to help me. Glory be to the Father, and to the Son, and to the Holy Ghost. As it was in the beginning, is now, and ever shall be, world without end. Amen. Alleluia.\end{enpars}
+%\newpage
+
+\firstantiphon{7. c}
+\initialscore{an_salve_crux_pretiosa_solesmes_1961}
+\antiphona{english}{God bless thee, precious cross, be welcome to the follower of him that hung on thee, even my Master Christ}
+
+\rubrique{\begin{enpars}
+Sit at the word ``Sede.'' The cantor sings odd verses; all sing even verses, and this for the hymn and Magnificat, when sung entirely in chant, as well.
+\end{enpars}}
+
+\psalmus{109}{109_7c}{109_7}{109_en}
+
+\rubrique{\begin{enpars}
+Clerics in descending order, or a cantor, intone the subsequent antiphons.\end{enpars}}
+
+ \gscore[2. Ant.]{8. G}{an_beatus_andreas_solesmes_1961}
+ \antiphona{english}{The blessed Andrew prayed and said: O Lord, King of everlasting glory, receive me hanging on this gallows}
+\psalmus{110}{110_8G}{110_8}{110_en}
+
+  \gscore[3. Ant.]{8. G}{an_andreas_christi_famulus_solesmes_1961}
+  \antiphona{english}{Andrew was the servant of Christ, a worthy Apostle of God, the brother of Peter, and likened to Christ and to Peter in his death}
+\psalmus{111}{111_8G}{111_8}{111_en}
+
+\gscore[4. Ant.]{8. G}{an_maximilla_christo_amabilis_solesmes_1961}
+\antiphona{english}{Christ's dear handmaid Maximilla took the body of the Apostle and buried it with spices in an honourable place}
+\psalmus{112}{112_8G}{112_8}{112_en}
+
+ \gscore[5. Ant.]{7. a}{an_qui_persequebantur_justum_solesmes_1961}
+\antiphona{english}{O Lord, thou hast caused them that persecuted the just to be swallowed up in hell, but to the just thou hast thyself shown the way on the tree of the cross}
+\psalmus{116}{116_7a}{116_7}{116_en}
+
+\rubrique{\begin{enpars}
+Having sung the last antiphon in full, stand when the celebrant does.
+\end{enpars}}
+
+\chapterlateng
+\scripture{Rom. 10, 10 – 11.}
+
+\texteparacol{\lettrine{F}{r}atres: Corde enim créditur ad justítiam,~† ore autem conféssio fit ad salútem.~* Dicit enim Scriptúra: Omnis qui credit in illum, non confundétur.}{english}{\noindent Brethren: For, with the heart, we believe unto justice; but, with the mouth, confession is made unto salvation. For the scripture saith: Whosoever believeth in him, shall not be confounded.}
+
+\hymnlateng
+
+\gscore[]{4.}{hy_exsultet_orbis_gaudiis_solesmes_1961}
+
+\textes{exsultet_orbis_en}
+
+\rubrique{\begin{enpars}
+The cantor sings the verse to which all reply.
+\end{enpars}}
+
+\smallscore{versiculus_1_vesperis_apostolorum_extra_tp}
+%\gresetinitiallines{0}
+%\gabcsnippet{(c3) ℣. In(h) om(h)nem(h) ter(h)ram(h) ex(h)í(h)vit(h) so(h)nus(h) e(h)ó(h)rum.(g_hvGFEfgf.) (::) (Z-)
+%℟. Et(h) in(h) fi(h)nes(h) or(h)bis(h) ter(h)ræ(h) ver(h)ba(h) e(h)ó(h)rum.(g_hvGFEfgf.) (::)}
+%\gresetinitiallines{1}
+
+\begin{enpars} \noindent \vv Their sound hath gone forth into all the earth.
+
+\noindent \rr And their words unto the ends of the world.
+ \end{enpars}
+ 
+\smalltitle{Antiphon at the Magnificat.}
+
+\rubrique{Sit when the celebrant does, after he sings the first words. Rise at the end.}
+
+\gscore[]{1. f}{an_unus_ex_duobus_solesmes_1961}
+ 
+ \antiphona{english}{One of the two which followed the Lord was Andrew, Simon Peter's brother, alleluia}
+
+
+\smallscore{Magnificat_1_f_Solemnis}
+%\gresetinitiallines{0}
+%\gabcsnippet{(c4) 1. Ma(f)gní(gh)fi(h)cat(h) * (:) á(h)ni(h)ma(h) <i>me</i>(g)a(f) <b>Dó</b>(gh)mi(gr)num.(gf..) (::)
+% (Z-)
+%
+%2. Et(f) ex(gh)sul(h)tá(h)vit(h) <i>spí</i>(hg)<i>ri</i>(ixgi)<i>tus</i>(h hr[ocb:1{]) <b>me</b>(hg[ocb:0}])us(gh..) *(:) in(h) De(h)o(h) sa(h)lu(h)<i>tá</i>(g)<i>ri</i>(f) <b>me</b>(gh//gr)o.(gf..) (::)}
+
+\magnificattexte{Magnificat_1_6_Solemnis}
+%\gresetinitiallines{1}
+%   \smallskip%
+%    \noindent%
+%    \begin{itemize}[%
+%    		label=\null, %
+%			leftmargin=0pt, %
+%			itemindent=0mm, %
+%			labelsep=0pt, %
+%			labelwidth=0pt, %
+%			rightmargin=0pt, %
+%			parsep=0pt, %
+%			topsep=0pt, %
+%			itemsep=0pt]%
+%\item 3. Quia respéxit humilitátem \textit{ancíllæ} \textbf{su}æ:~* ecce enim ex hoc beátam me dicent omnes gene\textit{rati}\textbf{ó}nes.
+%
+%\item 4. Quia fecit mihi \textit{magna} \textit{qui} \textbf{pot}\textbf{ens} est:~* et sanctum \textit{nomen} \textbf{e}jus.
+%
+%\item 5. Et misericórdia ejus a progéni\textit{e} \textit{in} \textit{pro}\textbf{gé}\textbf{ni}es~* timén\textit{tibus} \textbf{e}um.
+%
+%\item 6. Fecit poténtiam in \textit{bráchio} \textbf{su}o:~* dispérsit supérbos mente \textit{cordis} \textbf{su}i.
+%
+%\item 7. Depósuit po\textit{téntes} \textit{de} \textbf{se}de,~* et exal\textit{távit} \textbf{hú}miles.
+%
+%\item 8. Esuriéntes \textit{implévit} \textbf{bo}nis:~* et dívites dimí\kern 0.04em\textit{sit} \textit{in}\textbf{á}nes.
+%
+%\item 9. Suscépit Israel \textit{púerum} \textbf{su}um,~* recordátus misericór\textit{diæ} \textbf{su}æ.
+%
+%\item 10. Sicut locútus est \textit{ad} \textit{pa}\textit{tres} \textbf{no}stros,~* Abraham et sémini e\kern 0.02em\textit{jus} \textit{in} \textbf{sǽ}cula.
+%
+%\item 11. Glória \textit{Pa}\textit{tri,} \textit{et} \textbf{Fí}\textbf{li}o,~* et Spirí\textit{tui} \textbf{San}cto.
+%
+%\item 12. Sicut erat in princípio, \textit{et} \textit{nunc,} \textit{et} \textbf{sem}per,~* et in sǽcula sæcu\tinyhspace\textit{lórum.} \textbf{A}men.
+%
+%    \end{itemize}
+
+%\smalltitle{Canticle of the Blessed Virgin Mary.}
+%
+%\scripture{Luc. 1, 46–55.}
+
+\textes{magnificat_en_multicols}
+
+\rubrique{\begin{enpars}
+Sit as the antiphon is repeated. Then the usual dialogue follows. All stand from now until the end of the office.\end{enpars}}
+
+\texteparacol{\vv Dóminus vobíscum.
+
+\rr Et cum spíritu tuo.
+
+\lettrine{M}{a}jestátem tuam Dómine supplíciter exorámus:~† ut sicut Ecclésiæ tuæ beátus Andréas Apóstolus éxstitit prædicátor et rector;~* ita apud te sit pro nobis perpétuus intercéssor.
+Per Dóminum.}
+{english}{\noindent \vv The Lord be with you.
+
+\noindent \rr  And with thy spirit.
+
+\noindent O Lord, we humbly beseech thy majesty, that even as thou didst give thy blessed Apostle Andrew to thy church to be a teacher and a ruler on earth, so, now that he is with thee, he may continually make intercession for us. Through our Lord.}
+
+\myrule
+\rubrique{When the feast falls on a Sunday, then the following commemoration is made. If the feast falls on a weekday after the I Sunday of Advent, the antiphon proper to the day is sung with the following versicle and the collect as on the preceding Sunday.}
+
+\gscore[Ant.]{8.}{an_ne_timeas_solesmes_1961}
+
+\antiphona{english}{Fear not, Mary, for thou hast found grace with the Lord; behold, thou shalt conceive in thy womb and bring forth a son, alleluia}
+
+\texteparacol{
+\vv Roráte cæli désuper, et nubes pluant justum.
+
+\rr Aperiátur terra, et gérminet Salvatórem.
+
+\lettrine{E}{x}cita, quǽsumus Dómine, poténtiam tuam, et veni:~† ut ab imminéntibus peccatórum nostrórum perículis, te mereámur protegénte éripi,~* te liberánte salvári. Qui vivis et regnas cum Deo Patre.}{english}{
+\noindent \vv Drop down dew, ye heavens, from above, and let the clouds rain the Just.
+
+\noindent \rr Let the earth be opened, and bud forth the Saviour.
+
+\noindent Stir up, O Lord, we pray thee, thy strength, and come among us, that whereas through our sins and wickedness we do justly apprehend thy wrathful judgments hanging over us, thy bountiful grace and mercy may speedily help and deliver us; Who livest and reignest with God the Father.}
+
+\myrule
+
+\texteparacol{\vv Dóminus vobíscum.
+
+\rr Et cum spíritu tuo.}
+{english}{\noindent \vv The Lord be with you.
+
+\noindent \rr  And with thy spirit.}
+
+\rubrique{\begin{enpars}
+The cantor sings the verse to which all reply.
+\end{enpars}}
+
+\gscore[]{2.}{BD_Solemnis_I_Vesp}
+
+\noindent \vv Let us bless the Lord.
+
+\noindent \rr Thanks be to God.
+
+\textebilingue{fidelium_animae}{fidelium_animae_en}
+    
+%\rubrique{\begin{enpars}
+%Then one Our Father is said, unless Compline follows, or even some pious exercises, a sermon, or Benediction of the Blessed Sacrament, in parish and other smaller churches.\end{enpars}}
+
+%\rubrique{\begin{enpars}
+%Then the office is concluded with the following verses, the Marian antiphon, etc.
+%\end{enpars}}
+
+\end{document}
