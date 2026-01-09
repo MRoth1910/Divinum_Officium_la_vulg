@@ -1,0 +1,184 @@
+% !TEX TS-program = lualatexmk
+% !TEX parameter =  --shell-escape
+\documentclass[12pt]{book}
+
+\input{commonheaders_vespers_people} %%% will need to fix spacing problem in psalms at a later date.
+
+\begin{document}
+ 
+ \twosided[pc] %% to allow for the left-right switching of columns needed for bilingual liturgical typesetting (like in missals); it's unclear why this goes BEFORE everything else and not when activating the environment. %% It's OK for paper booklets to not switch, but it's probably best practice to switch.
+ 
+  \thispagestyle{empty}
+  
+\feasttitle{MOST HOLY FAMILY OF \\[0.25\baselineskip]JESUS, MARY, AND JOSEPH.}
+
+\header{most holy family.}
+
+\smalltitle{Before the Office.}
+
+\rubrique{These prayers are said kneeling. End when the priest stands.}
+
+\textebilingue{orationes_ante_do}{orationes_ante_do_eng}
+
+\smalltitle{\prayers}
+
+\rubrique{The celebrant intones the following verse. All sing the response and doxology.}
+
+\begin{enpars}
+\rubrique{Make the sign of the cross at the beginning and at the Magnificat, and bow the head when the Trinity is mentioned, when mention is made of the ``Holy Name'' in some way, and at ``Orémus.''}\end{enpars}
+
+\gscore[]{℣.}{Deus_In_Adjutorium_Festivus}
+
+\noindent
+\begin{enpars}
+O God, \cc{} come to my assistance. \rr O Lord, make haste to help me. Glory be to the Father, and to the Son,~* and to the Holy Ghost. As it was in the beginning, is now,~* and ever shall be, world without end. Amen. Alleluia.\end{enpars}
+
+%\rubrique{When at I Vespers only a commemoration of the feast was made, that is, when the feast of the Epiphany falls on Saturday, the antiphons and psalms are instead those of I Vespers.}
+
+\gscore[1. Ant.]{8. G}{an_post_triduum_solesmes_1961}
+\antiphona{english}{After three days, they found him in the temple, sitting in the midst of the doctors, hearing them, and asking them questions}
+\psalmus{109}{109_8G}{109_8}{109_en}
+
+\gscore[2. Ant.]{4. E}{an_dixit_mater_jesu_ad_illum_solesmes_1961}
+\antiphona{english}{The mother of Jesus said to him: Son, why hast thou done so to us? Behold thy father and I have sought thee sorrowing}
+\psalmus{112}{112_4E}{112_4E}{112_en}
+
+\gscore[3. Ant.]{8. G}{an_descendit_jesus_cum_eis_solesmes_1961}
+\antiphona{english}{Jesus went down with them, and came to Nazareth, and was subject to them}
+\psalmus{121}{121_8G}{121_8}{121_en}
+
+\gscore[4. Ant.]{2. D}{an_et_jesus_proficiebat_solesmes_1961}
+\antiphona{english}{And Jesus advanced in wisdom, and age, and grace with God and men}
+ \psalmus{126}{126_2}{126_2}{126_en}
+
+\gscore[5. Ant.]{8. G}{an_et_dicebant_solesmes_1961}
+\begin{enpars}\noindent Ant.  And they said: How came this man by this wisdom and miracles? Is not this the carpenter's son?\end{enpars}
+\psalmus{147}{147_8G}{147_8}{147_en}
+
+\chapterlateng
+\scripture{Luc. 2, 51.}
+
+\texteparacol{\lettrine{D}{e}scéndit Jesus cum María et Joseph, et venit Názareth,~* et erat súbditus illis.}{english}{\noindent Jesus went down with Mary and Joseph, and came to Nazareth, and was subject to them.}
+
+\hymnlateng
+\gscore[]{2.}{hy_o_lux_beata_caelitum_solesmes_1961}
+\textes{o_lux_beata_caelitum_en}
+\smallscore{versiculus_2_vespers_holy_family}
+
+\begin{enpars}\noindent \vv All thy children shall be taught of the Lord.
+
+\noindent \rr And great shall be the peace of thy children.
+ \end{enpars}
+ 
+  \gscore[Ad Magnif.]{Ant. 8. G}{an_maria_autem_solesmes_1961}
+\antiphona{english}{But Mary kept all these words, pondering them in her heart}
+
+ \smallscore{Magnificat_8G}
+ 
+\magnificattexte{Magnificat_8}
+
+\textes{magnificat_en_multicols}
+ 
+ \texteparacol{\vv Dóminus vobíscum.
+
+\rr Et cum spíritu tuo.
+
+\lettrine{D}{o}mine Jesu Christe, qui Maríæ et Joseph súbditus, domésticam vitam ineffabílibus virtútibus consecrásti:~† fac nos, utriúsque auxílio, Famíliæ sanctæ tuæ exémplis ínstrui;~* et consórtium cónsequi sempitérnum. Qui vivis et regnas cum Deo Patre.}{english}{\noindent \vv The Lord be with you.
+
+\noindent \rr  And with thy spirit.
+
+\noindent
+Lord Jesus Christ, who subject to Mary and Joseph, didst consecrate family life by thy unspeakable virtues, aid us by their united intercession to profit by the examples of thy Holy Family, and attain to their everlasting companionship. Who livest and reignest with God the Father.}
+
+\rubrique{Commemoration of the octave of the Epiphany, as below, \normaltext{\pageref{octave_epiphaniae}.}}
+
+\rubrique{Then one is made of the Sunday.}
+
+\gscore[Ant.]{8.}{an_fili_quid_fecisti_solesmes_1961}
+\begin{enpars}\noindent Ant. Son, why hast thou thus dealt with us? Behold, thy father and I have sought thee sorrowing. How is it that ye sought me? Wist ye not that I must be about my Father's business?\end{enpars}
+
+\texteparacol{\vv  Omnes de Saba vénient, allelúia.
+
+\rr Aurum et thus deferéntes, allelúia.
+
+\lettrine{V}{o}ta quǽsumus Dómine, supplicántis pópuli cælésti pietáte proséquere:~† ut et quæ agénda sunt, vídeant,~* et ad implénda quæ víderint, convaléscant.
+Per Dóminum.}{english}{\noindent \vv All they from Saba shall come. Alleluia.
+
+\noindent \rr They shall bring gold and incense. Alleluia.
+
+\noindent Attend, O Lord, we beseech thee, of thy heavenly mercy, to the desires of thy suppliant people; and grant that they may both perceive what they ought to do, and may have strength to fulfill the same. Through our Lord.}
+
+%\rubrique{¶ If the Octave Day of the Epiphany occurs on Sunday, nothing is celebrated of the Sunday on the octave day itself, but at I Vespers only, a commemoration for II Vespers of Sunday is made, if on January 12 was celebrated the office of the Holy Family as above.}
+
+\myrule
+
+\bigtitle{Days within the Octave of the Epiphany commemorated in the office of the Holy Family.} \label{octave_epiphaniae}\phantomsection
+
+\smalltitle{January 7. Second day within the Octave.}
+ 
+\gscore[Ad Magnif.]{Ant. 7. a}{an_videntes_stellam_solesmes_1961}
+ \antiphona{english}{When the wise men saw the star, they rejoiced with exceeding great joy; and when they were come into the house, they presented unto the Lord gold, frankincense, and myrrh. Alleluia}
+ 
+ \vv  Reges Tharsis et ínsulæ múnera ófferent.
+
+\rr Reges Arabum et Saba dona addúcent.
+
+\texteparacol{
+\lettrine{D}{e}us, qui hodiérna die Unigénitum tuum géntibus stella duce revelásti:~† concéde propítius; ut qui jam te ex fide cognóvimus,~* usque ad contemplándam spéciem tuæ celsitúdinis perducámur.}{english}{\noindent 
+O God, who by the leading of a star didst, as on this day, manifest thine Only-Begotten Son to the Gentiles, mercifully grant that we, which know thee now by faith, may after this life have the fruition of thy glorious godhead.}
+ 
+\smalltitle{January 8. Third day.}
+
+\gscore[Ad Magnif.]{Ant. 8. c}{an_lux_de_luce_solesmes_1961}
+ \antiphona{english}{O Christ, thou Light of Light, thou art made manifest, and the wise men have presented unto thee gifts. Alleluia, Alleluia, Alleluia}
+ 
+\smalltitle{January 9. Fourth day.}
+
+\gscore[Ad Magnif.]{Ant. 8. G}{an_interrogabat_magos_solesmes_1961}
+ \antiphona{english}{Herod inquired of the wise men: What is the sign that ye have seen that a King is born? We have seen the shining of the star, the glory whereof enlighteneth the whole world}
+ 
+\smalltitle{January 10. Fifth day.}
+
+\gscore[Ad Magnif.]{Ant. 8. c}{an_omnes_de_saba_solesmes_1961}
+ \antiphona{english}{All they from Saba shall come, they shall bring gold and frankincense, alleluia, alleluia}
+ 
+ \rubrique{Commemoration of \normaltext{ S. Hygini,} Pope et Martyr.}
+
+\gscore[Ant.]{8.}{an_cs_iste_sanctus_pro_lege_solesmes_1961}
+
+\vv Glória et honóre coronásti eum Dómine.
+
+\rr Et constituísti eum super ópera mánuum tuárum.
+
+\texteparacol{\lettrine{I}{n}firmitátem nostram réspice, omnípotens Deus:~† et quia pondus própriæ actiónis gravat,~* beáti Hygíni Mártyris tui atque Pontíficis intercéssio gloriósa nos prótegat.
+Per Dóminum.}{english}{\noindent Mercifully consider our weakness, o almighty God, and whereas by the burden of our sins we are sore, let Hyginus thy martyr be mercifully pleased to deliver us from all things which may hurt our bodies, and from all evil thoughts which may defile our souls.
+Through our Lord.}
+
+\smalltitle{January 11. Sixth day.}
+
+\gscore[Ad Magnif.]{Ant. 1. f}{an_admoniti_magi_solesmes_1961}
+ \antiphona{english}{The wise men being warned in a dream, departed into their own country another way}
+ 
+ \myrule
+ 
+ \texteparacol{\vv Dóminus vobíscum.
+
+\rr Et cum spíritu tuo.}
+{english}
+{\noindent \vv The Lord be with you.
+
+\noindent \rr  And with thy spirit.}
+
+\rubrique{\begin{enpars}
+The cantor sings the verse to which all reply.
+\end{enpars}}
+
+\gscore[]{8.}{BD_Duplex_II_Vesp} 
+
+ \noindent \vv Let us bless the Lord.
+
+\noindent \rr Thanks be to God.
+
+ \textebilingue{fidelium_animae}{fidelium_animae_en}
+
+\end{document}
