@@ -1,6 +1,6 @@
 # Divinum_Officium_la_vulg
 
-Materials for the singing of the Divine Office in Latin and in English or another vernacular language, firstly Sunday Vespers. I also include my edition of Tenebrae here. All is according to the Breviarium Romanum and the calendar before Pius XII unless otherwise noted.
+Materials for the singing of the Divine Office in Latin and in English or another vernacular language, primarily Sunday Vespers. I also include my edition of Tenebrae here. All is according to the Breviarium Romanum and the calendar before Pius XII unless otherwise noted.
 
 Pour chanter l'Office divin en latin et en langue anglaise ou en n'importe quelle autre langue vernaculaire, d'abord les vêpres du dimanche.
 Ici on trouve également mon édition de l'office des Ténèbres. Tout est selon le Breviarium Romanum et le calendrier d'avant Pie X, sauf indication contraire.
@@ -15,3 +15,5 @@ Translation of the Litany of the Saints orations © Michael Martin. Used with pe
 Translation of *Stabat mater dolorosa* © [the Stabat Mater Foundatiion.](https://stabatmater.info/nl/copyright/) Used with permission.
 
 All other material from sources in the public domain or free of known copyright restrictions.
+
+As of January 2026, although the older forms will be kept available, going forward the only actively maintained projects will be those with the older hymns (Hymni antiqui).
