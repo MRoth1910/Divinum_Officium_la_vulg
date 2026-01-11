@@ -1,0 +1,294 @@
+% !TEX TS-program = lualatexmk
+% !TEX parameter =  --shell-escape
+
+\documentclass[12pt]{book}
+
+\input{commonheaders_vespers_people}
+
+\begin{document}
+ 
+ \twosided[pc] %% to allow for the left-right switching of columns needed for bilingual liturgical typesetting (like in missals); it's unclear why this goes BEFORE everything else and not when activating the environment. %% It's OK for paper booklets to not switch, but it's probably best practice to switch.
+ 
+ \thispagestyle{empty}
+ 
+ {\centering{\huge\capspace{{SUNDAY AT VESPERS.}}}\par}\header{sunday at vespers.}
+ 
+\smalltitle{Before the Office.}
+
+\rubrique{These prayers are said kneeling. End when the priest stands.}
+
+\textebilingue{orationes_ante_do}{orationes_ante_do_eng}
+
+\smalltitle{\prayers}
+
+\rubrique{The celebrant intones the following verse. All sing the response and doxology.}
+
+\begin{enpars}
+\rubrique{Make the sign of the cross at the beginning and at the Magnificat, and bow the head when the Trinity is mentioned, when mention is made of the ``Holy Name'' in some way, and at ``Orémus.''}\end{enpars}
+
+\gscore[]{℣.}{Deus_In_Adjutorium_Festivus}
+
+\noindent
+\begin{enpars}
+O God, \cc{} come to my assistance. \rr O Lord, make haste to help me. Glory be to the Father, and to the Son, and to the Holy Ghost. As it was in the beginning, is now, and ever shall be, world without end. Amen. Alleluia.\end{enpars}
+
+\rubrique{After Septuagesima:}
+
+\smallscore{Laus_tibi_Domine}
+
+\noindent
+\begin{enpars}
+Praise be unto thee, o Lord, king of eternal glory.
+\end{enpars}
+
+\smalltitle{First Antiphon. 7. c2.}
+\initialscore{1_Dixit_Dominus}
+
+\footnotetext[1]{The words are not repeated, which is always done when the antiphon begins with the first words of the psalm, which continues therefore after the word with which the antiphon ends, whether it was sung in full or simply begun. Regardless, if the words are the same, the antiphon is continued with the psalm.}
+
+\rubrique{\begin{enpars}
+Sit at the word ``Sede.'' The cantor sings odd verses; all sing even verses, and this for the hymn and Magnificat as well.
+\end{enpars}}
+
+\sdpsalmusbilingue{109}{109_7}{109_en}
+
+\smallscore{an--dixit_dominus_domino--solesmes_1961}
+
+\antiphona{english}{The Lord said to my Lord: Sit thou at my right hand}
+
+\rubrique{\begin{enpars}
+Clerics in descending order, or a cantor, intone the subsequent antiphons. The cantor then continues the psalm.
+\end{enpars}}
+
+\gscore[2. Ant.]{3. b}{2_Magna_Opera}
+
+\psalmus{110}{110_3b}{110_3a_b}{110_en}
+
+\smallscore{an--magna_opera_domini--solesmes_1961}
+
+\antiphona{english}{Great are the works of the Lord, sought out according to all his wills}
+
+\gscore[3. Ant.]{4. g}{3_Qui_timet_Dominum}
+
+\psalmus{111}{111_4g}{111_4g}{111_en}
+
+\smallscore{an--qui_timet_dominum--solesmes_1961}
+
+\antiphona{english}{He who feareth the Lord shall delight exceedingly in his commandments}
+
+\gscore[4. Ant.]{7. c}{4_Sit_nomen_Domini}
+
+\psalmus{112}{112_7c}{112_7}{112_en}
+
+\smallscore{an--sit_nomen_domini..._in--solesmes_1961}
+
+\antiphona{english}{Blessed be the name of the Lord forever}
+
+\gscore[5. Ant.]{T. pereg.}{5_Deus_autem_noster}
+
+\psalmus{113}{113_per}{113_per}{113_en}
+
+\smallscore{an--deus_autem_noster--solesmes_1961}
+
+\antiphona{english}{But our God is in heaven, he hath done all things whatsoever he would}
+
+\rubrique{\begin{enpars}
+Having sung the last antiphon in full, stand when the celebrant does.
+\end{enpars}}
+
+\rubrique{\begin{enpars}
+The chapter, hymn, and verse are always the same from the IV Sunday after Pentecost until the last Sunday before Advent inclusive, as well as from the II Sunday after the Epiphany until the last before Septuagesima inclusive.
+\end{enpars}}
+
+\chapterlateng
+\scripture{2 Cor. 1, 3–4.}
+
+\textes{capitulum_pa_la_en}
+
+%% The usual tone and the 3rd tone, used ad libitum, are omitted as we do not use these tones, but they are included in the tex file and the gabc files are available, for the sake of completeness.
+
+\hymnlateng
+
+%\gscore[]{8.}{hy_lucis_creator_antiquus}
+%
+%\rubrique{\begin{enpars}
+%If a commemoration is made of the Blessed Virgin Mary, the doxology is as follows:
+%\end{enpars}}
+%
+%\smallscore{hy_Lucis_Creator_antiquus_BMV.}
+%
+%\smalltitle{2. Another tone ad lib.}
+
+\gscore[]{8.}{hy_lucis_creator_ad_lib_1_antiquus}
+
+\textes{lucis_creator_en}
+
+%\rubrique{Or:}
+
+\rubrique{\begin{enpars}
+If a commemoration is made of the Blessed Virgin Mary, the doxology is as follows:
+\end{enpars}}
+
+\smallscore{hy_Lucis_Creator_Optime_antiquus_ad_lib_BMV}
+\begin{enpars}
+Glory be to thee o Lord, who wast born of the Virgin, With the Father and the Holy Spirit, in the eternal age. Amen.
+\end{enpars}
+
+%\smalltitle{3. Another tone ad lib.}
+%
+%\gscore[]{1.}{hy_lucis_creator_ad_lib_2_antiquus}
+%
+%\rubrique{Or:}
+%
+%\smallscore{hy_Lucis_Creator_Optime_antiquus_mode_1_BMV}
+
+\textes{cantor_rubric}
+
+\smallscore{versiculus_dom_pa}
+\begin{enpars} \noindent \vv Direct, O Lord, my prayer.
+
+\noindent \rr As incense in thy sight.
+ \end{enpars}
+ 
+ \rubrique{\begin{enpars}
+The celebrant intones the \normaltext{Magnificat} antiphon; this is always proper to the day. The cantor continues the \normaltext{Ma\-gnificat.}\end{enpars}}
+
+\smalltitle{Canticle of the Blessed Virgin Mary.}
+
+\scripture{Luc. 1, 46–55.}
+
+\textes{magnificat_la_en}
+
+\rubrique{\begin{enpars}
+Sit as the antiphon is sung in full. Then the usual dialogue follows. On Sundays, all stand from now until the end of the office, unless one sits for the antiphons sung for the commemorations, according to custom.\end{enpars}}
+
+\textes{dv_la_en}
+
+\myrule
+
+\rubrique{When the officiant is not a deacon:}
+
+\smallscore{domine_exaudi_solemn}
+
+\begin{enpars}
+ \vv O Lord hear my prayer.
+
+ \rr And let my cry come unto thee.
+\end{enpars}
+
+\myrule
+
+ \rubrique{\begin{enpars}
+The celebrant sings the collect of the day, and any commemorations follow. When required, the Suffrage of All Saints is sung in the last place, as below.\end{enpars}}
+
+\myrule
+
+\smalltitle{Suffrage of All Saints.}
+
+\gscore[Ant.]{2.}{an_beata_dei_genitrix_virgo_solesmes_1961}
+\antiphona{english}{May the Blessed Virgin Mary, Mother of God, and all the Saints, intercede for us with the Lord}
+
+\textes{suffragium_la_en}
+
+\rubrique{In this collect, at \normaltext{N.,} the name of the titular of the proper church is said, provided that it is not a Divine Person or a mystery of the Lord, or that an office or commemoration has not been made by reason of a feast, or that the name is not in the same suffrage prayer. And the names of the holy Angels and of Saint John the Baptist, if they are titular, are placed before that of Saint Joseph.}
+
+\myrule
+
+\textes{dv_la_en}
+
+\myrule
+
+\orrubrique
+
+\smallscore{domine_exaudi_solemn}
+
+\myrule
+
+\textes{cantor_rubric}
+
+\gscore[]{1.}{BD_per_annum}
+
+\begin{enpars}
+ \vv Let us bless the Lord.
+
+ \rr Thanks be to God.
+\end{enpars}
+
+\rubrique{\begin{enpars}This tone is the same on all Sundays ``of the year'' and on the three Sundays before Lent.\end{enpars}}
+
+\textes{fidelium_la_en}
+
+\rubrique{\begin{enpars}
+Then the Lord's Prayer is recited silently, and the office is concluded with the following verses, the Marian antiphon, etc., unless Compline follows, or, in parish and other churches not bound to the office in choir, Benediction of the Blessed Sacrament or a sermon, or even some other pious exercises.\end{enpars}}
+
+\rubrique{\begin{enpars}The versicle \normaltext{Dóminus} and response \normaltext{Et vitam } are sung on a lower note.\end{enpars}}
+
+\texteparacol{
+\noindent \vv Dóminus det nobis suam pacem.
+
+\noindent \rr Et vitam ætérnam. Amen.}
+{english}
+{\noindent \vv May the Lord grant us his peace.
+
+\noindent \rr And life everlasting. Amen.}
+
+\rubrique{\begin{enpars}On Sundays, all remain standing.\end{enpars}}
+
+\rubrique{\begin{enpars} The officiant intones the Marian antiphon according to the season, followed by the versicle and collect in the usual way. The versicle \normaltext{Divínum auxílium} follows, \normaltext{\pageref{conclusion}.}\end{enpars}}
+
+\smalltitle{Alma Redemptoris Mater.}
+
+\rubrique{¶ From Vespers of the Saturday before the I Sunday of Advent to Vespers of February 2 inclusive.}
+
+%\gscore[]{5.}{an--alma_redemptoris--solesmes_1961}
+%%%\vspace{1ex}
+%
+%\smalltitle{Simple Tone.}
+\gscore[]{5.}{an--alma_redemptoris_simple_solesmes}
+
+\textes{alma_redemptoris_la_en}
+
+\smalltitle{Ave Regina Cælorum.}
+
+\rubrique{¶ After the Purification, that is, from Compline of February 2 even if the feast is transferred, until Compline of Wednesday in Holy Week.}
+
+%\gscore[]{6.}{an--ave_regina_caelorum--solesmes_1961}
+%%\vspace{1ex}
+%
+%\smalltitle{Simple Tone.}
+
+\gscore[]{6.}{an--ave_regina_caelorum_simple_tone--solesmes}
+
+\textes{ave_regina_la_en}
+
+%\smalltitle{Regina Cæli.}
+%
+%\rubrique{¶ From Compline of Holy Saturday until None of Saturday after Pentecost inclusive.}
+%
+%%\gscore[]{6.}{an--regina_caeli--solesmes}
+%%%\vspace{1ex}
+%%
+%%\smalltitle{Simple Tone.}
+%
+%\gscore[]{6.}{an--regina_caeli_simple_tone--solesmes}
+%
+%\textes{regina_caeli_la_en}
+
+\smalltitle{Salve Regina.}
+
+\rubrique{¶ From Vespers of the Holy Trinity until None of the Saturday before Advent inclusive.}
+
+%\gscore[]{1.}{an--salve_regina--solesmes}
+%%\vspace{1ex}
+%
+%\smalltitle{Simple Tone.}
+\gscore[]{5.}{an--salve_regina_simple_tone_solesmes}
+
+\textes{salve_regina_la_en}
+
+\rubrique{The versicle and response are sung on a lower note.}
+\label{conclusion} \phantomsection
+
+\textes{divinum_auxilium_la_en}
+
+\end{document}
