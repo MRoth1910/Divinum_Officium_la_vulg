@@ -44,6 +44,7 @@
 \usepackage{enumitem} %% nécessaire pour les textes des psaumes.
 \usepackage{etoolbox}
 \usepackage{lettrine}
+\usepackage{graphicx}
 %\usepackage{tocloft}%%to fix toc title. titlesec companion packages could also work.
 \usepackage{indentfirst}%% to allow for \section with indented 1st paragraphs in good Franco-Latin style (LaTeX default is to suppress this. Package sets  \@afterindentfalse to (always) true.
 \usepackage[savepos]{zref}
@@ -497,7 +498,7 @@ Numbers=OldStyle] %% all \kern numbers are based on this and can be removed if t
 
 %%%3rd version: need to switch languages!
     \NewDocumentCommand{\texteparacol}{ +mm+m }{%
-    \smallskip%
+    \smallskip% 
        \begin{paracol}{2}
            #1
            \switchcolumn
