@@ -1180,6 +1180,24 @@ Pater noster et Ave María \rubrique{secreto.}%
 \providecommand\phantomsection{} %% should make hyperref work properly %%only works with section etc., not with label etc. (that requires \phantomsection
 %
 
+\NewDocumentCommand\mycentering{m}{%
+ {\centering
+ {\Large
+ {About the #1
+ }%
+ \par}%
+ }%
+ }
+ 
+ 
+\NewDocumentCommand{\composer}{m}{%
+{\raggedleft{#1}
+%
+\par}%
+}
+
+ \setsansfont{Montserrat}
+
 \NewDocumentEnvironment{enpars}{}
   {\begin{otherlanguage*}{english}}
   {\par\end{otherlanguage*}}
